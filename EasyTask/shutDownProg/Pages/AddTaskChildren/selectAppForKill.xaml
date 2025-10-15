@@ -1,0 +1,58 @@
+﻿<ui:FluentWindow  x:Class="EasyTask.Pages.AddTaskChildren.SelectAppForKill"
+         xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" FlowDirection="{DynamicResource FlowAll}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+                 xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasyTask.Pages.AddTaskChildren" x:Name="SelectAppForKillX"
+        mc:Ignorable="d"
+        Title="Kill Apps" Height="600" Width="500" MouseDown="FluentWindow_MouseDown">
+    <ui:FluentWindow.Resources>
+        <CollectionViewSource x:Key="sourceCollection" Source="{Binding YourObservableCollectionProperty}">
+            <CollectionViewSource.SortDescriptions>
+                <scm:SortDescription PropertyName="YourProperty-Index"  Direction="Ascending"  />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </ui:FluentWindow.Resources>
+    <Border Background="{DynamicResource SAFKWB}" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="100"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0"  Background="{DynamicResource SAFKWSec}" ></Border>
+            <Border Grid.Row="2"  Background="{DynamicResource SAFKWSec}"></Border>
+            <TextBlock Grid.Row="0" Text="{x:Static Language:Lang.SelectAppForKill_Title}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,50,0,0" FontWeight="Bold"></TextBlock>
+            <Border Grid.Row="1" Background="{DynamicResource SAFKWSec}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  CornerRadius="0,0,5,5">
+                <Grid>
+                    <StackPanel x:Name="MainStack" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                        <ToggleButton x:Name="SuggestedItemsButton" Style="{DynamicResource SecoundButtonSAFK}" IsChecked="{Binding SuggestItemsButtonBool, ElementName=SelectAppForKillX}"  MinWidth="140" Width="auto" Height="50"  Content="{x:Static Language:Lang.SelectAppForKill_SuggestedButton}" Margin="5,20,5,0" Checked="SuggestedItemsButton_Checked" >
+
+                        </ToggleButton>
+                        <ToggleButton x:Name="AllItemsButton" Style="{DynamicResource SecoundButtonSAFK}" IsChecked="{Binding AllItemsButtonBool, ElementName=SelectAppForKillX}"  MinWidth="140" Width="auto" Height="50"  Content="{x:Static Language:Lang.SelectAppForKill_AllApplicationsButton}" Margin="5,20,5,0" Checked="AllItemsButton_Checked" >
+                          
+                        </ToggleButton>
+                    </StackPanel>
+                    <ScrollViewer Margin="0,100,0,0">
+                        <StackPanel x:Name="StackOfAppsEnableMain">
+                            <ItemsControl x:Name="StackOfSuggestAppsEnable" Visibility="Collapsed"  ItemsSource="{Binding Source={StaticResource sourceCollection}}"/>
+                            <ItemsControl x:Name="StackOfAllAppsEnable" Visibility="Collapsed" ItemsSource="{Binding Source={StaticResource sourceCollection}}"/>
+                    </StackPanel>
+
+
+                    </ScrollViewer>
+                </Grid>
+            </Border>
+            <Border Grid.Row="2" Background="{DynamicResource SAFKWB}" CornerRadius="0,0,0,0">
+                <Grid>
+                    <Button x:Name="Confirm" Width="120" Height="50" Background="{DynamicResource SAFKWSec}" Content="{x:Static Language:Lang.DefaultTextName_Confirm}" HorizontalAlignment="Right" Margin="0,0,30,0" Click="Confirm_Click" />
+                    <Button x:Name="Cancel" Width="120" Height="50" Background="Transparent" Content="{x:Static Language:Lang.DefaultTextName_Cancel}" HorizontalAlignment="Right" Margin="0,0,150,0" Click="Cancel_Click" />
+                </Grid>
+            </Border>
+            
+        </Grid>
+    </Border>
+</ui:FluentWindow>

@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="EasyTask.Pages.PagesConnectors.PageElement.ETBeginOfTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasyTask.Pages.PagesConnectors.PageElement"
+             mc:Ignorable="d"  x:Name="ETBMain" Margin="5,5,5,5"
+             Height="auto" Width="auto">
+    <Border >
+        <Label x:Name="ETBLabel" Content="{Binding ElementName=ETBMain, Path=ETBlabelContent ,Mode=TwoWay}" FontSize="25" Foreground="{DynamicResource ETBMain}" ></Label>
+    </Border>
+</UserControl>

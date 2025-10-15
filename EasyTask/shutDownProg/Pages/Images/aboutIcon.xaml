@@ -1,0 +1,71 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingGroup x:Key="clockIconDrawingGroup" ClipGeometry="M0,0 V900 H900 V0 H0 Z">
+    <GeometryDrawing Brush="#FF001A3A">
+      <GeometryDrawing.Geometry>
+        <EllipseGeometry RadiusX="450" RadiusY="450" Center="450,450" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <GeometryDrawing Brush="#FFD9EAFF">
+      <GeometryDrawing.Geometry>
+        <EllipseGeometry RadiusX="374" RadiusY="374" Center="450,450" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <GeometryDrawing Brush="#FF5097FF">
+      <GeometryDrawing.Geometry>
+        <RectangleGeometry RadiusX="12" RadiusY="12" Rect="431,133,38,323" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-164.34,396.75">
+      <GeometryDrawing Brush="#FF001A3A">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="9.74" RadiusY="9.74" Rect="377.75,309.42,38,174.66" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <GeometryDrawing Brush="#FF5097FF">
+      <GeometryDrawing.Geometry>
+        <RectangleGeometry RadiusX="12" RadiusY="12" Rect="15,423.5,84,53" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <DrawingGroup Transform="6.12303176911189E-17,-1,1,6.12303176911189E-17,-393,1293">
+      <GeometryDrawing Brush="#FF5097FF">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="12" RadiusY="12" Rect="408,816.5,84,53" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="-1,-1.22460635382238E-16,1.22460635382238E-16,-1,1686,900">
+      <GeometryDrawing Brush="#FF5097FF">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="12" RadiusY="12" Rect="801,423.5,84,53" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="6.12303176911189E-17,1,-1,6.12303176911189E-17,507,-393">
+      <GeometryDrawing Brush="#FF5097FF">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="12" RadiusY="12" Rect="408,30.5,84,53" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="clockIconDrawingImage" Drawing="{DynamicResource clockIconDrawingGroup}" />
+  <DrawingGroup x:Key="aboutIconDrawingGroup" ClipGeometry="M0,0 V898 H898 V0 H0 Z">
+    <GeometryDrawing Brush="#FF001A3A">
+      <GeometryDrawing.Geometry>
+        <EllipseGeometry RadiusX="449" RadiusY="449" Center="449,449" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <GeometryDrawing Brush="#FFD9EAFF">
+      <GeometryDrawing.Geometry>
+        <RectangleGeometry RadiusX="11.83" RadiusY="11.83" Rect="414.5,253,69,90" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <GeometryDrawing Brush="#FF5097FF">
+      <GeometryDrawing.Geometry>
+        <RectangleGeometry RadiusX="20.15" RadiusY="20.15" Rect="415,383,69,261" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+  </DrawingGroup>
+  <DrawingImage x:Key="aboutIconDrawingImage" Drawing="{DynamicResource aboutIconDrawingGroup}" />
+</ResourceDictionary>

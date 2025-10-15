@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="23.1" version="23.1" PreviousModules="simple" Modules="professional" RootPath="." Language="en" Id="{2AD17C93-B748-4961-9C76-515A5B863FFE}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="ActSyncAppComponent;CPLAppletComponent;AutorunComponent;GameUxComponent;SilverlightSlnComponent;SharePointSlnComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.deps.json" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.dll.config" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.exe" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\ar"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_1" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\de"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_2" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\es"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_3" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\fa"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_4" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\fr"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_5" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\pt"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_6" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\ru"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_7" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\zh"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_EasyTask.runtimeconfig.json" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_ExitIcon.ico" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\files\icons\ExitIcon"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_GLWpfControl.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Logo.ico" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_LottieSharp.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.DependencyCollector.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.EventCounterCollector.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.PerfCounterCollector.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.WindowsServer.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.ApplicationInsights.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Caching.Memory.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Configuration.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.DependencyInjection.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Logging.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Options.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Primitives.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Microsoft.Xaml.Behaviors.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_OpenTK.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Original.ico" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Resources.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_SkiaSharp.SceneGraph.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Skottie.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Views.Desktop.Common.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Views.WPF.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_SkiaSharp.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Data.OleDb.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_System.Data.OleDb.dll_1" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\runtimes\win\lib\net9.0"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WhiteBG80.ico" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\Resources"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Wpf.Ui.Abstractions.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_Wpf.Ui.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_actionDetails_Run.mdb" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dll" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\runtimes\win-arm64\native"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dll_1" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\runtimes\win-x64\native"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dll_2" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\runtimes\win-x86\native"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dylib" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\runtimes\osx\native"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_orgBGBluedark8.png" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish\files\icons\1080w"/>
+    <ROW Property="AI_PROPPATH_DIR_PERBUILD_recentDetails_Run.mdb" Value="..\shutDownProg\bin\Release\net10.0-windows10.0.17763.0\publish"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.deps.json" Value="EasyTask.deps.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.dll" Value="EasyTask.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.dll.config" Value="EasyTask.dll.config"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe" Value="EasyTask.exe"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_1" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_2" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_3" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_4" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_5" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_6" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_7" Value="EasyTask.resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.runtimeconfig.json" Value="EasyTask.runtimeconfig.json"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_ExitIcon.ico" Value="ExitIcon.ico"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_GLWpfControl.dll" Value="GLWpfControl.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll" Value="Hardcodet.NotifyIcon.Wpf.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Logo.ico" Value="Logo.ico"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_LottieSharp.dll" Value="LottieSharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.DependencyCollector.dll" Value="Microsoft.AI.DependencyCollector.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.EventCounterCollector.dll" Value="Microsoft.AI.EventCounterCollector.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.PerfCounterCollector.dll" Value="Microsoft.AI.PerfCounterCollector.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll" Value="Microsoft.AI.ServerTelemetryChannel.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.WindowsServer.dll" Value="Microsoft.AI.WindowsServer.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll" Value="Microsoft.ApplicationInsights.WorkerService.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.ApplicationInsights.dll" Value="Microsoft.ApplicationInsights.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll" Value="Microsoft.Extensions.Caching.Abstractions.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Caching.Memory.dll" Value="Microsoft.Extensions.Caching.Memory.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll" Value="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll" Value="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.dll" Value="Microsoft.Extensions.Configuration.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll" Value="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.DependencyInjection.dll" Value="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll" Value="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll" Value="Microsoft.Extensions.Logging.ApplicationInsights.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.dll" Value="Microsoft.Extensions.Logging.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Options.dll" Value="Microsoft.Extensions.Options.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Primitives.dll" Value="Microsoft.Extensions.Primitives.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll" Value="Microsoft.Toolkit.Uwp.Notifications.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll" Value="Microsoft.Windows.SDK.NET.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Xaml.Behaviors.dll" Value="Microsoft.Xaml.Behaviors.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_OpenTK.dll" Value="OpenTK.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Original.ico" Value="Original.ico"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Resources.dll" Value="SkiaSharp.Resources.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.SceneGraph.dll" Value="SkiaSharp.SceneGraph.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Skottie.dll" Value="SkiaSharp.Skottie.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Views.Desktop.Common.dll" Value="SkiaSharp.Views.Desktop.Common.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Views.WPF.dll" Value="SkiaSharp.Views.WPF.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.dll" Value="SkiaSharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Data.OleDb.dll" Value="System.Data.OleDb.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_System.Data.OleDb.dll_1" Value="System.Data.OleDb.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WhiteBG80.ico" Value="WhiteBG80.ico"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll" Value="WinRT.Runtime.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Wpf.Ui.Abstractions.dll" Value="Wpf.Ui.Abstractions.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_Wpf.Ui.dll" Value="Wpf.Ui.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_actionDetails_Run.mdb" Value="actionDetails_Run.mdb"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll" Value="libSkiaSharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll_1" Value="libSkiaSharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll_2" Value="libSkiaSharp.dll"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dylib" Value="libSkiaSharp.dylib"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_orgBGBluedark8.png" Value="orgBGBluedark8.png"/>
+    <ROW Property="AI_PROPPATH_FILENAME_PERBUILD_recentDetails_Run.mdb" Value="recentDetails_Run.mdb"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="ARPNOMODIFY" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
+    <ROW Property="ARPPRODUCTICON" Value="Installer.exe" Type="8"/>
+    <ROW Property="AppLogoIcon" Value="applogo.png" MultiBuildValue="DefaultBuild:Artboard12copy.png" Type="1" MsiKey="AppLogoIcon"/>
+    <ROW Property="AppLogoIconDark" Value="applogodark.png" MultiBuildValue="DefaultBuild:Artboard12copy.png" Type="1" MsiKey="AppLogoIconDark"/>
+    <ROW Property="Manufacturer" Value="Moradstudio"/>
+    <ROW Property="ProductCode" Value="1033:{EA964D57-B92A-4A1F-9803-9A4807FFD7DF} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Easy Task"/>
+    <ROW Property="ProductVersion" Value="1.32.1" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
+    <ROW Property="UpgradeCode" Value="{B3D6EE3E-8549-4C9E-BB08-219B477CF8F9}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows 7 x86, Windows 8 x86, Windows 8.1 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows 7 x64, Windows Server 2008 R2 x64, Windows 8 x64, Windows Server 2012 x64, Windows 8.1 x64, Windows Server 2012 R2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:Windows 7 x86, Windows 8 x86, Windows 8.1 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="EasyTask_Dir" Directory_Parent="APPDIR" DefaultDir="EasyTask" DirectoryOptions="3"/>
+    <ROW Directory="ExitIcon_Dir" Directory_Parent="icons_Dir" DefaultDir="ExitIcon" DirectoryOptions="3"/>
+    <ROW Directory="ProgramMenuFolder" Directory_Parent="TARGETDIR" DefaultDir="PROGRA~1|ProgramMenuFolder" IsPseudoRoot="1"/>
+    <ROW Directory="Resources_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="RESOUR~1|Resources" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="ar_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="ar" DirectoryOptions="3"/>
+    <ROW Directory="de_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="de" DirectoryOptions="3"/>
+    <ROW Directory="es_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="es" DirectoryOptions="3"/>
+    <ROW Directory="fa_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="fa" DirectoryOptions="3"/>
+    <ROW Directory="files_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="files" DirectoryOptions="3"/>
+    <ROW Directory="fr_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="fr" DirectoryOptions="3"/>
+    <ROW Directory="icons_Dir" Directory_Parent="files_Dir" DefaultDir="icons" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="win_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="native_1_Dir" Directory_Parent="winarm64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_2_Dir" Directory_Parent="winx64_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_3_Dir" Directory_Parent="winx86_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="native_Dir" Directory_Parent="osx_Dir" DefaultDir="native" DirectoryOptions="3"/>
+    <ROW Directory="net9.0_Dir" Directory_Parent="lib_Dir" DefaultDir="net9.0" DirectoryOptions="3"/>
+    <ROW Directory="osx_Dir" Directory_Parent="runtimes_Dir" DefaultDir="osx" DirectoryOptions="3"/>
+    <ROW Directory="pt_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="pt" DirectoryOptions="3"/>
+    <ROW Directory="ru_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="ru" DirectoryOptions="3"/>
+    <ROW Directory="runtimes_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="runtimes" DirectoryOptions="3"/>
+    <ROW Directory="w_Dir" Directory_Parent="icons_Dir" DefaultDir="1080w" DirectoryOptions="3"/>
+    <ROW Directory="win_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win" DirectoryOptions="3"/>
+    <ROW Directory="winarm64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="WIN-AR~1|win-arm64" DirectoryOptions="3"/>
+    <ROW Directory="winx64_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x64" DirectoryOptions="3"/>
+    <ROW Directory="winx86_Dir" Directory_Parent="runtimes_Dir" DefaultDir="win-x86" DirectoryOptions="3"/>
+    <ROW Directory="zh_Dir" Directory_Parent="EasyTask_Dir" DefaultDir="zh" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{80AC99CB-B782-4528-A20F-1668184FC326}"/>
+    <ROW Component="ProductInformation" Value="{F5A8777E-D812-429C-9638-42CBC64456E2}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AI_ExePath" ComponentId="{40A524F3-627F-4E32-85E3-1D0512B927D6}" Directory_="APPDIR" Attributes="4" KeyPath="AI_ExePath"/>
+    <ROW Component="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe" ComponentId="{F4F51998-45DB-4AEA-BD5D-9B6151ED3305}" Directory_="EasyTask_Dir" Attributes="256" KeyPath="EasyTask.exe"/>
+    <ROW Component="APPDIR" ComponentId="{80AC99CB-B782-4528-A20F-1668184FC326}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="EasyTask_PrimaryOutput" ComponentId="{9CAA022E-F4CF-4EE5-8C17-7D3CA4E37794}" Directory_="EasyTask_Dir" Attributes="0" KeyPath="EasyTask.dll"/>
+    <ROW Component="EasyTask_PublishOutput" ComponentId="{03DAB186-5CBD-4F16-8CEB-43346A605A2E}" Directory_="EasyTask_Dir" Attributes="0" KeyPath="actionDetails_Run.mdb" Type="0"/>
+    <ROW Component="EasyTask_PublishOutput_Resources" ComponentId="{4B0B2D7C-58C4-4297-849D-70B1E47FE949}" Directory_="Resources_Dir" Attributes="0" KeyPath="Original.ico" Type="0"/>
+    <ROW Component="EasyTask_PublishOutput_ar" ComponentId="{9C9152EA-F933-4896-AFFE-4D929C23FD66}" Directory_="ar_Dir" Attributes="0" KeyPath="EasyTask.resources.dll"/>
+    <ROW Component="EasyTask_PublishOutput_de" ComponentId="{401E6AB8-85FF-402F-83AD-2B248FCC429D}" Directory_="de_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_1"/>
+    <ROW Component="EasyTask_PublishOutput_es" ComponentId="{05FD58FC-040E-4C0E-A4CA-EC521B79A375}" Directory_="es_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_2"/>
+    <ROW Component="EasyTask_PublishOutput_fa" ComponentId="{171E453A-43D8-43F5-89A5-417E06AB71B0}" Directory_="fa_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_3"/>
+    <ROW Component="EasyTask_PublishOutput_files_icons_1080w" ComponentId="{0E52617A-A231-4F96-809D-B3C6786415FC}" Directory_="w_Dir" Attributes="0" KeyPath="orgBGBluedark8.png" Type="0"/>
+    <ROW Component="EasyTask_PublishOutput_files_icons_ExitIcon" ComponentId="{2A5EC29D-0751-4842-9132-DFE86672022F}" Directory_="ExitIcon_Dir" Attributes="0" KeyPath="ExitIcon.ico" Type="0"/>
+    <ROW Component="EasyTask_PublishOutput_fr" ComponentId="{A859F396-42C9-4A46-BB6C-683F923395AA}" Directory_="fr_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_4"/>
+    <ROW Component="EasyTask_PublishOutput_pt" ComponentId="{8B034CDE-9E08-4758-9287-C16ACA539850}" Directory_="pt_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_5"/>
+    <ROW Component="EasyTask_PublishOutput_ru" ComponentId="{B8EBAE50-09B5-42AC-B4CF-F8994B69B2A1}" Directory_="ru_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_6"/>
+    <ROW Component="EasyTask_PublishOutput_runtimes_osx_native" ComponentId="{3269CBEF-91F6-4AD0-8CEC-677BA03B4A89}" Directory_="native_Dir" Attributes="0" KeyPath="libSkiaSharp.dylib" Type="0"/>
+    <ROW Component="EasyTask_PublishOutput_runtimes_win_lib_net9.0" ComponentId="{81762CE8-66E4-4B66-AAA0-F9A43A64A0ED}" Directory_="net9.0_Dir" Attributes="0" KeyPath="System.Data.OleDb.dll_1"/>
+    <ROW Component="EasyTask_PublishOutput_runtimes_winarm64_native" ComponentId="{94934F69-BD4C-4654-BCE6-DF5497A15EB9}" Directory_="native_1_Dir" Attributes="256" KeyPath="libSkiaSharp.dll"/>
+    <ROW Component="EasyTask_PublishOutput_runtimes_winx64_native" ComponentId="{74F27A89-6720-41B0-BC12-FF02D41181D9}" Directory_="native_2_Dir" Attributes="256" KeyPath="libSkiaSharp.dll_1"/>
+    <ROW Component="EasyTask_PublishOutput_runtimes_winx86_native" ComponentId="{694CEC07-413B-4505-9170-05714236F530}" Directory_="native_3_Dir" Attributes="0" KeyPath="libSkiaSharp.dll_2"/>
+    <ROW Component="EasyTask_PublishOutput_zh" ComponentId="{17151D9C-EFD9-46B1-9349-5241672B5942}" Directory_="zh_Dir" Attributes="0" KeyPath="EasyTask.resources.dll_7"/>
+    <ROW Component="ProductInformation" ComponentId="{F5A8777E-D812-429C-9638-42CBC64456E2}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{3311F3BC-C882-4A17-A6BA-790109972A89}" Directory_="SHORTCUTDIR" Attributes="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="EasyTask.dll" Component_="EasyTask_PrimaryOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.dll&gt;" SelfReg="false"/>
+    <ROW File="actionDetails_Run.mdb" Component_="EasyTask_PublishOutput" FileName="ACTION~2.MDB|[|AI_PROPPATH_FILENAME_PERBUILD_actionDetails_Run.mdb]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_actionDetails_Run.mdb&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.deps.json" Component_="EasyTask_PublishOutput" FileName="EASYTA~2.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.deps.json]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.deps.json&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.dll.config" Component_="EasyTask_PublishOutput" FileName="EASYTA~2.CON|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.dll.config]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.dll.config&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.exe" Component_="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.exe&gt;" SelfReg="false" DigSign="true"/>
+    <ROW File="EasyTask.runtimeconfig.json" Component_="EasyTask_PublishOutput" FileName="EASYTA~3.JSO|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.runtimeconfig.json]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.runtimeconfig.json&gt;" SelfReg="false"/>
+    <ROW File="GLWpfControl.dll" Component_="EasyTask_PublishOutput" FileName="GLWPFC~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_GLWpfControl.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_GLWpfControl.dll&gt;" SelfReg="false"/>
+    <ROW File="Hardcodet.NotifyIcon.Wpf.dll" Component_="EasyTask_PublishOutput" FileName="HARDCO~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll&gt;" SelfReg="false"/>
+    <ROW File="Logo.ico" Component_="EasyTask_PublishOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Logo.ico]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Logo.ico&gt;" SelfReg="false"/>
+    <ROW File="LottieSharp.dll" Component_="EasyTask_PublishOutput" FileName="LOTTIE~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_LottieSharp.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_LottieSharp.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.AI.DependencyCollector.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.DependencyCollector.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.AI.DependencyCollector.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.AI.EventCounterCollector.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.EventCounterCollector.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.AI.EventCounterCollector.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.AI.PerfCounterCollector.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.PerfCounterCollector.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.AI.PerfCounterCollector.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.AI.ServerTelemetryChannel.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.AI.WindowsServer.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~6.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.WindowsServer.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.AI.WindowsServer.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.ApplicationInsights.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~7.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.ApplicationInsights.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.ApplicationInsights.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.ApplicationInsights.WorkerService.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~8.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Caching.Abstractions.dll" Component_="EasyTask_PublishOutput" FileName="MICROS~9.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Caching.Memory.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~10.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Caching.Memory.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Caching.Memory.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.Abstractions.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~11.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.Binder.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~12.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Configuration.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~13.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Configuration.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.Abstractions.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~14.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.DependencyInjection.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~15.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.DependencyInjection.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.DependencyInjection.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.Abstractions.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~16.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.ApplicationInsights.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~17.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Logging.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~18.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Logging.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Options.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~19.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Options.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Options.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Extensions.Primitives.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~20.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Primitives.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Extensions.Primitives.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Toolkit.Uwp.Notifications.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~21.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Windows.SDK.NET.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~22.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Windows.SDK.NET.dll&gt;" SelfReg="false"/>
+    <ROW File="Microsoft.Xaml.Behaviors.dll" Component_="EasyTask_PublishOutput" FileName="MICRO~23.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Xaml.Behaviors.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Microsoft.Xaml.Behaviors.dll&gt;" SelfReg="false"/>
+    <ROW File="OpenTK.dll" Component_="EasyTask_PublishOutput" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_OpenTK.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_OpenTK.dll&gt;" SelfReg="false"/>
+    <ROW File="recentDetails_Run.mdb" Component_="EasyTask_PublishOutput" FileName="RECENT~2.MDB|[|AI_PROPPATH_FILENAME_PERBUILD_recentDetails_Run.mdb]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_recentDetails_Run.mdb&gt;" SelfReg="false"/>
+    <ROW File="SkiaSharp.dll" Component_="EasyTask_PublishOutput" FileName="SKIASH~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_SkiaSharp.dll&gt;" SelfReg="false"/>
+    <ROW File="SkiaSharp.Resources.dll" Component_="EasyTask_PublishOutput" FileName="SKIASH~3.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Resources.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_SkiaSharp.Resources.dll&gt;" SelfReg="false"/>
+    <ROW File="SkiaSharp.SceneGraph.dll" Component_="EasyTask_PublishOutput" FileName="SKIASH~4.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.SceneGraph.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_SkiaSharp.SceneGraph.dll&gt;" SelfReg="false"/>
+    <ROW File="SkiaSharp.Skottie.dll" Component_="EasyTask_PublishOutput" FileName="SKIASH~5.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Skottie.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_SkiaSharp.Skottie.dll&gt;" SelfReg="false"/>
+    <ROW File="SkiaSharp.Views.Desktop.Common.dll" Component_="EasyTask_PublishOutput" FileName="SKIASH~6.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Views.Desktop.Common.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_SkiaSharp.Views.Desktop.Common.dll&gt;" SelfReg="false"/>
+    <ROW File="SkiaSharp.Views.WPF.dll" Component_="EasyTask_PublishOutput" FileName="SKIASH~7.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Views.WPF.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_SkiaSharp.Views.WPF.dll&gt;" SelfReg="false"/>
+    <ROW File="System.Data.OleDb.dll" Component_="EasyTask_PublishOutput" FileName="SYSTEM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Data.OleDb.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Data.OleDb.dll&gt;" SelfReg="false"/>
+    <ROW File="WinRT.Runtime.dll" Component_="EasyTask_PublishOutput" FileName="WINRTR~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WinRT.Runtime.dll&gt;" SelfReg="false"/>
+    <ROW File="Wpf.Ui.Abstractions.dll" Component_="EasyTask_PublishOutput" FileName="WPFUIA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Wpf.Ui.Abstractions.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Wpf.Ui.Abstractions.dll&gt;" SelfReg="false"/>
+    <ROW File="Wpf.Ui.dll" Component_="EasyTask_PublishOutput" FileName="WPFUI~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_Wpf.Ui.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Wpf.Ui.dll&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll" Component_="EasyTask_PublishOutput_ar" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_1" Component_="EasyTask_PublishOutput_de" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_1]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_1&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_2" Component_="EasyTask_PublishOutput_es" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_2]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_2&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_3" Component_="EasyTask_PublishOutput_fa" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_3]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_3&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_4" Component_="EasyTask_PublishOutput_fr" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_4]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_4&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_5" Component_="EasyTask_PublishOutput_pt" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_5]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_5&gt;" SelfReg="false"/>
+    <ROW File="Original.ico" Component_="EasyTask_PublishOutput_Resources" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_Original.ico]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_Original.ico&gt;" SelfReg="false"/>
+    <ROW File="WhiteBG80.ico" Component_="EasyTask_PublishOutput_Resources" FileName="WHITEB~2.ICO|[|AI_PROPPATH_FILENAME_PERBUILD_WhiteBG80.ico]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_WhiteBG80.ico&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_6" Component_="EasyTask_PublishOutput_ru" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_6]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_6&gt;" SelfReg="false"/>
+    <ROW File="EasyTask.resources.dll_7" Component_="EasyTask_PublishOutput_zh" FileName="EASYTA~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_7]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_EasyTask.resources.dll_7&gt;" SelfReg="false"/>
+    <ROW File="orgBGBluedark8.png" Component_="EasyTask_PublishOutput_files_icons_1080w" FileName="ORGBGB~2.PNG|[|AI_PROPPATH_FILENAME_PERBUILD_orgBGBluedark8.png]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_orgBGBluedark8.png&gt;" SelfReg="false"/>
+    <ROW File="ExitIcon.ico" Component_="EasyTask_PublishOutput_files_icons_ExitIcon" FileName="[|AI_PROPPATH_FILENAME_PERBUILD_ExitIcon.ico]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_ExitIcon.ico&gt;" SelfReg="false"/>
+    <ROW File="libSkiaSharp.dylib" Component_="EasyTask_PublishOutput_runtimes_osx_native" FileName="LIBSKI~2.DYL|[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dylib]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libSkiaSharp.dylib&gt;" SelfReg="false"/>
+    <ROW File="libSkiaSharp.dll" Component_="EasyTask_PublishOutput_runtimes_winarm64_native" FileName="LIBSKI~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libSkiaSharp.dll&gt;" SelfReg="false"/>
+    <ROW File="libSkiaSharp.dll_1" Component_="EasyTask_PublishOutput_runtimes_winx64_native" FileName="LIBSKI~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll_1]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libSkiaSharp.dll_1&gt;" SelfReg="false"/>
+    <ROW File="libSkiaSharp.dll_2" Component_="EasyTask_PublishOutput_runtimes_winx86_native" FileName="LIBSKI~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll_2]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_libSkiaSharp.dll_2&gt;" SelfReg="false"/>
+    <ROW File="System.Data.OleDb.dll_1" Component_="EasyTask_PublishOutput_runtimes_win_lib_net9.0" FileName="SYSTEM~2.DLL|[|AI_PROPPATH_FILENAME_PERBUILD_System.Data.OleDb.dll_1]" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_APPPATH_PERBUILD_System.Data.OleDb.dll_1&gt;" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.custcomp.MsiShortcutPropertyComponent">
+    <ROW MsiShortcutProperty="EasyTask0" Shortcut_="EasyTask" PropertyKey="System.AppUserModel.PreventPinning" PropVariantValue="1"/>
+    <ROW MsiShortcutProperty="EasyTask_10" Shortcut_="EasyTask_1" PropertyKey="System.AppUserModel.PreventPinning" PropVariantValue="1"/>
+    <ROW MsiShortcutProperty="EasyTask_20" Shortcut_="EasyTask_2" PropertyKey="System.AppUserModel.PreventPinning" PropVariantValue="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppPathsComponent">
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.deps.json" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.deps.json]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.deps.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.dll.config" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.dll.config]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.dll.config]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.exe" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.exe]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_3" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_3]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_3]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_4" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_4]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_4]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_5" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_5]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_5]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_6" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_6]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_6]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.resources.dll_7" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.resources.dll_7]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.resources.dll_7]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_EasyTask.runtimeconfig.json" Path="[|AI_PROPPATH_DIR_PERBUILD_EasyTask.runtimeconfig.json]\[|AI_PROPPATH_FILENAME_PERBUILD_EasyTask.runtimeconfig.json]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_ExitIcon.ico" Path="[|AI_PROPPATH_DIR_PERBUILD_ExitIcon.ico]\[|AI_PROPPATH_FILENAME_PERBUILD_ExitIcon.ico]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_GLWpfControl.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_GLWpfControl.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_GLWpfControl.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Hardcodet.NotifyIcon.Wpf.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Logo.ico" Path="[|AI_PROPPATH_DIR_PERBUILD_Logo.ico]\[|AI_PROPPATH_FILENAME_PERBUILD_Logo.ico]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_LottieSharp.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_LottieSharp.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_LottieSharp.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.AI.DependencyCollector.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.DependencyCollector.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.DependencyCollector.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.AI.EventCounterCollector.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.EventCounterCollector.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.EventCounterCollector.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.AI.PerfCounterCollector.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.PerfCounterCollector.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.PerfCounterCollector.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.ServerTelemetryChannel.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.AI.WindowsServer.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.AI.WindowsServer.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.AI.WindowsServer.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.ApplicationInsights.WorkerService.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.ApplicationInsights.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.ApplicationInsights.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.ApplicationInsights.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Caching.Abstractions.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Caching.Memory.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Caching.Memory.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Caching.Memory.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.Abstractions.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.Binder.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Configuration.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Configuration.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Configuration.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.DependencyInjection.Abstractions.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.DependencyInjection.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.DependencyInjection.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.DependencyInjection.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.Abstractions.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.ApplicationInsights.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Logging.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Logging.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Logging.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Options.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Options.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Options.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Extensions.Primitives.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Extensions.Primitives.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Extensions.Primitives.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Toolkit.Uwp.Notifications.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Windows.SDK.NET.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Windows.SDK.NET.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Windows.SDK.NET.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Microsoft.Xaml.Behaviors.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Microsoft.Xaml.Behaviors.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Microsoft.Xaml.Behaviors.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_OpenTK.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_OpenTK.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_OpenTK.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Original.ico" Path="[|AI_PROPPATH_DIR_PERBUILD_Original.ico]\[|AI_PROPPATH_FILENAME_PERBUILD_Original.ico]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_SkiaSharp.Resources.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Resources.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Resources.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_SkiaSharp.SceneGraph.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_SkiaSharp.SceneGraph.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.SceneGraph.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_SkiaSharp.Skottie.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Skottie.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Skottie.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_SkiaSharp.Views.Desktop.Common.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Views.Desktop.Common.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Views.Desktop.Common.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_SkiaSharp.Views.WPF.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_SkiaSharp.Views.WPF.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.Views.WPF.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_SkiaSharp.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_SkiaSharp.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_SkiaSharp.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Data.OleDb.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Data.OleDb.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Data.OleDb.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_System.Data.OleDb.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_System.Data.OleDb.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_System.Data.OleDb.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WhiteBG80.ico" Path="[|AI_PROPPATH_DIR_PERBUILD_WhiteBG80.ico]\[|AI_PROPPATH_FILENAME_PERBUILD_WhiteBG80.ico]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_WinRT.Runtime.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_WinRT.Runtime.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_WinRT.Runtime.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Wpf.Ui.Abstractions.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Wpf.Ui.Abstractions.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Wpf.Ui.Abstractions.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_Wpf.Ui.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_Wpf.Ui.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_Wpf.Ui.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_actionDetails_Run.mdb" Path="[|AI_PROPPATH_DIR_PERBUILD_actionDetails_Run.mdb]\[|AI_PROPPATH_FILENAME_PERBUILD_actionDetails_Run.mdb]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libSkiaSharp.dll" Path="[|AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dll]\[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libSkiaSharp.dll_1" Path="[|AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dll_1]\[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll_1]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libSkiaSharp.dll_2" Path="[|AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dll_2]\[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dll_2]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_libSkiaSharp.dylib" Path="[|AI_PROPPATH_DIR_PERBUILD_libSkiaSharp.dylib]\[|AI_PROPPATH_FILENAME_PERBUILD_libSkiaSharp.dylib]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_orgBGBluedark8.png" Path="[|AI_PROPPATH_DIR_PERBUILD_orgBGBluedark8.png]\[|AI_PROPPATH_FILENAME_PERBUILD_orgBGBluedark8.png]" Type="2" Content="0"/>
+    <ROW Name="AI_APPPATH_PERBUILD_recentDetails_Run.mdb" Path="[|AI_PROPPATH_DIR_PERBUILD_recentDetails_Run.mdb]\[|AI_PROPPATH_FILENAME_PERBUILD_recentDetails_Run.mdb]" Type="2" Content="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrapperUISequenceComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="249"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="251"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\EXE" PackageFileName="Installer App" Languages="en" InstallationType="2" CabsLocation="1" UseLzma="true" LzmaMethod="2" LzmaCompressionLevel="4" PackageType="1" FilesInsideExe="true" ExeIconPath="..\shutDownProg\Installer.ico" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" UseLargeSchema="true" ExeName="Installer"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;appinstaller\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="MessageDlg.aip" Path="&lt;AI_THEMES&gt;appinstaller\fragments\MessageDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;appinstaller\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;appinstaller\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;appinstaller\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_DeleteLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_DeleteRLzma" Description="Deleting files extracted from archive" DescriptionLocId="ActionText.Description.AI_DeleteLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractFiles" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+    <ROW Action="AI_ExtractLzma" Description="Extracting files from archive" DescriptionLocId="ActionText.Description.AI_ExtractLzma" TemplateLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiAppSearchComponent">
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_LM" Builds="DefaultBuild"/>
+    <ROW Property="AI_SETUPEXEPATH" Signature_="AI_EXE_PATH_CU" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="Artboard12copy.png" SourcePath="..\shutDownProg\files\Logo\png1080\Artboard 12 copy.png"/>
+    <ROW Name="Prereq.dll" SourcePath="&lt;AI_CUSTACTS&gt;Prereq.dll"/>
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+    <ROW Name="lzmaextractor.dll" SourcePath="&lt;AI_CUSTACTS&gt;lzmaextractor.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlComponent">
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control="MaintenanceWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="Description" Type="Text" X="16" Y="94" Width="458" Height="57" Attributes="196611" Text="The highlighted volumes do not have enough disk space available for the currently selected features. You can either remove some files from the highlighted volumes,or select different destination drive(s). Alternatively, you may choose to disable the installer&apos;s rollback functionality. Click Yes if you wish to take the risk to disable rollback." TextStyle="[DescriptionFont]" Order="400" TextLocId="AppInstaller.Control.Text.OutOfRbDiskDlg#Description" MsiKey="OutOfRbDiskDlg#Description"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="VolumeList" Type="VolumeCostList" X="16" Y="151" Width="458" Height="54" Attributes="393223" Text="{120}{70}{70}{70}{70}" TextStyle="ListFontDark" Order="500" TextLocId="Control.Text.OutOfDiskDlg#VolumeList" MsiKey="OutOfRbDiskDlg#VolumeList"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProductNameTitle" Type="Text" X="15" Y="17" Width="364" Height="32" Attributes="196611" Text="Install [ProductName]?" TextStyle="[ProductNameTitleFont]" Order="600" TextLocId="AppInstaller.Control.Text.ProductName" MsiKey="OutOfRbDiskDlg#ProductNameTitle"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="CompanyText" Type="Text" X="16" Y="46" Width="362" Height="15" Attributes="196611" Text="Publisher: [Manufacturer]" TextStyle="[ManufacturerFont]" Order="700" TextLocId="AppInstaller.Control.Text.Manufacturer" MsiKey="OutOfRbDiskDlg#CompanyText"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProductLogo" Type="Bitmap" X="404" Y="15" Width="70" Height="70" Attributes="1" Text="[AppLogoIcon]" Order="800" MsiKey="OutOfRbDiskDlg#ProductLogo"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="ProducVersionText" Type="Text" X="16" Y="60" Width="362" Height="15" Attributes="196611" Text="Version: [ProductVersion]" TextStyle="[ManufacturerFont]" Order="900" TextLocId="AppInstaller.Control.Text.ProductVersion" MsiKey="OutOfRbDiskDlg#ProducVersionText"/>
+    <ROW Dialog_="OutOfRbDiskDlg" Control="AboutBtn" Type="ImageButton" X="5" Y="269" Width="18" Height="18" Attributes="4718595" Text="[AboutBtnIcon]" TextStyle="[ManufacturerFont]" Order="1000" MsiKey="OutOfRbDiskDlg#AboutBtn" Options="1" ExtType="ImageButton" ExtData="[InfoIconMsi]"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control="PatchWelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+    <ROW Dialog_="WelcomeDlg" Control="WelcomeDlgDialogInitializer" Type="DialogInitializer" X="0" Y="0" Width="0" Height="0" Attributes="0" Order="-1" TextLocId="-" HelpLocId="-" ExtDataLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_INSTALL AND CustomInstallation" Ordering="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="99"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="3" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="4" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="5" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="WelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_INSTALL" Ordering="0" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="WelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_INSTALL" Ordering="1" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="WelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_INSTALL" Ordering="2" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="WelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_INSTALL" Ordering="3" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="6" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="7" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_INSTALL" Ordering="0" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_INSTALL" Ordering="1" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_INSTALL AND CustomInstallation AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="8" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_INSTALL AND CustomInstallation AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="9" Options="2"/>
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_INSTALL AND CustomInstallation AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="10" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="2" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_MAINT AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="3" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_MAINT AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="4" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_MAINT" Ordering="0" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_MAINT" Ordering="1" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_MAINT" Ordering="2" Options="2"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="MaintenanceWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_MAINT" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfRbDiskDlg" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND (PROMPTROLLBACKCOST=&quot;P&quot; OR NOT PROMPTROLLBACKCOST)" Ordering="202" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="EnableRollback" Argument="False" Condition="AI_PATCH AND OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 0 AND PROMPTROLLBACKCOST=&quot;D&quot;" Ordering="203" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="SpawnDialog" Argument="OutOfDiskDlg" Condition="AI_PATCH AND ( (OutOfDiskSpace = 1 AND OutOfNoRbDiskSpace = 1) OR (OutOfDiskSpace = 1 AND PROMPTROLLBACKCOST=&quot;F&quot;) )" Ordering="204" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_ButtonText_Next_Orig]" Argument="[ButtonText_Next]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[ButtonText_Next]" Argument="[[AI_CommitButton]]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[AI_Text_Next_Orig]" Argument="[Text_Next]" Condition="AI_PATCH" Ordering="2" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="PatchWelcomeDlgDialogInitializer" Event="[Text_Next]" Argument="[Text_Install]" Condition="AI_PATCH" Ordering="3" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[ButtonText_Next]" Argument="[AI_ButtonText_Next_Orig]" Condition="AI_PATCH" Ordering="0" Options="2"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Back" Event="[Text_Next]" Argument="[AI_Text_Next_Orig]" Condition="AI_PATCH" Ordering="1" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH_ORIGINAL" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ChooseTextStyles" Type="1" Source="aicustact.dll" Target="ChooseTextStyles"/>
+    <ROW Action="AI_DATA_SETTER" Type="51" Source="CustomActionData" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DeleteCadLzma" Type="51" Source="AI_DeleteLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteLzma" Type="1025" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DeleteRCadLzma" Type="51" Source="AI_DeleteRLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_DeleteRLzma" Type="1281" Source="lzmaextractor.dll" Target="DeleteLZMAFiles"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_ExtractCadLzma" Type="51" Source="AI_ExtractLzma" Target="[AI_SETUPEXEPATH]"/>
+    <ROW Action="AI_ExtractFiles" Type="1" Source="Prereq.dll" Target="ExtractSourceFiles" AdditionalSeq="AI_DATA_SETTER"/>
+    <ROW Action="AI_ExtractLzma" Type="1025" Source="lzmaextractor.dll" Target="ExtractLZMAFiles"/>
+    <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PrimaryOutput"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_ar"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_de"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_es"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_fa"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_fr"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_pt"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_Resources"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_ru"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_zh"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_files_icons_1080w"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_files_icons_ExitIcon"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_runtimes_osx_native"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_runtimes_winarm64_native"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_runtimes_winx64_native"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_runtimes_winx86_native"/>
+    <ROW Feature_="MainFeature" Component_="EasyTask_PublishOutput_runtimes_win_lib_net9.0"/>
+    <ROW Feature_="MainFeature" Component_="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="AI_ExePath"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="AI_PROPPATH_FILENAME_PERBUILD_Easy.exe_Task" SourcePath="..\shutDownProg\files\Logo\Logo.ico" Index="0"/>
+    <ROW Name="Installer.exe" SourcePath="..\shutDownProg\Installer.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1397"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99" Builds="DefaultBuild"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="199" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="198" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractCadLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="197" Builds="DefaultBuild"/>
+    <ROW Action="AI_FindExeLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="196" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1549" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteRLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="1548" Builds="DefaultBuild"/>
+    <ROW Action="AI_DeleteLzma" Condition="SETUPEXEDIR=&quot;&quot; AND Installed AND (REMOVE&lt;&gt;&quot;ALL&quot;) AND (AI_INSTALL_MODE&lt;&gt;&quot;Remove&quot;) AND (NOT PATCH)" Sequence="6599" Builds="DefaultBuild"/>
+    <ROW Action="AI_ExtractFiles" Sequence="1399" Builds="DefaultBuild"/>
+    <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ROW Action="AI_BACKUP_AI_SETUPEXEPATH" Sequence="99"/>
+    <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Condition="AI_SETUPEXEPATH_ORIGINAL" Sequence="101"/>
+    <ROW Action="AI_ChooseTextStyles" Sequence="74"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 601) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 602) OR (MsiNTProductType = 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 603) OR (MsiNTProductType = 1)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR VersionNT64 OR ( VersionNT AND (VersionNT &lt;&gt; 601) AND (VersionNT &lt;&gt; 602) AND (VersionNT &lt;&gt; 603) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] cannot be installed on [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="SETUPEXEDIR OR (REMOVE=&quot;ALL&quot;)" Description="This package can only be run from a bootstrapper." DescriptionLocId="AI.LaunchCondition.RequireBootstrapper" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegLocatorComponent">
+    <ROW Signature_="AI_EXE_PATH_CU" Root="1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+    <ROW Signature_="AI_EXE_PATH_LM" Root="2" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Type="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="AI_ExePath" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="AI_ExePath" Value="[AI_SETUPEXEPATH]" Component_="AI_ExePath"/>
+    <ROW Registry="AdvancedInstaller" Root="-1" Key="Software\Caphyon\Advanced Installer" Name="\"/>
+    <ROW Registry="Caphyon" Root="-1" Key="Software\Caphyon" Name="\"/>
+    <ROW Registry="LZMA" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA" Name="\"/>
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductCode" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]" Name="\"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="ProductVersion" Root="-1" Key="Software\Caphyon\Advanced Installer\LZMA\[ProductCode]\[ProductVersion]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="EasyTask" Directory_="SHORTCUTDIR" Name="EASYTA~1|Easy Task" Component_="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe" Target="[#EasyTask.exe]" Hotkey="0" Icon_="AI_PROPPATH_FILENAME_PERBUILD_Easy.exe_Task" IconIndex="0" ShowCmd="1" WkDir="EasyTask_Dir"/>
+    <ROW Shortcut="EasyTask_1" Directory_="DesktopFolder" Name="EASYTA~1|Easy Task" Component_="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe" Target="[#EasyTask.exe]" Hotkey="0" Icon_="AI_PROPPATH_FILENAME_PERBUILD_Easy.exe_Task" IconIndex="0" ShowCmd="1" WkDir="EasyTask_Dir"/>
+    <ROW Shortcut="EasyTask_2" Directory_="ProgramMenuFolder" Name="EASYTA~1|Easy Task" Component_="AI_PROPPATH_FILENAME_PERBUILD_EasyTask.exe" Target="[#EasyTask.exe]" Hotkey="0" Icon_="AI_PROPPATH_FILENAME_PERBUILD_Easy.exe_Task" IconIndex="0" ShowCmd="1" WkDir="EasyTask_Dir"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="appinstaller"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.VsProjectComponent">
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="actionDetails_Run.mdb"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.deps.json"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.dll.config"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.exe"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.runtimeconfig.json"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="GLWpfControl.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Hardcodet.NotifyIcon.Wpf.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Logo.ico"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="LottieSharp.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.AI.DependencyCollector.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.AI.EventCounterCollector.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.AI.PerfCounterCollector.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.AI.ServerTelemetryChannel.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.AI.WindowsServer.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.ApplicationInsights.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.ApplicationInsights.WorkerService.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Caching.Abstractions.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Caching.Memory.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Configuration.Abstractions.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Configuration.Binder.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Configuration.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.DependencyInjection.Abstractions.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.DependencyInjection.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Logging.Abstractions.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Logging.ApplicationInsights.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Logging.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Options.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Extensions.Primitives.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Toolkit.Uwp.Notifications.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Windows.SDK.NET.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Microsoft.Xaml.Behaviors.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="OpenTK.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="recentDetails_Run.mdb"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="SkiaSharp.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="SkiaSharp.Resources.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="SkiaSharp.SceneGraph.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="SkiaSharp.Skottie.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="SkiaSharp.Views.Desktop.Common.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="SkiaSharp.Views.WPF.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="System.Data.OleDb.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="WinRT.Runtime.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Wpf.Ui.Abstractions.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Wpf.Ui.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_1"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_2"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_3"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_4"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_5"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="Original.ico"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="WhiteBG80.ico"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_6"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="EasyTask.resources.dll_7"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="orgBGBluedark8.png"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="ExitIcon.ico"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="libSkiaSharp.dylib"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="libSkiaSharp.dll"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="libSkiaSharp.dll_1"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="libSkiaSharp.dll_2"/>
+    <ROW ProjectId="{f1f766d1-36bc-4a71-aff4-a783e4aa84a0}" ProjectName="EasyTask" OutputGroup="PublishOutput" OutputFile="System.Data.OleDb.dll_1"/>
+  </COMPONENT>
+</DOCUMENT>

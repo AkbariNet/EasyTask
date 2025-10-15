@@ -1,0 +1,304 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily x:Key="SegoeFluentIcons">Inter</FontFamily>
+   
+    
+    <!--Set For All Default-->
+    <SolidColorBrush Color="#c9a941" x:Key="Sec"></SolidColorBrush>
+    <SolidColorBrush Color="#f5f5f7" x:Key="Main"></SolidColorBrush>
+    <SolidColorBrush Color="#513e00" x:Key="EllipseColor"></SolidColorBrush>
+    <!--Colors :"c9a941" "9f9140" "513e00" "C5C3C4" "ffffff" "f5f5f7" "c9a941" Blue:"ffd652" -->
+    <SolidColorBrush Color="#9f9140" x:Key="MovingRibbon"></SolidColorBrush>
+    <SolidColorBrush Color="#c9a941" x:Key="scrollborder"></SolidColorBrush>
+    <SolidColorBrush Color="#c9a941" x:Key="selectborder"></SolidColorBrush>
+    <SolidColorBrush Color="#513e00" x:Key="RecOfselectborder"></SolidColorBrush>
+    <SolidColorBrush Color="#513e00" x:Key="Contentborder"></SolidColorBrush>
+    <SolidColorBrush Color="#513e00" x:Key="buttonborder"></SolidColorBrush>
+    <SolidColorBrush Color="#FFFFFF" x:Key="labelContent"></SolidColorBrush>
+    <SolidColorBrush Color="#FFFFFF" x:Key="ExitButtonsColor"></SolidColorBrush>
+  
+<!--MWB == Main Window Button-->
+    <SolidColorBrush Color="#c9a941" x:Key="MWBNewTaskMain"></SolidColorBrush>
+    <SolidColorBrush Color="#9f9140" x:Key="MWBNewTaskSec"></SolidColorBrush>
+    <SolidColorBrush Color="#ffffff" x:Key="MWBNewTaskText"></SolidColorBrush>
+    <SolidColorBrush Color="#ffffff" x:Key="MWBNewTaskRec"></SolidColorBrush>
+    <SolidColorBrush Color="#c9a941" x:Key="MWBNewTaskB"></SolidColorBrush>
+
+
+    <!-- {All For ShortActionPro // Colors}-->
+    <SolidColorBrush x:Key="MainColorSAP" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="SecColorSAP" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="BColorSAP" Color="#f5f5f7"></SolidColorBrush>
+
+    <!--For Rectangle-->
+    <SolidColorBrush x:Key="RecMainColorSAP" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="RecSecColorSAP" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="RecBColorSAP" Color="#777d83"></SolidColorBrush>
+
+
+    <!-- FOR Texts-->
+    <SolidColorBrush Color="#ffffff" x:Key="labelContentSAP"></SolidColorBrush>
+    <SolidColorBrush Color="#ffffff" x:Key="secContentSAP"></SolidColorBrush>
+
+    <!-- For BTNS-->
+    <SolidColorBrush Color="#c9a941" x:Key="BTNContentSAP"></SolidColorBrush>
+    <SolidColorBrush Color="#ffffff" x:Key="BTNBackgroundSAP"></SolidColorBrush>
+    <!--Finish-->
+    <!--Finish-->
+
+
+
+    <!--{ All of this:For Set Icons colors :}-->
+    <!-- for New task pallet -->
+    <SolidColorBrush x:Key="allpartOfnewTask"  Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="allpartOfnewTaskSecend" Color="#c9a941"></SolidColorBrush>
+
+
+    <!-- For Exit Icon pallet-->
+    <SolidColorBrush x:Key="MainColorExitIcon" Color="Transparent"></SolidColorBrush>
+    <SolidColorBrush x:Key="SecColorExitIcon" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="BColorExitIcon" Color="#f5f5f7"></SolidColorBrush>
+
+    <SolidColorBrush x:Key="RibbonBarButtonsForegroundColor" Color="#ffffff"></SolidColorBrush>
+    <!-- For Recent Icon pallet-->
+    <SolidColorBrush x:Key="MainColorRecentIcon" Color="#FFFFFF"></SolidColorBrush>
+
+    <!--001add For About Icon Pallet-->
+    <SolidColorBrush x:Key="MainColorAboutIcon" Color="#FFFFFF"></SolidColorBrush>
+    
+    
+    <!-- For More Icon pallet-->
+    <SolidColorBrush x:Key="MainMoreIcon" Color="#ffffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="SecMoreIcon" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="BMoreIcon" Color="#f5f5f7"></SolidColorBrush>
+    
+    
+    
+    
+    
+    
+    <!--Color For ELEMEMTS-->
+    <Color x:Key="MoreIconColor" >#ffffff</Color>
+    <Color x:Key="NothingIconColor" >#ffffff</Color>
+    <Color x:Key="ClockIconColor" >#ffffff</Color>
+    <Color x:Key="LockIconColor" >#ffffff</Color>
+    <Color x:Key="UnLockIconColor" >#513e00</Color>
+    <Color x:Key="LinkIconColor" >#ffffff</Color>
+    <Color x:Key="RingIconColor" >#ffffff</Color>
+    <Color x:Key="RingDIconColor" >#513e00</Color>
+    <Color x:Key="LanguageIconColor" >#ffffff</Color>
+    <SolidColorBrush x:Key="DeleteIconColor" Color="#ffffff"></SolidColorBrush>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<!-- ELEMENTS FOR SHORT ACTION PRO  SAP-->
+
+    <Color x:Key="RestartIconColorMain" >Transparent</Color>
+    <Color x:Key="RestartIconColorSec" >#513e00</Color>
+    <Color x:Key="RestartTrueIconColorMain" >Transparent</Color>
+    <Color x:Key="RestartTrueIconColorSec" >#ffffff</Color>
+    <Color x:Key="ShutDownIconColorMain" >Transparent</Color>
+    <Color x:Key="ShutDownIconColorSec" >#513e00</Color>
+    <Color x:Key="ShutDownTrueIconColorMain" >Transparent</Color>
+    <Color x:Key="ShutDownTrueIconColorSec" >#ffffff</Color>
+    <Color x:Key="SleepIconColorMain" >Transparent</Color>
+    <Color x:Key="SleepIconColorSec" >#513e00</Color>
+    <Color x:Key="SleepTrueIconColorMain" >Transparent</Color>
+    <Color x:Key="SleepTrueIconColorSec" >#ffffff</Color>
+    <Color x:Key="MoreIconColorMain" >Transparent</Color>
+    <Color x:Key="MoreIconColorSec" >#ffffff</Color>
+    <Color x:Key="MoreTrueIconColorMain" >Transparent</Color>
+    <Color x:Key="MoreTrueIconColorSec" >#513e00</Color>
+    <!--Finish-->
+
+
+    <!--Colors :"c9a941" "9f9140" "513e00" "C5C3C4" "ffffff" "f5f5f7" -->
+
+
+<!--{For ADD TASK WINDOW ATW}-->
+    <SolidColorBrush Color="#c9a941" x:Key="labelContentATW"></SolidColorBrush>
+    <SolidColorBrush Color="#f5f5f7" x:Key="secContentATW"></SolidColorBrush>
+
+
+    <!--{For ADDTASKWINDOW} -->
+    <SolidColorBrush x:Key="ATWLabelColor">#ffffff</SolidColorBrush>
+    <Color x:Key="PlusIconColor">#ffffff</Color>
+    <Color x:Key="TopElmOfWelcomeIconColor">#c9a941</Color>
+    <Color x:Key="ButtomElmOfWelcomeIconColor">#c9a941</Color>
+    
+
+
+    <SolidColorBrush x:Key="ATWMainColor" Color="#ffffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="ATWSecColor" Color="#9f9140"></SolidColorBrush>
+    <SolidColorBrush x:Key="ATWBColor" Color="#c9a941"></SolidColorBrush>
+    
+    <SolidColorBrush x:Key="ATWBrushMainColor" Color="#ffffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="ATWBrushSecColor" Color="#9f9140"></SolidColorBrush>
+    <SolidColorBrush x:Key="ATWBrushBColor" Color="#c9a941"></SolidColorBrush>
+    
+    <SolidColorBrush x:Key="ATWElpsColor" Color="#ffffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="ATWDarkOrWhiteColor" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="ATWDarkOrWhiteColorRep" Color="#ffffff"></SolidColorBrush>
+    <!--AddTask Window / Childrens-->
+    
+    
+    
+    <!--SelectAppForKillWindow :SAFKW-->
+    <SolidColorBrush x:Key="SAFKWMain" Color="#FFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="SAFKWSec" Color="#9f9140"></SolidColorBrush>
+    <SolidColorBrush x:Key="SAFKWB" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="SAFKWC" Color="#ffd652"></SolidColorBrush>
+    <SolidColorBrush x:Key="SAFKOnlyWhite" Color="#FFFF"></SolidColorBrush>
+    
+    
+    
+    <!--Only Color-->
+    <Color x:Key="SAFKWMain_C" >#FFFF</Color>
+    <Color x:Key="SAFKWSec_C" >#9f9140</Color>
+    <Color x:Key="SAFKWB_C" >#513e00</Color>
+    <Color x:Key="SAFKWC_C" >#ffd652</Color>
+    <Color x:Key="SAFKOnlyWhite_C" >#FFFF</Color>
+
+
+
+
+    <!--{For Settings Window SW}-->
+
+    <SolidColorBrush x:Key="SWMain" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="SWSec" Color="#9f9140"></SolidColorBrush>
+    <SolidColorBrush x:Key="SWB" Color="#513e00"></SolidColorBrush>
+
+
+    <!--ETCheckBoxes-->
+    <SolidColorBrush Color="#c9a941" x:Key="CBSec"></SolidColorBrush>
+    <SolidColorBrush Color="#ffffff" x:Key="CBMain"></SolidColorBrush>
+    <!--Lables-->
+    <SolidColorBrush Color="#c9a941" x:Key="CBLSec"></SolidColorBrush>
+    <SolidColorBrush Color="#f5f5f7" x:Key="CBLMain"></SolidColorBrush>
+
+    <!--ETBeginOfSettings-->
+    <SolidColorBrush Color="#c9a941" x:Key="ETBSec"></SolidColorBrush>
+    <SolidColorBrush Color="#f5f5f7" x:Key="ETBMain"></SolidColorBrush>
+
+
+    <!--ETEndingOfSettings-->
+    <SolidColorBrush Color="#c9a941" x:Key="ETESec"></SolidColorBrush>
+    <SolidColorBrush Color="#FFFFFF" x:Key="ETEMain"></SolidColorBrush>
+
+    <!--ETSettingsBTN-->
+    <SolidColorBrush Color="#c9a941" x:Key="ETSBSec"></SolidColorBrush>
+    <SolidColorBrush Color="#f5f5f7" x:Key="ETSBMain"></SolidColorBrush>
+
+    <!--ETComboBoxes-->
+    <SolidColorBrush Color="#c9a941" x:Key="ETCBSec"></SolidColorBrush>
+    <SolidColorBrush Color="#FFFFFF" x:Key="ETCBMain"></SolidColorBrush>
+
+
+
+    <SolidColorBrush x:Key="SWPMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="SWPSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="SWPB" Color="#f5f5f7"></SolidColorBrush>
+
+    <!--ChangePasswordWindow-->
+
+    <SolidColorBrush x:Key="CPWMain" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="CPWSec" Color="#FFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="CPWB" Color="#ffd652"></SolidColorBrush>
+
+    
+   
+    <!--Border Brush For Difficult Color Elements-->
+    <SolidColorBrush x:Key="BorderBrushForDifficultColorElements" Color="#ffd652"></SolidColorBrush>
+    <SolidColorBrush x:Key="BorderBrushForDifficultColorElements2" Color="#ffffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="BorderBrushForDifficultColorElements3" Color="#001a3a"></SolidColorBrush>
+    <!--For ProcessInProduct Window-->
+    <SolidColorBrush x:Key="PIPWMain" Color="#9f9140"></SolidColorBrush>
+    <SolidColorBrush x:Key="PIPWSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="PIPWB" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="PIPWTextBTN" Color="#FFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="PIPWElementColor" Color="#FFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="PIPWIcon" Color="#FFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="PIPWIcon2" Color="#c9a941"></SolidColorBrush>
+    <!--Finish-->
+
+    <!--For ActionStartReminder Window-->
+    <SolidColorBrush x:Key="ASRWMain" Color="#FFFF"></SolidColorBrush>
+    <SolidColorBrush x:Key="ASRWSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="ASRWB" Color="#f5f5f7"></SolidColorBrush>
+    <SolidColorBrush x:Key="ASRWC" Color="#ffd652"></SolidColorBrush>
+
+    <Color x:Key="ASRWMainColor">#c9a941</Color>
+    <Color x:Key="ASRWSecColor">#513e00</Color>
+    <SolidColorBrush x:Key="ASRWButtonColor">#513e00</SolidColorBrush>
+    <!--Finish-->
+
+
+
+
+
+    <!--For UnlockWindow-->
+    <SolidColorBrush x:Key="UWMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="UWSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="UWB" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="UWElementColor" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="UWElementColor2" Color="#c9a941"></SolidColorBrush>
+
+
+
+
+    <!--For Applying Process Task APT-->
+    <SolidColorBrush x:Key="APTMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="APTSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="APTB" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="APTRingColor" Color="#ffd652"></SolidColorBrush>
+
+    <!--For RecentActionPro Element = RAPE-->
+    <SolidColorBrush x:Key="RAPEMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="RAPESec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="RAPEB" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="RAPERingColor" Color="#ffd652"></SolidColorBrush>
+    <SolidColorBrush x:Key="RAPELightRingColor" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="RAPEDeleteElementColor" Color="#ff5555"></SolidColorBrush>
+
+
+
+    <!--1.1 SelectLanguage = SL -->
+    <SolidColorBrush x:Key="SLMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="SLSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="SLB" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="SLRingColor" Color="#ffd652"></SolidColorBrush>
+
+    <!--1.2 TaskbarIconStyle -->
+    <SolidColorBrush x:Key="TaskbarIconStyleMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="TaskbarIconStyleSec" Color="#c9a941"></SolidColorBrush>
+    <SolidColorBrush x:Key="TaskbarIconStyleB" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="TaskbarIconStyleBLue" Color="#ffd652"></SolidColorBrush>
+
+
+    <!--1.31 SettingsProIconsColorStyle-->
+    <SolidColorBrush x:Key="SettingsProIconMain" Color="#ffff"></SolidColorBrush>
+    <SolidColorBrush x:Key="SettingsProIconSec" Color="#c9a941"></SolidColorBrush>
+
+    <!--1.32 Set Color For Main Text OF Settings pro-->
+    <SolidColorBrush x:Key="SettingsProTextMain" Color="#513e00"></SolidColorBrush>
+    <SolidColorBrush x:Key="SettingsProTextSec" Color="#ffff"></SolidColorBrush>
+
+
+
+    <SolidColorBrush x:Key="SLRec" Color="#4C513e00"></SolidColorBrush>
+    <!--Adding Element Styles Of All Windows-->
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="..\Themes\Includer.xaml"/>
+        <ResourceDictionary Source="..\Themes\ThemeButtonOfChangeThemeResourceDictionary_Dark.xaml"/>
+    </ResourceDictionary.MergedDictionaries>
+
+</ResourceDictionary>
+                    

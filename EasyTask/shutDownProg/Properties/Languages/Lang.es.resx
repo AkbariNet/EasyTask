@@ -1,0 +1,708 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionStartReminder.GoesToSleep" xml:space="preserve">
+    <value>se va a dormir</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.Secound" xml:space="preserve">
+    <value>Segundo</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.ShutsDown" xml:space="preserve">
+    <value>Apaga</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.TitlePart1" xml:space="preserve">
+    <value>El sistema</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.TitlePart2" xml:space="preserve">
+    <value>En: </value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.WillRestart" xml:space="preserve">
+    <value>se reiniciará</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="AddTaskWindow.CreateTaskMainText" xml:space="preserve">
+    <value>Crear tarea</value>
+    <comment>AddTaskWindow</comment>
+  </data>
+  <data name="AddTaskWindow.SetActionMainText" xml:space="preserve">
+    <value>Establecer acción</value>
+    <comment>AddTaskWindow</comment>
+  </data>
+  <data name="AddTaskWindow.SetDateMainText" xml:space="preserve">
+    <value>Establecer fecha</value>
+    <comment>AddTaskWindow</comment>
+  </data>
+  <data name="AddTaskWindow.SetTaskNameMainText" xml:space="preserve">
+    <value>Establecer nombre de tarea</value>
+    <comment>AddTaskWindow</comment>
+  </data>
+  <data name="AddTaskWindow.SetTimeMainText" xml:space="preserve">
+    <value>Establecer hora</value>
+    <comment>AddTaskWindow</comment>
+  </data>
+  <data name="App.xaml.By doing this, all created tasks will be stopped." xml:space="preserve">
+    <value>Al hacer esto, todas las tareas creadas serán detenidas.</value>
+    <comment>app.xaml</comment>
+  </data>
+  <data name="ApplyingProcessTask.Opening your app" xml:space="preserve">
+    <value>Abriendo tu aplicación</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.Start Kill Apps" xml:space="preserve">
+    <value>Iniciar matar aplicaciones</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.start process of kill" xml:space="preserve">
+    <value>iniciar el proceso de matar</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.start process of kill apps.." xml:space="preserve">
+    <value>iniciar proceso de matar aplicaciones..</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.Starting process of open your exe app" xml:space="preserve">
+    <value>Iniciando proceso de abrir tu aplicación exe</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.StopProcess" xml:space="preserve">
+    <value>¿Detener proceso?</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ChangePasswordWindow.Enter Correct password" xml:space="preserve">
+    <value>Ingresa la contraseña correcta:</value>
+    <comment>Settings_ChangePasswordWindow</comment>
+  </data>
+  <data name="ChangePasswordWindow.Enter new password" xml:space="preserve">
+    <value>Ingresa la nueva contraseña:</value>
+    <comment>Settings_ChangePasswordWindow</comment>
+  </data>
+  <data name="ChangePasswordWindow.There was a problem, your password was not changed." xml:space="preserve">
+    <value>Hubo un problema, tu contraseña no fue cambiada.</value>
+    <comment>Settings_ChangePasswordWindow</comment>
+  </data>
+  <data name="ChangePasswordWindow.Your password has been successfully changed." xml:space="preserve">
+    <value>Tu contraseña ha sido cambiada exitosamente.</value>
+    <comment>Settings_ChangePasswordWindow</comment>
+  </data>
+  <data name="ChangeThemeOfThemeUserControl.Choose your favorite theme" xml:space="preserve">
+    <value>Elige tu tema favorito</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Connection.AlwaysTry" xml:space="preserve">
+    <value>Intentar siempre</value>
+    <comment>Settings_Connection</comment>
+  </data>
+  <data name="Connection.Connect" xml:space="preserve">
+    <value>Conectar</value>
+    <comment>Settings_Connection</comment>
+  </data>
+  <data name="Connection.EachTryTime" xml:space="preserve">
+    <value>Cada tiempo de intento (segundos)</value>
+    <comment>Settings_Connection</comment>
+  </data>
+  <data name="ConnectionBTN" xml:space="preserve">
+    <value>Conexión</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="CreatePasswordWindow.Your password has been successfully created" xml:space="preserve">
+    <value>Tu contraseña ha sido creada con éxito</value>
+    <comment>Settings_Security_CreatePasswordWindow</comment>
+  </data>
+  <data name="DefaultTextName.AreYouSure" xml:space="preserve">
+    <value>¿Estás seguro?</value>
+    <comment>defaultText</comment>
+  </data>
+  <data name="DefaultTextName.Back" xml:space="preserve">
+    <value>Atrás</value>
+    <comment>defaultText</comment>
+  </data>
+  <data name="DefaultTextName.Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+    <comment>defaultText</comment>
+  </data>
+  <data name="DefaultTextName.ChangePassword" xml:space="preserve">
+    <value>Cambiar contraseña</value>
+    <comment>defaultText</comment>
+  </data>
+  <data name="DefaultTextName.Confirm" xml:space="preserve">
+    <value>Confirmar</value>
+    <comment>defaultText</comment>
+  </data>
+  <data name="DefaultTextName.Empty" xml:space="preserve">
+    <value>Vacío</value>
+    <comment>defaultText</comment>
+  </data>
+  <data name="DefaultTextName.Enable" xml:space="preserve">
+    <value>Habilitar</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.Error" xml:space="preserve">
+    <value>¡Error!</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.Exit" xml:space="preserve">
+    <value>Salir</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.Next" xml:space="preserve">
+    <value>Siguiente</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.No" xml:space="preserve">
+    <value>No</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="defaultTextName.Open" xml:space="preserve">
+    <value>Abrir</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.Sucsses" xml:space="preserve">
+    <value>¡Éxito!</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.Unsuccessful" xml:space="preserve">
+    <value>¡Fallido!</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="DefaultTextName.Yes" xml:space="preserve">
+    <value>Sí</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>ES</value>
+    <comment>DefaultText</comment>
+  </data>
+  <data name="MainPage.ADDTASK" xml:space="preserve">
+    <value>AGREGAR TAREA</value>
+    <comment>MainWindow_MainPage</comment>
+  </data>
+  <data name="Notify.Application Minimized" xml:space="preserve">
+    <value>Aplicación minimizada</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Notify.for Enable Tasks, application Minimized" xml:space="preserve">
+    <value>para habilitar tareas, aplicación minimizada</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Notify.MeBetter" xml:space="preserve">
+    <value>Mejorar</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Notify.Welcome" xml:space="preserve">
+    <value>Bienvenido</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Process.TimerWindow" xml:space="preserve">
+    <value>Ventana de temporizador</value>
+    <comment>Settings_Process</comment>
+  </data>
+  <data name="Process.WaitingForSecound" xml:space="preserve">
+    <value>Esperando un segundo</value>
+    <comment>Settings_Process</comment>
+  </data>
+  <data name="ProcessBTN" xml:space="preserve">
+    <value>Proceso</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="ProcessInProduct.Action time is behinded of system Time." xml:space="preserve">
+    <value>El tiempo de acción está retrasado respecto al tiempo del sistema.</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Add Your Task to DataBase..." xml:space="preserve">
+    <value>Agregando tu tarea a la base de datos...</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Adding.." xml:space="preserve">
+    <value>Agregando..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.AddTask" xml:space="preserve">
+    <value>Agregar tarea</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Data Invalid" xml:space="preserve">
+    <value>¡Datos inválidos!</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Delete Sucsess" xml:space="preserve">
+    <value>¡Eliminación exitosa!</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Deleting..." xml:space="preserve">
+    <value>Eliminando...</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Error On Calulate Of Date. Please Return to Step1" xml:space="preserve">
+    <value>¡Error al calcular la fecha! Vuelve al paso 1.</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Exiting" xml:space="preserve">
+    <value>Saliendo</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Finding Error.." xml:space="preserve">
+    <value>Buscando Error..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.For Exit this app and disable tasks, you must unlock application" xml:space="preserve">
+    <value>Para salir de esta aplicación y desactivar tareas, debes desbloquear la aplicación</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Invalid Value" xml:space="preserve">
+    <value>Valor inválido</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Kill Succesfully Canceled" xml:space="preserve">
+    <value>¡Matar cancelado con éxito!</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Killing your app.." xml:space="preserve">
+    <value>Matando tu aplicación..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Lock Enabled" xml:space="preserve">
+    <value>Bloqueo habilitado</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Open EXE Succesfully Canceled" xml:space="preserve">
+    <value>Abrir EXE cancelado con éxito!</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Presence of disorder" xml:space="preserve">
+    <value>Presencia de desorden</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Probably there is a problem" xml:space="preserve">
+    <value>Probablemente haya un problema</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Programs name" xml:space="preserve">
+    <value>Nombre de los programas:</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Running programs that were not found" xml:space="preserve">
+    <value>Programas en ejecución que no fueron encontrados:</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Start finding.." xml:space="preserve">
+    <value>Iniciando búsqueda..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Starting process of Kill your file.." xml:space="preserve">
+    <value>Iniciando proceso de eliminar tu archivo..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.The action id was invalided" xml:space="preserve">
+    <value>El id de acción fue invalidado</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.The App is Locked" xml:space="preserve">
+    <value>La aplicación está bloqueada</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.The file does not open" xml:space="preserve">
+    <value>El archivo no se abre</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.The Task is deleted" xml:space="preserve">
+    <value>La tarea ha sido eliminada</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.These programs were successfully killed" xml:space="preserve">
+    <value>Estos programas fueron eliminados con éxito:</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.This can be for a number of reasons, test that your file is closed or that the file is not closed or frozen." xml:space="preserve">
+    <value>Esto puede ser por varias razones, prueba que tu archivo esté cerrado o que el archivo no esté cerrado o congelado.</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.This can have various reasons, test that your file opens or that the file has not been moved or deleted." xml:space="preserve">
+    <value>Esto puede tener varias razones, prueba que tu archivo se abra o que el archivo no haya sido movido o eliminado.</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.trying to add to database.." xml:space="preserve">
+    <value>Intentando agregar a la base de datos..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Trying to conntect to database..." xml:space="preserve">
+    <value>Intentando conectarse a la base de datos...</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.TryingToExit.." xml:space="preserve">
+    <value>Intentando salir..</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.We haven't your action id" xml:space="preserve">
+    <value>No tenemos tu id de acción</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.When lock is Enabled you can't Delete a task" xml:space="preserve">
+    <value>Cuando el bloqueo está habilitado, no puedes eliminar una tarea</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.When the app is locked, you cannot change the settings." xml:space="preserve">
+    <value>Cuando la aplicación está bloqueada, no puedes cambiar la configuración</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Your program has been Killed" xml:space="preserve">
+    <value>Tu programa ha sido eliminado</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Your program has been opened" xml:space="preserve">
+    <value>Tu programa ha sido abierto</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Your task is not add to recent tasks" xml:space="preserve">
+    <value>Tu tarea no ha sido añadida a las tareas recientes</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.YourTask Is Added To Application" xml:space="preserve">
+    <value>Tu tarea ha sido añadida a la aplicación</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.YourTask Is Not Added To Application" xml:space="preserve">
+    <value>Tu tarea no ha sido añadida a la aplicación</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="RecentActionControl.ActionStartedAt" xml:space="preserve">
+    <value>Acción iniciada en:</value>
+    <comment>RecentActionsPage_RecentActionControl</comment>
+  </data>
+  <data name="RecentActionControl.DeleteButton" xml:space="preserve">
+    <value>¿Eliminar?</value>
+    <comment>RecentActionsPage_RecentActionControl</comment>
+  </data>
+  <data name="RecentActions.Action" xml:space="preserve">
+    <value>Acción:</value>
+    <comment>MainWindow_RecentActionsPage</comment>
+  </data>
+  <data name="RecentActions.LastAction" xml:space="preserve">
+    <value>Última acción</value>
+    <comment>MainWindow_RecentActionsPage</comment>
+  </data>
+  <data name="S1AddTaskWindow.Day" xml:space="preserve">
+    <value>Día</value>
+    <comment>S1AddTaskWindow</comment>
+  </data>
+  <data name="S1AddTaskWindow.EnterDate" xml:space="preserve">
+    <value>Introduce la fecha</value>
+    <comment>S1AddTaskWindow</comment>
+  </data>
+  <data name="S1AddTaskWindow.Month" xml:space="preserve">
+    <value>Mes</value>
+    <comment>S1AddTaskWindow</comment>
+  </data>
+  <data name="S1AddTaskWindow.Year" xml:space="preserve">
+    <value>Año</value>
+    <comment>S1AddTaskWindow</comment>
+  </data>
+  <data name="S2AddTaskWindow.EnterTime" xml:space="preserve">
+    <value>Introduce la hora</value>
+    <comment>S2AddTaskWindow</comment>
+  </data>
+  <data name="S2AddTaskWindow.Hour" xml:space="preserve">
+    <value>Hora</value>
+    <comment>S2AddTaskWindow</comment>
+  </data>
+  <data name="S2AddTaskWindow.Minute" xml:space="preserve">
+    <value>Minuto</value>
+    <comment>S2AddTaskWindow</comment>
+  </data>
+  <data name="S3AddTaskWindow.EnterAction" xml:space="preserve">
+    <value>Introduce acción</value>
+    <comment>S3AddTaskWindow</comment>
+  </data>
+  <data name="S3AddTaskWindow.KillApp" xml:space="preserve">
+    <value>Eliminar aplicación</value>
+    <comment>S3AddTaskWindow</comment>
+  </data>
+  <data name="S3AddTaskWindow.OpenFile" xml:space="preserve">
+    <value>Abrir aplicación</value>
+    <comment>S3AddTaskWindow</comment>
+  </data>
+  <data name="S3AddTaskWindow.ReStart" xml:space="preserve">
+    <value>Reiniciar</value>
+    <comment>S3AddTaskWindow</comment>
+  </data>
+  <data name="S3AddTaskWindow.ShutDown" xml:space="preserve">
+    <value>Apagar</value>
+    <comment>S3AddTaskWindow</comment>
+  </data>
+  <data name="S3AddTaskWindow.Sleep" xml:space="preserve">
+    <value>Suspender</value>
+    <comment>S3AddTaskWindow</comment>
+  </data>
+  <data name="S4AddTaskWindow.DefaultTaskName" xml:space="preserve">
+    <value>Tarea nueva</value>
+    <comment>S4AddTaskWindow</comment>
+  </data>
+  <data name="S4AddTaskWindow.EnterTaskName" xml:space="preserve">
+    <value>Introduce nombre de tarea</value>
+    <comment>S4AddTaskWindow</comment>
+  </data>
+  <data name="Security.CantAddTaskWhenLockedAppProperty" xml:space="preserve">
+    <value>No se puede agregar tarea cuando la aplicación está bloqueada</value>
+    <comment>Settings_Security</comment>
+  </data>
+  <data name="Security.InCaseOfRiskOfPenetrationProperty" xml:space="preserve">
+    <value>En caso de riesgo de penetración:</value>
+    <comment>Settings_Security</comment>
+  </data>
+  <data name="Security.LockMode" xml:space="preserve">
+    <value>Modo de bloqueo</value>
+    <comment>Settings_Security</comment>
+  </data>
+  <data name="SecurityBTN" xml:space="preserve">
+    <value>Seguridad</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="SelectAppForKill.AllApplicationsButton" xml:space="preserve">
+    <value>Todas las aplicaciones</value>
+    <comment>AddTaskWindow.SelectAppForKill</comment>
+  </data>
+  <data name="SelectAppForKill.SuggestedButton" xml:space="preserve">
+    <value>Sugerido</value>
+    <comment>AddTaskWindow.SelectAppForKill</comment>
+  </data>
+  <data name="SelectAppForKill.Title" xml:space="preserve">
+    <value>Seleccione su aplicación para finalizar</value>
+    <comment>AddTaskWindow.SelectAppForKill</comment>
+  </data>
+  <data name="SelectLanguage.Select your language" xml:space="preserve">
+    <value>Seleccione su idioma:</value>
+    <comment>MainWindow_SelectLanguage</comment>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>Configuraciones</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="ShortActionPro.Action" xml:space="preserve">
+    <value>Acción:</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="ShortActionPro.DateCreated" xml:space="preserve">
+    <value>Fecha de creación:</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="ShortActionPro.deleteButtonTask" xml:space="preserve">
+    <value>Eliminar</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="ShortActionPro.ElementName" xml:space="preserve">
+    <value>Sin título</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="ShortActionPro.StartDate" xml:space="preserve">
+    <value>Fecha de inicio:</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="ShortActionPro.X minute to start action" xml:space="preserve">
+    <value>minutos para comenzar la acción</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="ShortActionPro.You can control your Task in the app." xml:space="preserve">
+    <value>Puede controlar su tarea en la aplicación.</value>
+    <comment>MainPage_ShortActionPro</comment>
+  </data>
+  <data name="Tasks.NotificationSystem" xml:space="preserve">
+    <value>Sistema de notificaciones</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="tasks.Task removal system" xml:space="preserve">
+    <value>Sistema de eliminación de tareas</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="Tasks.WarningToMinute" xml:space="preserve">
+    <value>Advertencia a (minuto)</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="Tasks.WarnToAddTaskProperty" xml:space="preserve">
+    <value>Advertir para agregar tarea</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="Tasks.WarnToClosedRunningTask" xml:space="preserve">
+    <value>Advertencia cuando la tarea está en ejecución</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="tasks.WhenLockModeIsEnableWeCantDeleteRecentTask" xml:space="preserve">
+    <value>No se puede eliminar la tarea reciente cuando el modo de bloqueo está habilitado</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="tasks.WhenLockModeIsEnableWeCantDeleteTask" xml:space="preserve">
+    <value>No se puede eliminar una tarea cuando el modo de bloqueo está habilitado</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="TasksBTN" xml:space="preserve">
+    <value>Tareas</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="Theme.ChangeTheme" xml:space="preserve">
+    <value>Cambiar tema</value>
+    <comment>Settings_Theme</comment>
+  </data>
+  <data name="Theme.enBTN" xml:space="preserve">
+    <value>Inglés</value>
+    <comment>Settings_Theme</comment>
+  </data>
+  <data name="Theme.faBTN" xml:space="preserve">
+    <value>Persa</value>
+    <comment>Settings_Theme</comment>
+  </data>
+  <data name="Theme.ThemeEditing" xml:space="preserve">
+    <value>Edición de tema</value>
+    <comment>Settings_Theme</comment>
+  </data>
+  <data name="ThemeBTN" xml:space="preserve">
+    <value>Tema</value>
+    <comment>Settings</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.Subtitle1" xml:space="preserve">
+    <value>Los siguientes temas personalizados le permiten tener más capacidades de personalización.</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.ThemeBlue" xml:space="preserve">
+    <value>Azul</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.ThemeClassic" xml:space="preserve">
+    <value>Clásico</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.ThemeYellow" xml:space="preserve">
+    <value>Amarillo</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="TwoWayYesNo.Title.AreYouSure" xml:space="preserve">
+    <value>¿Está seguro?</value>
+    <comment>TwoWayYesNo</comment>
+  </data>
+  <data name="TwoWayYesNo.Title2.By performing this operation, the program will be restarted." xml:space="preserve">
+    <value>Al realizar esta operación, el programa se reiniciará.</value>
+    <comment>TwoWayYesNo</comment>
+  </data>
+  <data name="UnlockWindow.EnterPasswordText" xml:space="preserve">
+    <value>Ingrese la contraseña:</value>
+    <comment>MainWindow_UnlockWindow</comment>
+  </data>
+</root>

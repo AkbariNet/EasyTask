@@ -1,0 +1,16 @@
+﻿<UserControl x:Class="EasyTask.Pages.PagesConnectors.PageElement.ETIntBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasyTask.Pages.PagesConnectors.PageElement"
+             mc:Ignorable="d" Height="40" x:Name="IntBoxElm" Margin="15,5,5,5">
+    <Border Background="{DynamicResource CBSec}" CornerRadius="3">
+        <Grid  >
+            <Label Content="{Binding ElementName=IntBoxElm,Path=ContentOfMainLabel}" Foreground="{DynamicResource CBLMain}"
+                    VerticalAlignment="Center"  Margin="10,0,60,0" HorizontalAlignment="Left"/>
+            <TextBox HorizontalAlignment="Right" VerticalAlignment="Center" BorderBrush="{DynamicResource BorderBrushForDifficultColorElements}"  BorderThickness="1"    Width="40" Height="25" Margin="0,0,10,0" TextChanged="TextBox_TextChanged" Background="{x:Null}"  FontSize="16" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Text="{Binding ElementName=IntBoxElm ,Path=IntBoxValue}" />
+
+        </Grid>
+    </Border>
+</UserControl>

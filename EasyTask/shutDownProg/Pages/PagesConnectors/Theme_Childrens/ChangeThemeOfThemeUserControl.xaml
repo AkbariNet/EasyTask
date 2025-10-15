@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="EasyTask.Pages.PagesConnectors.Theme_Childrens.ChangeThemeOfThemeUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"  Background="{DynamicResource SWB}" FlowDirection="{DynamicResource FlowAll}"
+             xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasyTask.Pages.PagesConnectors.Theme_Childrens.ChangeTheme_Childrens"
+             mc:Ignorable="d"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+             MinHeight="300" MinWidth="650">
+    <Grid  Margin="10,40,10,0">
+        <TextBlock Text="{x:Static Language:Lang.ChangeThemeOfThemeUserControl_Choose_your_favorite_theme}" FontSize="41.89px" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,250" FontWeight="Bold"/>
+        <TextBlock Text="{x:Static Language:Lang.Theme_ChangeThemeOfThemeUserControl_Subtitle1}" FontSize="9.89px" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,150" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,50,0,0">
+            <local:ThemeButtonOfChangeThemeUserControl x:Name="DeffaultTheme" Click="ChangeTheme_Click" Content="{x:Static Language:Lang.Theme_ChangeThemeOfThemeUserControl_ThemeClassic}"  BColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_DeffultBColor}" MainColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_DeffultMainColor}" SecoundColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_DeffultSecColor}"></local:ThemeButtonOfChangeThemeUserControl>
+            <local:ThemeButtonOfChangeThemeUserControl x:Name="BlueTheme" Click="ChangeTheme_Click" Content="{x:Static Language:Lang.Theme_ChangeThemeOfThemeUserControl_ThemeBlue}"   BColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_BlueBColor}" MainColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_BlueMainColor}" SecoundColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_BlueSecColor}"></local:ThemeButtonOfChangeThemeUserControl>
+            <local:ThemeButtonOfChangeThemeUserControl x:Name="YellowTheme" Click="ChangeTheme_Click" Content="{x:Static Language:Lang.Theme_ChangeThemeOfThemeUserControl_ThemeYellow}" BColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_YellowBColor}" MainColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_YellowMainColor}" SecoundColor="{DynamicResource ThemeButtonOfChangeThemeUserControl_YellowSecColor}"></local:ThemeButtonOfChangeThemeUserControl>
+
+        </StackPanel>
+        <ListBox SelectionChanged="ListBox_SelectionChanged"  Width="100" Margin="0,70,400,0"  HorizontalAlignment="Center" Visibility="Collapsed">
+            <ItemsControl x:Name="Default" Background="{DynamicResource SWSec}" >Default
+
+            </ItemsControl>
+            <ItemsControl x:Name="Blue" Background="{DynamicResource SWSec}">Blue</ItemsControl>
+            <ItemsControl x:Name="Yellow" Background="{DynamicResource SWSec}">Yellow</ItemsControl>
+        </ListBox>
+    </Grid>
+</UserControl>

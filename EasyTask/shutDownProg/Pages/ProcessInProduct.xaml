@@ -1,0 +1,261 @@
+﻿<ui:FluentWindow x:Class="EasyTask.Pages.ProcessInProduct"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasyTask.Pages" ui:Height="300" 
+        WindowStyle="None"  ui:Width="500" Topmost="True" FlowDirection="{DynamicResource FlowAll}"
+        Title="Message"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary x:Name="ExitIcon" Source="..\files\icons\ExitIcon\ExitIcon.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <Storyboard x:Key="Prossesing" RepeatBehavior="Forever">
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="gridProsses" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:01" Value="360"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="FalseProsses">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="falseProssesGrid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00.5000000" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="falseProssesGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.2">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="falseProssesGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.2">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+
+            <Storyboard x:Key="TrueProsses">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="TrueProssesGrid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="TrueProssesGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.2"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="TrueProssesGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.2"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+
+
+        </ResourceDictionary>
+    </Window.Resources>
+    <Border   MouseDown="Border_MouseDown" Background="{DynamicResource PIPWSec}">
+    <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="auto" Height="auto" >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30px"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid x:Name="panel_Grid" Grid.Row="0" MinWidth="300" MinHeight="20">
+                <Grid>
+                    <Button x:Name="EXTButtonStart" Width="20" Height="20" HorizontalAlignment="Right" Margin="0,0,20,0" Click="EXTButtonStart_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <ContentControl>
+                                    <Grid>
+                                        <Image Source="{StaticResource exitIcon_07DrawingImage}" Width="15" Height="15"/>
+                                    </Grid>
+                                </ContentControl>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Image Visibility="Collapsed" Source="\files\1080LOGO\LogoSmokeTransparent80.png" HorizontalAlignment="Left" Margin="20,0,0,0"></Image>
+                    <TextBlock HorizontalAlignment="Left" Visibility="Collapsed" Margin="45,0,0,0" Padding="0,0,0,0"  Text="EasyTask" VerticalAlignment="Center" FontSize="12"  FontWeight="DemiBold" Foreground="White" ></TextBlock>
+                </Grid>
+            </Grid>
+        <Grid x:Name="Contents" Grid.Row="1" MinHeight="220" MinWidth="300" >
+            <Border BorderBrush="Transparent" BorderThickness="0"  Background="{DynamicResource PIPWSec}" >
+                <StackPanel >
+                        <TextBlock x:Name="ProssesName" TextAlignment="Center" Text="{x:Static Language:Lang.DefaultTextName_Empty}"   FontWeight="Bold" FontSize="41.89px" Foreground="{DynamicResource PIPWTextBTN}" HorizontalAlignment="Center"  Padding="0,0,0,0" Margin="20,30,20,0" TextWrapping="Wrap"/>
+                    <ScrollViewer Margin="0,20,20,20"  MaxHeight="60" HorizontalAlignment="Center">
+                            <TextBlock Text="{x:Static Language:Lang.DefaultTextName_Empty}"  TextWrapping="Wrap" TextAlignment="Center" Padding="0,0,0,0" x:Name="ProssesAbout" MaxWidth="270" FontSize="9.89px" FontWeight="Light" Foreground="{DynamicResource PIPWTextBTN}" Margin="40,0,0,0"/>
+
+                    </ScrollViewer>
+                    <Grid FlowDirection="LeftToRight" >
+                        <Grid x:Name="Prossesing"   RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                            <Grid.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Grid.RenderTransform>
+                            <Grid x:Name="gridProsses" Visibility="Visible" RenderTransformOrigin="0.5,0.5" Width="100" Height="100">
+                                <Grid.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Grid.RenderTransform>
+                                <Ellipse x:Name="ellipse" HorizontalAlignment="Left" Height="16" Margin="74,0,0,0" VerticalAlignment="Center" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104">
+                                    <Ellipse.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+                                <Ellipse x:Name="ellipse1" HorizontalAlignment="Center" Height="16" Margin="0,10,0,0" VerticalAlignment="Top" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104"/>
+                                <Ellipse x:Name="ellipse2" HorizontalAlignment="Left" Height="16" Margin="10,0,0,0" VerticalAlignment="Center" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104"/>
+                                <Ellipse x:Name="ellipse3" HorizontalAlignment="Center" Height="16" Margin="0,74,0,0" VerticalAlignment="Top" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104"/>
+                                <Ellipse x:Name="ellipse4" HorizontalAlignment="Left" Height="16" Margin="21,21,0,0" VerticalAlignment="Top" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104"/>
+                                <Ellipse x:Name="ellipse5" HorizontalAlignment="Left" Height="16" Margin="63,21,0,0" VerticalAlignment="Top" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104"/>
+                                <Ellipse x:Name="ellipse6" HorizontalAlignment="Left" Height="16" Margin="21,63,0,0" VerticalAlignment="Top" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104"/>
+                                <Ellipse x:Name="ellipse7" HorizontalAlignment="Left" Height="16" Margin="63,63,0,0" VerticalAlignment="Top" Width="16" Fill="{DynamicResource PIPWElementColor}" RenderTransformOrigin="0.937,-0.104">
+                                    <Ellipse.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+
+                            </Grid>
+
+                        </Grid>
+                        <Grid x:Name="ProssesResult"   RenderTransformOrigin="0.5,0.5">
+                            <Grid.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform ScaleX="0.5" ScaleY="0.5"/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Grid.RenderTransform>
+                            <Grid x:Name="falseProssesGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5"  Width="100" Height="100" IsVisibleChanged="falseProssesGrid_IsVisibleChanged" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Grid.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Grid.RenderTransform>
+                                <Ellipse x:Name="ellipse8" HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="80" Fill="{DynamicResource PIPWIcon}" RenderTransformOrigin="0.937,-0.104">
+                                    <Ellipse.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+                                <Rectangle x:Name="rectangle" HorizontalAlignment="Center" RadiusX="5" RadiusY="5" Height="60" VerticalAlignment="Center" Width="14" Fill="{DynamicResource PIPWIcon2}" RenderTransformOrigin="0.5,0.5">
+                                    <Rectangle.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-45"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+                                <Rectangle x:Name="rectangle1" HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="14" Fill="{DynamicResource PIPWIcon2}" RenderTransformOrigin="0.5,0.5" RadiusX="5" RadiusY="5">
+                                    <Rectangle.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="45"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+
+                            </Grid>
+                            <Grid x:Name="TrueProssesGrid" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5" Width="100" Height="100"  IsVisibleChanged="TrueProssesGrid_IsVisibleChanged" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Grid.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Grid.RenderTransform>
+                                <Ellipse x:Name="ellipse9" HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="80" Fill="{DynamicResource PIPWIcon}" RenderTransformOrigin="0.937,-0.104">
+                                    <Ellipse.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Ellipse.RenderTransform>
+                                </Ellipse>
+                                <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" RadiusX="5" RadiusY="5" Height="28" VerticalAlignment="Top" Width="14" Fill="{DynamicResource PIPWIcon2}" RenderTransformOrigin="0.5,0.5" Margin="29,47,0,0">
+                                    <Rectangle.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-45"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+                                <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="60" VerticalAlignment="Center" Width="14" Fill="{DynamicResource PIPWIcon2}" RenderTransformOrigin="0.5,0.5" RadiusX="5" RadiusY="5" Margin="51,0,0,0">
+                                    <Rectangle.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="45"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+
+                            </Grid>
+
+                        </Grid>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </Grid>
+
+    </Grid>
+    </Border>
+</ui:FluentWindow>

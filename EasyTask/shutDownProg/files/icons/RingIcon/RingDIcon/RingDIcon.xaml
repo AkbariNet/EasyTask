@@ -1,0 +1,30 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="RingDIconGeometry1">F1 M40.04,40.04z M0,0z M17.62,6.98L3.21,31.95C2.14,33.8,3.48,36.11,5.61,36.11L34.44,36.11C36.57,36.11,37.91,33.8,36.84,31.95L22.42,6.98C21.35,5.13,18.69,5.13,17.62,6.98z</Geometry>
+  <Geometry x:Key="RingDIconGeometry2">F1 M40.04,40.04z M0,0z M17,1.47L23.04,1.47C28.5,1.47,32.93,5.9,32.93,11.36L32.93,28.57 7.11,28.57 7.11,11.37C7.11,5.91,11.54,1.47,17,1.47z</Geometry>
+  <DrawingGroup x:Key="RingDIconDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+    <DrawingGroup Opacity="1">
+            <GeometryDrawing Brush="{DynamicResource RingDIconColorMain}">
+        <GeometryDrawing.Geometry>
+          <EllipseGeometry RadiusX="3.94" RadiusY="3.94" Center="20.02,36.1" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+            <GeometryDrawing Brush="{DynamicResource RingDIconColorMain}" Geometry="{StaticResource RingDIconGeometry1}" />
+            <GeometryDrawing Brush="{DynamicResource RingDIconColorMain}" Geometry="{StaticResource RingDIconGeometry2}" />
+      <GeometryDrawing Brush="{DynamicResource RingDIconColorMain}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="1.47" RadiusY="1.47" Rect="17.97,0,4.11,2.95" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="0.707106781186548,0.707106781186547,-0.707106781186547,0.707106781186548,22.37,-9.92">
+      <GeometryDrawing Brush="#FFFF0000">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="2.17" RadiusY="2.17" Rect="20.98,3.06,4.35,37.97" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+  </DrawingGroup>
+    <DrawingImage x:Key="RingDIconDrawingImage" Drawing="{StaticResource RingDIconDrawingGroup}" />
+    <SolidColorBrush x:Key="RingDIconColorMain" Color="{DynamicResource RingDIconColor}"></SolidColorBrush>
+    
+</ResourceDictionary>

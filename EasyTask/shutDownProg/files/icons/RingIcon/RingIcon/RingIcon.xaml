@@ -1,0 +1,21 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="RingIconGeometry1">F1 M40.04,40.04z M0,0z M17.62,6.98L3.21,31.95C2.14,33.8,3.48,36.11,5.61,36.11L34.44,36.11C36.57,36.11,37.91,33.8,36.84,31.95L22.42,6.98C21.35,5.13,18.69,5.13,17.62,6.98z</Geometry>
+  <Geometry x:Key="RingIconGeometry2">F1 M40.04,40.04z M0,0z M17,1.47L23.04,1.47C28.5,1.47,32.93,5.9,32.93,11.36L32.93,28.57 7.11,28.57 7.11,11.37C7.11,5.91,11.54,1.47,17,1.47z</Geometry>
+  <DrawingGroup x:Key="RingIconDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+        <GeometryDrawing Brush="{DynamicResource RingIconColorMain}">
+      <GeometryDrawing.Geometry>
+        <EllipseGeometry RadiusX="3.94" RadiusY="3.94" Center="20.02,36.1" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+        <GeometryDrawing Brush="{DynamicResource RingIconColorMain}" Geometry="{StaticResource RingIconGeometry1}" />
+        <GeometryDrawing Brush="{DynamicResource RingIconColorMain}" Geometry="{StaticResource RingIconGeometry2}" />
+        <GeometryDrawing Brush="{DynamicResource RingIconColorMain}">
+      <GeometryDrawing.Geometry>
+        <RectangleGeometry RadiusX="1.47" RadiusY="1.47" Rect="17.97,0,4.11,2.95" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+  </DrawingGroup>
+    <DrawingImage x:Key="RingIconDrawingImage" Drawing="{StaticResource RingIconDrawingGroup}" />
+    <SolidColorBrush x:Key="RingIconColorMain" Color="{DynamicResource RingIconColor}"></SolidColorBrush>
+   
+</ResourceDictionary>

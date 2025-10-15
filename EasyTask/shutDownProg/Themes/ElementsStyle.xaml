@@ -1,0 +1,513 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"  
+                   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+<!--For TaskBar Icon element Style-->
+    <Style x:Key="CustomMenuItemStyle" TargetType="MenuItem" >
+        <Setter Property="Background" Value="{DynamicResource TaskbarIconStyleMain}"/>
+        <Setter Property="Foreground" Value="{DynamicResource TaskbarIconStyleSec}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="Padding" Value="10,5"/>
+        <Setter Property="Margin" Value="5"/>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="{DynamicResource TaskbarIconStyleBLue}"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="Ellipse">
+        <Setter Property="Stroke" Value="{DynamicResource EllipseColor}"></Setter>
+    </Style>
+    
+    <!--{Set For All}-->
+    <FlowDirection x:Key="FlowAll" >
+        LeftToRight
+    </FlowDirection>
+    <FontFamily x:Key="MainFont"  >pack://application:,,,/files/Fonts/Inter.ttf #Inter</FontFamily>
+    
+    <Style TargetType="Label">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="16" ></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource Main}"></Setter>
+    </Style>
+    <Style TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="16" ></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource Main}"></Setter>
+    </Style>
+    <Style TargetType="Window">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="16" ></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource Main}"></Setter>
+    </Style>
+    
+    <!--For All labels-->
+    <!--For TextBoxes-->
+    <Style TargetType="TextBox" >
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+        <Setter Property="Width" Value="20"></Setter>
+        <Setter Property="Height" Value="20"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource Main}"></Setter>
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="2"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+
+    <Style TargetType="TextBlock" x:Key="Default">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="16"></Setter>
+    </Style>
+
+    <!--For CheckTick-->
+    <Style TargetType="CheckBox" x:Key="SWCheckBox">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate>
+                    <Grid>
+                        <Rectangle x:Name="RecFill" Fill="{DynamicResource SWSec}" Width="20" Height="20" RadiusX="2" RadiusY="2">
+                        </Rectangle>
+
+                        <Rectangle x:Name="RecTrue" Fill="{DynamicResource SWMain}" Width="10" Height="10" RadiusX="2" RadiusY="2">
+                        </Rectangle>
+                    </Grid>
+
+                    <ControlTemplate.Triggers>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <!--ForAll ScrollBar-->
+    <Style TargetType="ScrollViewer">
+        <Setter Property="Foreground" Value="{DynamicResource scrollborder}"></Setter>
+
+    </Style>
+    <Style TargetType="ScrollBar"  >
+        <Setter Property="SnapsToDevicePixels" Value="True"></Setter>
+        <Setter Property="OverridesDefaultStyle" Value="True"></Setter>
+        
+        <Style.Triggers>
+            <Trigger Property="Orientation" Value="Vertical">
+                <Setter Property="Width" Value="5"/>
+                <Setter Property="Height" Value="auto"/>
+                <Setter Property="Margin" Value="5,0,5,0"></Setter>
+                <Setter Property="Template" Value="{DynamicResource VerticalScrollBar}"></Setter>
+            </Trigger>
+
+        </Style.Triggers>
+    </Style>
+    <ControlTemplate x:Key="VerticalScrollBar" TargetType="{x:Type ScrollBar}"  >
+        <Grid  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Visibility="Collapsed"
+                        Grid.Row="1"
+                        CornerRadius="10"
+                        Margin="10"
+                        Background="{DynamicResource scrollborder}" BorderThickness="0" 
+                        ></Border>
+            <!--lineUpCommand-->
+            <RepeatButton Visibility="Collapsed"
+                        Grid.Row="0"
+                        
+                        Focusable="False"
+                        Height="0"
+                        Command="ScrollBar.LineUpCommand" BorderThickness="0" 
+                        ></RepeatButton>
+
+
+            <!--lineDownCommand-->
+            <RepeatButton Visibility="Collapsed"
+                        Grid.Row="2"
+                        Focusable="False"
+                        Height="0"
+                        Command="ScrollBar.LineDownCommand"  BorderThickness="0" 
+                        ></RepeatButton>
+            <!--Track-->
+            <Track  
+                        Name="PART_Track"
+                        Grid.Row="1" 
+                        IsDirectionReversed="True" >
+                <Track.DecreaseRepeatButton>
+                    <!--Command="ScrollBar.PageUpCommand"-->
+                    <RepeatButton Visibility="Collapsed"
+                            Margin="3,2,3,2"   Background="{DynamicResource MovingRibbon}"  BorderThickness="0"  ></RepeatButton>
+                </Track.DecreaseRepeatButton>
+
+                <!--Tomb-->
+                <Track.Thumb>
+                    <Thumb Foreground="{TemplateBinding  Property=Foreground}">
+                        <Thumb.Template>
+                            <ControlTemplate>
+                                <Border Background="{TemplateBinding  Property=Foreground}" CornerRadius="3" Visibility="Visible"></Border>
+                                <ControlTemplate.Resources>
+                                </ControlTemplate.Resources>
+                            </ControlTemplate>
+                        </Thumb.Template>
+                    </Thumb>
+                </Track.Thumb>
+
+                <Track.IncreaseRepeatButton>
+                    <RepeatButton Visibility="Collapsed"
+                            Margin="3,2,3,2"  Background="White"  BorderThickness="0" ></RepeatButton>
+                </Track.IncreaseRepeatButton>
+            </Track>
+
+        </Grid>
+    </ControlTemplate>
+
+
+    <!--For Buttons-->
+    <ControlTemplate TargetType="Button" x:Key="ButtonTMP">
+
+        <Border Name="border" 
+                        BorderThickness="{TemplateBinding Property=BorderThickness}"
+                        Padding="4,2" 
+                        BorderBrush="Transparent" 
+                        CornerRadius="2" 
+                        Background="{TemplateBinding Background}">
+            <TextBlock Foreground="{TemplateBinding Foreground}"  HorizontalAlignment="Center"  VerticalAlignment="Center" Text="{TemplateBinding Property=Content}"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"></Setter>
+                <Setter TargetName="border" Property="BorderBrush" Value="#DCDCDE" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+    <Style TargetType="Button" >
+        
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template" Value="{DynamicResource ButtonTMP}"></Setter>
+        <Setter Property="Background" Value="{DynamicResource ATWSecColor}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{DynamicResource    ATWMainColor}"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ATWSecColor}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"/>
+        <Setter Property="FontWeight" Value="Regular"></Setter>
+        <Setter Property="RenderTransform">
+            <Setter.Value>
+                <ScaleTransform  />
+            </Setter.Value>
+        </Setter>
+
+
+
+        <Style.Resources>
+            <ResourceDictionary>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="2"/>
+                </Style>
+                
+
+            </ResourceDictionary>
+        </Style.Resources>
+        
+    </Style>
+    <!--Finish-->
+    <!--Finish-->
+    <!--Colors :"3A3D40" "575A5E" "161819" "C5C3C4" "ffffff" "f5f5f7" -->
+
+
+    <!--{For ADDTASKWINDOW} -->
+
+    <!--/MainLabel-->
+    <Style TargetType="Label" x:Key="labelStyleATW">
+        <Setter Property="Foreground" Value="{DynamicResource ATWLabelColor}"></Setter>
+        <Setter Property="FontSize" Value="48"></Setter>
+        <Setter Property="FontWeight" Value="DemiBold"></Setter>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="TextBlockStyleATW">
+        <Setter Property="Foreground" Value="{DynamicResource ATWLabelColor}"></Setter>
+        <Setter Property="FontSize" Value="48"></Setter>
+        <Setter Property="FontWeight" Value="DemiBold"></Setter>
+    </Style>
+    <Style TargetType="Button" x:Key="MainButtonStyle" >
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderBrush" Value="#3A3D40"/>
+        <Setter Property="Foreground" Value="#3A3D40"/>
+        <Setter Property="Padding" Value="0"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="FontSize" Value="16"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"/>
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}" x:Key="RadiusOfButton">
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+    <!--Finish-->
+    <!-- ADD TASK WINDOW STYLES -->
+
+    <Style TargetType="Button" x:Key="AddtaskButtonStyle" >
+
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template" Value="{DynamicResource ButtonTMP}"></Setter>
+        <Setter Property="Background" Value="{DynamicResource ATWSecColor}"/>
+        <Setter Property="BorderThickness" Value="2"/>
+        <Setter Property="Foreground" Value="{DynamicResource    ATWMainColor}"/>
+        <Setter Property="FontSize" Value="16px"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource ATWSecColor}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"/>
+        <Setter Property="FontWeight" Value="SemiBold"></Setter>
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="2"/>
+            </Style>
+        </Style.Resources>
+
+    </Style>
+
+
+
+
+    <Style x:Key="AddtaskSecendryButton" TargetType="Button">
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template" Value="{DynamicResource ButtonTMP}"></Setter>
+        <Setter Property="Background" Value="{DynamicResource ATWDarkOrWhiteColor}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="{DynamicResource ATWMainColor}"/>
+        <Setter Property="FontSize" Value="16px"/>
+        <Setter Property="Width" Value="100"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="BorderBrush" Value="{x:Null}"/>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"/>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="2"/>
+            </Style>
+        </Style.Resources>
+    </Style>
+    <Style TargetType="Label" x:Key="Normal text">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="16px"></Setter>
+        <Setter Property="FontWeight" Value="Normal"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource ATWMainColor}"></Setter>
+    </Style>
+    <Style TargetType="Label" x:Key="BoldText">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="42px"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="BoldTextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="42px"></Setter>
+        <Setter Property="FontWeight" Value="Medium"></Setter>
+    </Style>
+    <Style TargetType="TextBox" x:Key="ForValueOfDate">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource ATWDarkOrWhiteColorRep}"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+        <Setter Property="FontSize" Value="25px"></Setter>
+        <Setter Property="Background" Value="{x:Null}"></Setter>
+        <Setter Property="TextWrapping" Value="NoWrap"></Setter>
+        <Setter Property="FontStretch" Value="SemiCondensed"></Setter>
+        <Setter Property="MaxLength" Value="2"></Setter>
+    </Style>
+    <Style TargetType="TextBox" x:Key="ForValueOfName">
+        <Setter Property="TextWrapping" Value="NoWrap"></Setter>
+        <Setter Property="MaxLength" Value="2"></Setter>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="25px"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource ATWMainColor}"></Setter>
+        <Setter Property="HorizontalContentAlignment" Value="Left"></Setter>
+        <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        <Setter Property="BorderBrush" Value="Transparent"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+        <Style.Resources>
+            <Style TargetType="{x:Type Border}">
+                <Setter Property="CornerRadius" Value="2"/>
+            </Style>
+        </Style.Resources>
+
+    </Style>
+    <Style TargetType="ToggleButton" x:Name="SecoundButton" x:Key="SecoundButton">
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template" Value="{DynamicResource ToggleButtonTMP}"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource  ATWBrushMainColor}" ></Setter>
+        <Setter Property="Background"  Value="{DynamicResource ATWBrushBColor}"></Setter>
+        <Setter Property="BorderBrush" Value="{DynamicResource  ATWBrushMainColor}"></Setter>
+        <Setter Property="BorderThickness" Value="2"></Setter>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}" ></Setter>
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="FontWeight" Value="Regular"></Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Background" Value="{DynamicResource ATWBrushMainColor}"></Setter>
+                <Setter Property="Foreground" Value="{DynamicResource ATWBColor}"></Setter>
+                <Setter Property="BorderBrush" Value="{DynamicResource ATWBColor}"></Setter>
+                <Setter Property="BorderThickness" Value="0"></Setter>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="False">
+                <Setter Property="Background" Value="{DynamicResource ATWBColor}"></Setter>
+                <Setter Property="Foreground" Value="{DynamicResource ATWBrushMainColor}"></Setter>
+                <Setter Property="BorderThickness" Value="2"></Setter>
+
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+    <ControlTemplate TargetType="ToggleButton"  x:Key="ToggleButtonTMP">
+
+        <Border Name="border" 
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="4,2" 
+                        BorderBrush="{TemplateBinding BorderBrush }" 
+                        CornerRadius="2" 
+                        Background="{TemplateBinding Background}">
+            <TextBlock Foreground="{TemplateBinding BorderBrush}"  HorizontalAlignment="Center"  VerticalAlignment="Center" Text="{TemplateBinding Property=Content}"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"></Setter>
+                <Setter TargetName="border" Property="BorderBrush" Value="#DCDCDE" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+
+
+
+    <Style TargetType="ToggleButton" x:Name="SecoundButtonSAFK" x:Key="SecoundButtonSAFK">
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Template" Value="{DynamicResource ToggleButtonTMP}"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource  SAFKWMain}" ></Setter>
+        <Setter Property="Background"  Value="Transparent"></Setter>
+        <Setter Property="BorderBrush" Value="{DynamicResource  SAFKWMain}"></Setter>
+        <Setter Property="BorderThickness" Value="0"></Setter>
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}" ></Setter>
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="FontWeight" Value="Normal"></Setter>
+
+        <Style.Triggers>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Background" Value="{DynamicResource SAFKWC}"></Setter>
+                <Setter Property="Foreground" Value="White"></Setter>
+                <Setter Property="BorderBrush" Value="White"></Setter>
+                <Setter Property="BorderThickness" Value="0"></Setter>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="False">
+                <Setter Property="Background" Value="Transparent"></Setter>
+                <Setter Property="Foreground" Value="{DynamicResource SAFKWMain}"></Setter>
+                <Setter Property="BorderBrush" Value="{DynamicResource  SAFKWMain}"></Setter>
+                <Setter Property="BorderThickness" Value="0"></Setter>
+
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+    <ControlTemplate TargetType="ToggleButton"  x:Key="ToggleButtonSAFK">
+
+        <Border Name="border" 
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        Padding="4,2" 
+                        BorderBrush="{TemplateBinding BorderBrush }" 
+                        CornerRadius="2" 
+                        Background="{TemplateBinding Background}">
+            <TextBlock Foreground="{TemplateBinding BorderBrush}"  HorizontalAlignment="Center"  VerticalAlignment="Center" Text="{TemplateBinding Property=Content}"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"></Setter>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+  
+    <!--Finish-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--{For Settings Window}-->
+    <Style TargetType="Button" x:Key="SettingsButtonStyle" >
+
+        <Setter Property="Cursor" Value="Hand"></Setter>
+        <Setter Property="Background" Value="{DynamicResource SWB}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="{DynamicResource    SWMain}"/>
+        <Setter Property="Margin" Value="20,0,20,0"/>
+        
+        <Setter Property="FontSize" Value="25px"/>
+        <Setter Property="FontWeight" Value="Regular"></Setter>
+        <Setter Property="Template" Value="{DynamicResource SettingsButtonTMP}">
+        </Setter>
+
+    </Style>
+
+    <ControlTemplate TargetType="Button" x:Key="SettingsButtonTMP">
+
+        <Border Name="border" 
+                        BorderThickness="{TemplateBinding Property=BorderThickness}"
+                        Padding="4,2" 
+                        BorderBrush="Transparent" 
+                        CornerRadius="2" 
+                        Background="{TemplateBinding Background}">
+            <TextBlock Foreground="{TemplateBinding Foreground}"  HorizontalAlignment="Center"  VerticalAlignment="Center" Text="{TemplateBinding Property=Content}"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Cursor" Value="Hand"></Setter>
+                <Setter TargetName="border" Property="BorderBrush" Value="#DCDCDE" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <!-- Settings/Pages-->
+
+    <Style TargetType="Label" x:Key="SWPBoldLabel">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="36"></Setter>
+        <Setter Property="FontWeight" Value="Regular"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource SWPMain}"></Setter>
+    </Style>
+    <Style TargetType="TextBlock" x:Key="SWPBoldTextBlock">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontSize" Value="36"></Setter>
+        <Setter Property="FontWeight" Value="Regular"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource SWPMain}"></Setter>
+    </Style>
+
+    <Style TargetType="Label" x:Key="SWPSecLabel">
+        <Setter Property="FontFamily" Value="{DynamicResource MainFont}"></Setter>
+        <Setter Property="FontWeight" Value="Normal"></Setter>
+        <Setter Property="Foreground" Value="{DynamicResource SWPMain}"></Setter>
+    </Style>
+
+
+
+
+    <ResourceDictionary.MergedDictionaries>
+
+    </ResourceDictionary.MergedDictionaries>
+
+
+
+</ResourceDictionary>

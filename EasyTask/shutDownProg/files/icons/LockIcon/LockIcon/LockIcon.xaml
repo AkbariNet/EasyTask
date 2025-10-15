@@ -1,0 +1,24 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="LockIconGeometry1">F1 M40.04,40.04z M0,0z M34.97,1.91L34.97,19.12 30.19,19.12 30.19,4.78 9.86,4.78 9.86,19.12 5.08,19.12 5.08,1.91C5.08,0.86,5.94,0,6.99,0L33.06,0C34.11,0,34.97,0.86,34.97,1.91z</Geometry>
+  <Geometry x:Key="LockIconGeometry2">F1 M40.04,40.04z M0,0z M20.02,24.89L20.02,24.89 16.01,31.85 24.04,31.85 20.02,24.89z</Geometry>
+  <DrawingGroup x:Key="LockIconDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+        <GeometryDrawing Brush="{DynamicResource LockIconColorMain}">
+      <GeometryDrawing.Geometry>
+        <RectangleGeometry RadiusX="2.01" RadiusY="2.01" Rect="3.47,15.45,33.1,24.59" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+        <GeometryDrawing Brush="{DynamicResource LockIconColorMain}" Geometry="{StaticResource LockIconGeometry1}" />
+    <DrawingGroup Opacity="1">
+            <GeometryDrawing Brush="{DynamicResource LockIconColorSec}">
+        <GeometryDrawing.Geometry>
+          <EllipseGeometry RadiusX="3.48" RadiusY="3.48" Center="20.02,24.89" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+      <GeometryDrawing Brush="{DynamicResource LockIconColorSec}" Geometry="{StaticResource LockIconGeometry2}" />
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="LockIconDrawingImage" Drawing="{StaticResource LockIconDrawingGroup}" />
+    <SolidColorBrush x:Key="LockIconColorMain" Color="{DynamicResource LockIconColor}"></SolidColorBrush>
+    <SolidColorBrush x:Key="LockIconColorSec" Color="#ffffff"></SolidColorBrush>
+    
+</ResourceDictionary>

@@ -1,0 +1,15 @@
+
+    <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+   
+    
+    
+    <Geometry x:Key="ClockIconGeometry">F1 M40.04,40.04z M0,0z M40.04,22.15L40.04,34.52C40.04,37.57,37.57,40.04,34.52,40.04L30.5,40.04C28.95,40.04,27.69,38.78,27.69,37.23L27.69,37.23C27.69,34.2,25.21,31.71,22.17,31.71L17.85,31.71C14.82,31.71,12.33,34.19,12.33,37.23L12.33,37.23C12.33,38.78,11.07,40.04,9.52,40.04L5.5,40.04C2.47,40.04,0,37.58,0,34.53L0,22.16C0,20.78,0.51,19.46,1.43,18.44L16.9,1.42C17.76,0.47 18.89,0 20.02,0 21.15,0 22.28,0.47 23.14,1.42L38.61,18.44C39.53,19.46,40.04,20.78,40.04,22.15z</Geometry>
+  <DrawingGroup x:Key="ClockIconDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+        <GeometryDrawing Brush="{DynamicResource MainColorOfClock}" x:Name="MainGeoColor" Geometry="{StaticResource ClockIconGeometry}" />
+  </DrawingGroup>
+    <DrawingImage x:Key="ClockIconDrawingImage" Drawing="{StaticResource ClockIconDrawingGroup}" />
+        
+    <SolidColorBrush x:Key="MainColorOfClock"  Color="{DynamicResource ClockIconColor}"></SolidColorBrush>
+ 
+
+</ResourceDictionary>

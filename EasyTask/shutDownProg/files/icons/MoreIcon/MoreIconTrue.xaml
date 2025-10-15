@@ -1,0 +1,42 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <DrawingGroup x:Key="MoreIconTrueDrawingGroup" ClipGeometry="M0,0 V108 H108 V0 H0 Z">
+        <GeometryDrawing Brush="{DynamicResource SAPMTISec}">
+      <GeometryDrawing.Geometry>
+        <EllipseGeometry RadiusX="54" RadiusY="54" Center="54,54" />
+      </GeometryDrawing.Geometry>
+    </GeometryDrawing>
+    <DrawingGroup Opacity="1">
+      <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-26.24,61.63">
+                <GeometryDrawing Brush="{DynamicResource SAPMTIMain}">
+          <GeometryDrawing.Geometry>
+            <RectangleGeometry RadiusX="3.07" RadiusY="3.07" Rect="47.92,59.43,26.7,6.13" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+      </DrawingGroup>
+      <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-30.5,51.35">
+                <GeometryDrawing Brush="{DynamicResource SAPMTIMain}">
+          <GeometryDrawing.Geometry>
+            <RectangleGeometry RadiusX="3.07" RadiusY="3.07" Rect="43.66,49.14,6.13,26.7" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+      </DrawingGroup>
+      <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-14.23,56.65">
+                <GeometryDrawing Brush="{DynamicResource SAPMTIMain}">
+          <GeometryDrawing.Geometry>
+            <RectangleGeometry RadiusX="3.07" RadiusY="3.07" Rect="47.92,42.44,26.7,6.13" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+      </DrawingGroup>
+      <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-18.49,46.37">
+                <GeometryDrawing Brush="{DynamicResource SAPMTIMain}">
+          <GeometryDrawing.Geometry>
+            <RectangleGeometry RadiusX="3.07" RadiusY="3.07" Rect="43.66,32.15,6.13,26.7" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingGroup>
+    <DrawingImage x:Key="MoreIconTrueDrawing" Drawing="{DynamicResource MoreIconTrueDrawingGroup}" />
+    <SolidColorBrush Color="{DynamicResource MoreTrueIconColorMain}" x:Key="SAPMTISec"></SolidColorBrush>
+    <SolidColorBrush Color="{DynamicResource MoreTrueIconColorSec}" x:Key="SAPMTIMain"></SolidColorBrush>
+</ResourceDictionary>

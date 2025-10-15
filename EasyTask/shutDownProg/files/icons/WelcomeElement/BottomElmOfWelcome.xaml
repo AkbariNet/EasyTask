@@ -1,0 +1,12 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="BottomElmOfWelcome_svgGeometry1">F1 M90,14.43z M0,0z M12.48,14.17C8.48,14.17 3.48,15.18 1.48,13.17 0.68,12.77 0.36,11.72 0.29,10.39 1.44,10.36 2.48,10.16 2.48,10.16 2.48,11.16 2.48,12.17 3.48,13.17 6.48,16.18 7.48,5.13 12.48,14.17z</Geometry>
+  <Geometry x:Key="BottomElmOfWelcome_svgGeometry2">F1 M90,14.43z M0,0z M16.45,13.8C18.48,12.62 20.48,10.62 22.48,9.62 23.48,9.62 25.48,12.62 26.48,12.62 29.48,12.62 33.48,9.62 36.48,10.62 41.48,12.62 47.48,11.62 52.48,10.62L51.48,10.62C55.48,9.62 58.48,9.62 62.48,9.62 60.48,9.62 57.48,9.62 55.48,10.62 62.48,15.62 68.48,10.62 75.48,10.62 58.48,17.62 38.48,11.62 20.52,13.76 17.98,13.79 16.45,13.8 16.45,13.8z</Geometry>
+  <Geometry x:Key="BottomElmOfWelcome_svgGeometry3">F1 M90,14.43z M0,0z M89.51,14.24C85.48,11.56 80.48,15.56 76.48,12.56 80.48,12.56 83.48,11.56 87.38,10.77L89.51,14.24z</Geometry>
+  <DrawingGroup x:Key="BottomElmOfWelcome_svgDrawingGroup" ClipGeometry="M0,0 V14.43 H90 V0 H0 Z">
+        <GeometryDrawing Brush="{DynamicResource MainColorTopELM}" Geometry="{StaticResource BottomElmOfWelcome_svgGeometry1}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorTopELM}" Geometry="{StaticResource BottomElmOfWelcome_svgGeometry2}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorTopELM}" Geometry="{StaticResource BottomElmOfWelcome_svgGeometry3}" />
+  </DrawingGroup>
+    <SolidColorBrush x:Key="MainColorTopELM" Color="{DynamicResource ButtomElmOfWelcomeIconColor}"></SolidColorBrush>
+  <DrawingImage x:Key="BottomElmOfWelcome_svgDrawingImage" Drawing="{StaticResource BottomElmOfWelcome_svgDrawingGroup}" />
+</ResourceDictionary>

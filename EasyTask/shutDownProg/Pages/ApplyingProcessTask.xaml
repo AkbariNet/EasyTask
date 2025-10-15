@@ -1,0 +1,63 @@
+﻿<ui:FluentWindow x:Class="EasyTask.Pages.ApplyingProcessTask"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" FlowDirection="{DynamicResource FlowAll}"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Topmost="True"
+                 xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"  WindowStyle="None"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasyTask.Pages"
+                 
+                  Background="{DynamicResource APTSec}"
+        mc:Ignorable="d" 
+        Title="ApplyingProcessTask" Height="200" Width="400" MouseEnter="FluentWindow_MouseEnter" MouseLeave="FluentWindow_MouseLeave">
+    <ui:FluentWindow.Resources>
+        <ResourceDictionary>
+            <Storyboard x:Key="SmoothIn">
+
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StopKillBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="StopKillBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="SmoothOut">
+
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StopKillBorder" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="StopKillBorder" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+        </ResourceDictionary>
+    </ui:FluentWindow.Resources>
+    <Border Background="{DynamicResource APTSec}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+        <Grid>
+            <Grid Visibility="Visible">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="100"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="Title" Foreground="{DynamicResource APTMain}" Text="Title Not Valid!" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="26" FontWeight="Bold"></TextBlock>
+                <TextBlock x:Name="Subtitle"  Foreground="{DynamicResource APTMain}" Text="Closing apps.." HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,70,0,0"></TextBlock>
+                <ui:ProgressRing x:Name="ProcessRing"  IsIndeterminate="True" Grid.Row="2" Foreground="{DynamicResource APTRingColor}" ></ui:ProgressRing>
+            </Grid>
+            <Border x:Name="StopKillBorder" Background="{DynamicResource APTSec}" Visibility="Collapsed"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <TextBlock Foreground="{DynamicResource APTMain}" Text="{x:Static Language:Lang.ApplyingProcessTask_StopProcess}" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="26" FontWeight="Bold"></TextBlock>
+                <Button   Width="100" x:Name="StopKillButton" Height="50" Margin="0,50,0,0"  Background="{DynamicResource APTRingColor}" Click="StopKillButton_Click" >
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Border Background="{DynamicResource APTRingColor}" CornerRadius="5">
+                                <TextBlock Text="Yes" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="18"></TextBlock>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                </Grid>
+            </Border>
+        </Grid>
+    </Border>
+</ui:FluentWindow>

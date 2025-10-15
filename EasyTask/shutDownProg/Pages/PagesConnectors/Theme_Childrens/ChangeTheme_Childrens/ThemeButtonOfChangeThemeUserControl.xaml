@@ -1,0 +1,114 @@
+﻿<Button x:Class="EasyTask.Pages.PagesConnectors.Theme_Childrens.ChangeTheme_Childrens.ThemeButtonOfChangeThemeUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Margin="15,0,15,0"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="ThemeButtonOfChangeThemeUserControlX"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Cursor="Hand"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:EasyTask.Pages.PagesConnectors.Theme_Childrens.ChangeTheme_Childrens"
+             mc:Ignorable="d" Width="100" Height="130" RenderTransformOrigin="0.5,0.5"
+            >
+    <Button.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+        </TransformGroup>
+    </Button.RenderTransform>
+    <Button.Resources>
+
+        <Storyboard x:Key="Focus" Storyboard.TargetName="{x:Null}">
+
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.2">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1.2">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+        <Storyboard x:Key="LostFocus" Storyboard.TargetName="{x:Null}">
+
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="1.2">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames  Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.0000000" Value="1.2">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <PowerEase EasingMode="EaseOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+    </Button.Resources>
+    <Button.Style>
+        <Style TargetType="Button">
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseEnter">
+                    <EventTrigger.Actions>
+                        <BeginStoryboard Storyboard="{StaticResource Focus}"/>
+                    </EventTrigger.Actions>
+                </EventTrigger>
+                <EventTrigger RoutedEvent="MouseLeave">
+                    <BeginStoryboard Storyboard="{StaticResource LostFocus}"/>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Button.Style>
+    <Button.Template>
+        <ControlTemplate>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100*"></RowDefinition>
+                    <RowDefinition Height="30*"></RowDefinition>
+                </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="{Binding ElementName=ThemeButtonOfChangeThemeUserControlX , Path=BColor}" CornerRadius="10">
+                
+                <Grid >
+                    <Grid Margin="24,32,3,16">
+                        <Path Stretch="Uniform"   Fill="{Binding ElementName=ThemeButtonOfChangeThemeUserControlX , Path=MainColor}" Data="m 107.759,133.43553
+c -53.886798,93.39792 -53.886798,93.39792 -53.886798,93.39792 -3.351389,5.82083 0.79375,13.05278 7.496528,13.05278 107.8618,0 107.8618,0 107.8618,0 6.70278,0 10.84792,-7.23195 7.49653,-13.05278 -53.88681,-93.39792 -53.88681,-93.39792 -53.88681,-93.39792 -3.35139,-5.82083 -11.72986,-5.82083 -15.08125,0
+z" Margin="-10,-13,10,-1"/>
+                    </Grid>
+                    <Ellipse  Margin="10,40,55,24" Stroke="Transparent" StrokeThickness="0" Fill="{Binding ElementName=ThemeButtonOfChangeThemeUserControlX , Path=SecoundColor}" ></Ellipse>
+                    
+                </Grid>
+
+                </Border>
+                <TextBlock Text="{Binding ElementName=ThemeButtonOfChangeThemeUserControlX , Path=Content }" Grid.Row="1" HorizontalAlignment="Center"  Margin="0,10,0,0"></TextBlock>
+            </Grid>
+        </ControlTemplate>
+    </Button.Template>
+</Button>

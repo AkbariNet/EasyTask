@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="EasyTask.Pages.MainWindowElement.Elements.SLElement"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasyTask.Pages.MainWindowElement.Elements"
+              MinWidth="100"  x:Name="SLElemnt" 
+             Width="auto" Height="30">
+
+
+    <Button FontFamily="{Binding ElementName=SLElemnt, Path=FontFamily }">
+        <Button.Template>
+            <ControlTemplate>
+                <Border >
+                    <Grid>
+                        <Rectangle x:Name="RecOfLang" Height="30" Width="auto" Fill="{Binding ElementName=SLElemnt, Path=BackGR}"  Stroke="{DynamicResource SLRec}" RadiusX="5" RadiusY="5" StrokeThickness="1"  >
+
+                        </Rectangle>
+                        <TextBlock Text="{Binding ElementName=SLElemnt, Path=NameOfLanguage }" Foreground="{Binding ElementName=SLElemnt, Path=ForeGR}" FontFamily="{TemplateBinding Property=FontFamily}" FontSize="16" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,5,0"></TextBlock>
+                    </Grid>
+                   </Border>
+                
+            </ControlTemplate>
+        </Button.Template>
+    </Button>
+
+</UserControl>

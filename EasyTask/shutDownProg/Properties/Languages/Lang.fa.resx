@@ -1,0 +1,720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionStartReminder.GoesToSleep" xml:space="preserve">
+    <value>به حالت خواب میرود</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.Secound" xml:space="preserve">
+    <value>ثانیه</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.ShutsDown" xml:space="preserve">
+    <value>خاموش میشود</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.TitlePart1" xml:space="preserve">
+    <value>سیستم</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.TitlePart2" xml:space="preserve">
+    <value>در: </value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="ActionStartReminder.WillRestart" xml:space="preserve">
+    <value>راه اندازی مجدد میشود</value>
+    <comment>ActionStartReminder</comment>
+  </data>
+  <data name="AddTaskWindow.CreateTaskMainText" xml:space="preserve">
+    <value>ساخت دستورالعمل</value>
+    <comment>پنجره امر جدید</comment>
+  </data>
+  <data name="AddTaskWindow.SetActionMainText" xml:space="preserve">
+    <value>تنظیم عمل</value>
+    <comment>پنجره امر جدید</comment>
+  </data>
+  <data name="AddTaskWindow.SetDateMainText" xml:space="preserve">
+    <value>تنظیم تاریخ</value>
+    <comment>پنجره امر جدید</comment>
+  </data>
+  <data name="AddTaskWindow.SetTaskNameMainText" xml:space="preserve">
+    <value>تنظیم نام امر</value>
+    <comment>پنجره امر جدید</comment>
+  </data>
+  <data name="AddTaskWindow.SetTimeMainText" xml:space="preserve">
+    <value>تنظیم زمان</value>
+    <comment>پنجره امر جدید</comment>
+  </data>
+  <data name="App.xaml.By doing this, all created tasks will be stopped." xml:space="preserve">
+    <value>با انجام این عمل، تمامی دستورالعمل های ساخته شده متوقف میشوند.</value>
+    <comment>app.xaml</comment>
+  </data>
+  <data name="ApplyingProcessTask.Opening your app" xml:space="preserve">
+    <value>درحال اجرای اپلیکیشن شما</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.Start Kill Apps" xml:space="preserve">
+    <value>شروع کردن پروسه کشتن برنامه ها</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.start process of kill" xml:space="preserve">
+    <value>شروع کردن پروسه کشتن برنامه </value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.start process of kill apps.." xml:space="preserve">
+    <value>پروسه کشتن برنامه ها درحال شروع شدن است..</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.Starting process of open your exe app" xml:space="preserve">
+    <value>شروع شدن پروسه اجرا کردن فایل انتخاب شده شما</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ApplyingProcessTask.StopProcess" xml:space="preserve">
+    <value>فرایند متوقف شود؟</value>
+    <comment>ApplyingProcessTask</comment>
+  </data>
+  <data name="ChangePasswordWindow.Enter Correct password" xml:space="preserve">
+    <value>رمز عبور فعلی خود را وارد کنید:</value>
+    <comment>تنظیمات_صفحه تغییر رمز عبور</comment>
+  </data>
+  <data name="ChangePasswordWindow.Enter new password" xml:space="preserve">
+    <value>رمز عبود جدید خود را وارد کنید:</value>
+    <comment>تنظیمات_صفحه تغییر رمز عبور</comment>
+  </data>
+  <data name="ChangePasswordWindow.There was a problem, your password was not changed." xml:space="preserve">
+    <value>مشکلی وجود داشت، رمز عبور شما تعویض نشد!</value>
+    <comment>تنظیمات_صفحه تغییر رمز عبور</comment>
+  </data>
+  <data name="ChangePasswordWindow.Your password has been successfully changed." xml:space="preserve">
+    <value>رمز عبور شما با موفقیت تعویض گردید.</value>
+    <comment>تنظیمات_صفحه تغییر رمز عبور</comment>
+  </data>
+  <data name="ChangeThemeOfThemeUserControl.Choose your favorite theme" xml:space="preserve">
+    <value>تم مورد علاقه خود را انتخاب کنید:</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Connection.AlwaysTry" xml:space="preserve">
+    <value>همیشه برای اتصال تلاش کن</value>
+    <comment>تنظیمات_ارتباطات</comment>
+  </data>
+  <data name="Connection.Connect" xml:space="preserve">
+    <value>اتصال</value>
+    <comment>تنظیمات_ارتباطات</comment>
+  </data>
+  <data name="Connection.EachTryTime" xml:space="preserve">
+    <value>هر بار تلاش (ثانیه)</value>
+    <comment>تنظیمات_ارتباطات</comment>
+  </data>
+  <data name="ConnectionBTN" xml:space="preserve">
+    <value>ارتباطات</value>
+    <comment>تنظیمات</comment>
+  </data>
+  <data name="CreatePasswordWindow.Your password has been successfully created" xml:space="preserve">
+    <value>رمز عبور شما با موفقیت ساخته شد!</value>
+    <comment>Settings_Security_CreatePasswordWindow</comment>
+  </data>
+  <data name="DefaultTextName.AreYouSure" xml:space="preserve">
+    <value>آیا مطمئن هستید؟</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Back" xml:space="preserve">
+    <value>قبلی</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Cancel" xml:space="preserve">
+    <value>لغو</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.ChangePassword" xml:space="preserve">
+    <value>تغییر رمز عبور</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Confirm" xml:space="preserve">
+    <value>تایید</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Empty" xml:space="preserve">
+    <value>خالی</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Enable" xml:space="preserve">
+    <value>فعالسازی</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Error" xml:space="preserve">
+    <value>خطا!</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Exit" xml:space="preserve">
+    <value>خروج</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Next" xml:space="preserve">
+    <value>بعدی</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.No" xml:space="preserve">
+    <value>خیر</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="defaultTextName.Open" xml:space="preserve">
+    <value>بازکردن</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Sucsses" xml:space="preserve">
+    <value>موفقیت آمیز بود!</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Unsuccessful" xml:space="preserve">
+    <value>ناموفق!</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="DefaultTextName.Yes" xml:space="preserve">
+    <value>بله</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>FA</value>
+    <comment>متن پیشفرض</comment>
+  </data>
+  <data name="MainPage.ADDTASK" xml:space="preserve">
+    <value>دستور جدید</value>
+    <comment>پنچره اصلی_صفحه اصلی</comment>
+  </data>
+  <data name="Notify.Application Minimized" xml:space="preserve">
+    <value>اپلیکیشن Minimize شد</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Notify.for Enable Tasks, application Minimized" xml:space="preserve">
+    <value>برای فعال ماندن امور، اپلیکیشن به حالت Minimize درآمد.</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Notify.MeBetter" xml:space="preserve">
+    <value>من بهترم!</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Notify.Welcome" xml:space="preserve">
+    <value>خوش آمدید</value>
+    <comment>App.Notify</comment>
+  </data>
+  <data name="Process.TimerWindow" xml:space="preserve">
+    <value>پنجره تایمر</value>
+    <comment>تنظیمات_عملکرد</comment>
+  </data>
+  <data name="Process.WaitingForSecound" xml:space="preserve">
+    <value>صبر کنید برای ثانیه</value>
+    <comment>تنظیمات_عملکرد</comment>
+  </data>
+  <data name="ProcessBTN" xml:space="preserve">
+    <value>عملکرد</value>
+    <comment>تنظیمات</comment>
+  </data>
+  <data name="ProcessInProduct.Action time is behinded of system Time." xml:space="preserve">
+    <value>زمان عمل دستورالعمل شما از زمان سیستم عقب تر است.</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Add Your Task to DataBase..." xml:space="preserve">
+    <value>اضافه کردن امر شما به پایگاه داده...</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Adding.." xml:space="preserve">
+    <value>درحال اضافه شدن..</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.AddTask" xml:space="preserve">
+    <value>اضافه کردن دستورالعمل</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Data Invalid" xml:space="preserve">
+    <value>داده ها نامعتبر است!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Delete Sucsess" xml:space="preserve">
+    <value>حذف موفقیت آمیز بود!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Deleting..." xml:space="preserve">
+    <value>درحال حذف...</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Error On Calulate Of Date. Please Return to Step1" xml:space="preserve">
+    <value>خطا در محاسبه تاریخ. لطفا به مرحله 1 بازگردید!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Exiting" xml:space="preserve">
+    <value>درحال خروج</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Finding Error.." xml:space="preserve">
+    <value>درحال پیداکردن مشکل..</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.For Exit this app and disable tasks, you must unlock application" xml:space="preserve">
+    <value>برای خروج و غیرفعال شدن دستورالعمل ها، شما باید قفل برنامه را باز نمایید</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Invalid Value" xml:space="preserve">
+    <value>مقدار نامشخص!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Kill Succesfully Canceled" xml:space="preserve">
+    <value>فرایند کشتن متوقف شد!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Killing your app.." xml:space="preserve">
+    <value>درحال کشتن برنامه انتخاب شده شما...</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Lock Enabled" xml:space="preserve">
+    <value>حالت قفل فعال است</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Open EXE Succesfully Canceled" xml:space="preserve">
+    <value>باز کردن برنامه انتخابی شما باموفقیت متوقف شد!</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.Presence of disorder" xml:space="preserve">
+    <value>اختلالی وجود دارد</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Probably there is a problem" xml:space="preserve">
+    <value>احتمالا مشکلی وجود دارد</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Programs name" xml:space="preserve">
+    <value>نام برنامه ها:</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Running programs that were not found" xml:space="preserve">
+    <value>اپلیکیشن های در حال اجرایی که پیدا نشدند:</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Start finding.." xml:space="preserve">
+    <value>درحال جستن..</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Starting process of Kill your file.." xml:space="preserve">
+    <value>شروع پروسه کشتن اپلیکیشن انتخابی شما</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.The action id was invalided" xml:space="preserve">
+    <value>شناسه اقدام نامعتبر بود</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.The App is Locked" xml:space="preserve">
+    <value>اپلیکیشن قفل است</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.The file does not open" xml:space="preserve">
+    <value>برنامه باز نمیشود</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.The Task is deleted" xml:space="preserve">
+    <value>دستورالعمل حذف شده است</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.These programs were successfully killed" xml:space="preserve">
+    <value>این اپلیکیشن ها با موفقیت از بین رفت:</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.This can be for a number of reasons, test that your file is closed or that the file is not closed or frozen." xml:space="preserve">
+    <value>این می تواند به دلایل مختلفی باشد، آزمایش کنید که اپلیکیشن مورد نظر شما به درستی بسته شده است یا اینکه اپلیکیشن شما بسته یا فریز نشده است.</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.This can have various reasons, test that your file opens or that the file has not been moved or deleted." xml:space="preserve">
+    <value>این می تواند دلایل مختلفی داشته باشد، آزمایش کنید که فایل شما باز می شود یا اینکه فایل منتقل یا حذف نشده باشد.</value>
+    <comment>ProcessInProduct</comment>
+  </data>
+  <data name="ProcessInProduct.trying to add to database.." xml:space="preserve">
+    <value>تلاش برای اضافه کردن به پایگاه داده..</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Trying to conntect to database..." xml:space="preserve">
+    <value>درحال تلاش برای اتصال به پایگاه داده</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.TryingToExit.." xml:space="preserve">
+    <value>تلاش برای خارج شدن...</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.We haven't your action id" xml:space="preserve">
+    <value>آی دی معتبر اقدام شما را نداریم</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.When lock is Enabled you can't Delete a task" xml:space="preserve">
+    <value>هنگامی که حالت قفل فعال است، شما نمیتوانید دستورالعملی را حذف کنید!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.When the app is locked, you cannot change the settings." xml:space="preserve">
+    <value>هنگامی که برنامه قفل است، نمی توانید تنظیمات را تغییر دهید</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Your program has been Killed" xml:space="preserve">
+    <value>برنامه با موفقیت کشته شد</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Your program has been opened" xml:space="preserve">
+    <value>اپلیکیشن با موفقیت اجرا شد!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.Your task is not add to recent tasks" xml:space="preserve">
+    <value>دستورالعمل شما به کارهای اخیر اضافه نشد!</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.YourTask Is Added To Application" xml:space="preserve">
+    <value>دستورالعمل شما به برنامه اضافه شد</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="ProcessInProduct.YourTask Is Not Added To Application" xml:space="preserve">
+    <value>دستورالعمل شما به برنامه اضافه نشد</value>
+    <comment>پنجره پروسه داخل برنامه</comment>
+  </data>
+  <data name="RecentActionControl.ActionName" xml:space="preserve">
+    <value>خالی</value>
+    <comment>صفحه کنترل عمل قبلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="RecentActionControl.ActionStartedAt" xml:space="preserve">
+    <value>عمل اجرا شد در:</value>
+    <comment>صفحه کنترل عمل قبلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="RecentActionControl.DeleteButton" xml:space="preserve">
+    <value>حذف شود؟</value>
+    <comment>صفحه کنترل عمل قبلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="RecentActions.Action" xml:space="preserve">
+    <value>عمل:</value>
+    <comment>پنجره اصلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="RecentActions.LastAction" xml:space="preserve">
+    <value>آخرین دستورالعمل</value>
+    <comment>پنجره اصلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="RecentActions.LastTaskActionsVariable" xml:space="preserve">
+    <value>خالی</value>
+    <comment>پنجره اصلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="RecentActions.LastTaskVariable" xml:space="preserve">
+    <value>خالی</value>
+    <comment>پنجره اصلی_صفحه عمل های قبلی</comment>
+  </data>
+  <data name="S1AddTaskWindow.Day" xml:space="preserve">
+    <value>روز</value>
+    <comment>ص1پنجره امر جدید</comment>
+  </data>
+  <data name="S1AddTaskWindow.EnterDate" xml:space="preserve">
+    <value>تاریخ را وارد کنید</value>
+    <comment>ص1پنجره امر جدید</comment>
+  </data>
+  <data name="S1AddTaskWindow.Month" xml:space="preserve">
+    <value>ماه</value>
+    <comment>ص1پنجره امر جدید</comment>
+  </data>
+  <data name="S1AddTaskWindow.Year" xml:space="preserve">
+    <value>سال</value>
+    <comment>ص1پنجره امر جدید</comment>
+  </data>
+  <data name="S2AddTaskWindow.EnterTime" xml:space="preserve">
+    <value>زمان را وارد کنید:</value>
+    <comment>ص2پنجره امر جدید</comment>
+  </data>
+  <data name="S2AddTaskWindow.Hour" xml:space="preserve">
+    <value>ساعت</value>
+    <comment>ص2پنجره امر جدید</comment>
+  </data>
+  <data name="S2AddTaskWindow.Minute" xml:space="preserve">
+    <value>دقیقه</value>
+    <comment>ص2پنجره امر جدید</comment>
+  </data>
+  <data name="S3AddTaskWindow.EnterAction" xml:space="preserve">
+    <value>عمل را انتخاب کنید:</value>
+    <comment>ص3پنجره امر جدید</comment>
+  </data>
+  <data name="S3AddTaskWindow.KillApp" xml:space="preserve">
+    <value>کشتن برنامه</value>
+    <comment>ص3پنجره امر جدید</comment>
+  </data>
+  <data name="S3AddTaskWindow.OpenFile" xml:space="preserve">
+    <value>اجرای برنامه</value>
+    <comment>ص3پنجره امر جدید</comment>
+  </data>
+  <data name="S3AddTaskWindow.ReStart" xml:space="preserve">
+    <value>راه اندازی مجدد</value>
+    <comment>ص3پنجره امر جدید</comment>
+  </data>
+  <data name="S3AddTaskWindow.ShutDown" xml:space="preserve">
+    <value>خاموش شدن</value>
+    <comment>ص3پنجره امر جدید</comment>
+  </data>
+  <data name="S3AddTaskWindow.Sleep" xml:space="preserve">
+    <value>خواب</value>
+    <comment>ص3پنجره امر جدید</comment>
+  </data>
+  <data name="S4AddTaskWindow.DefaultTaskName" xml:space="preserve">
+    <value>امر جدید</value>
+    <comment>ص4پنجره امر جدید</comment>
+  </data>
+  <data name="S4AddTaskWindow.EnterTaskName" xml:space="preserve">
+    <value>نام دستورالعمل خود را وارد کنید</value>
+    <comment>ص4پنجره امر جدید</comment>
+  </data>
+  <data name="Security.CantAddTaskWhenLockedAppProperty" xml:space="preserve">
+    <value>وقتی برنامه قفل است نمی توان دستورالعملی را اضافه کرد</value>
+    <comment>تنظیمات_امنیت</comment>
+  </data>
+  <data name="Security.InCaseOfRiskOfPenetrationProperty" xml:space="preserve">
+    <value>در صورت خطر نفوذ:</value>
+    <comment>تنظیمات_امنیت</comment>
+  </data>
+  <data name="Security.LockMode" xml:space="preserve">
+    <value>حالت قفل</value>
+    <comment>تنظیمات_امنیت</comment>
+  </data>
+  <data name="SecurityBTN" xml:space="preserve">
+    <value>امنیت</value>
+    <comment>تنظیمات</comment>
+  </data>
+  <data name="SelectAppForKill.AllApplicationsButton" xml:space="preserve">
+    <value>همه اپلیکیشن ها</value>
+    <comment>AddTaskWindow.SelectAppForKill</comment>
+  </data>
+  <data name="SelectAppForKill.SuggestedButton" xml:space="preserve">
+    <value>پیشنهاد شده</value>
+    <comment>AddTaskWindow.SelectAppForKill</comment>
+  </data>
+  <data name="SelectAppForKill.Title" xml:space="preserve">
+    <value>اپلیکیشن خود را برای کشتن انتخاب کنید</value>
+    <comment>AddTaskWindow.SelectAppForKill</comment>
+  </data>
+  <data name="SelectLanguage.Select your language" xml:space="preserve">
+    <value>زبان خود را انتخاب کنید:</value>
+    <comment>پنجره اصلی_انتخاب زبان</comment>
+  </data>
+  <data name="SettingsText" xml:space="preserve">
+    <value>تنظیمات</value>
+    <comment>تنظیمات</comment>
+  </data>
+  <data name="ShortActionPro.Action" xml:space="preserve">
+    <value>عمل: </value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="ShortActionPro.DateCreated" xml:space="preserve">
+    <value>زمان ساخته شده:</value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="ShortActionPro.deleteButtonTask" xml:space="preserve">
+    <value>حذف</value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="ShortActionPro.ElementName" xml:space="preserve">
+    <value>نامشخص</value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="ShortActionPro.StartDate" xml:space="preserve">
+    <value>تاریخ شروع دستورالعمل:</value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="ShortActionPro.X minute to start action" xml:space="preserve">
+    <value>دقیقه تا شروع دستورالعمل شما</value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="ShortActionPro.You can control your Task in the app." xml:space="preserve">
+    <value>شما میتوانید درون برنامه دستورالعمل خود را کنترل کنید</value>
+    <comment>صفحه اصلی_شورت اکشن پرو</comment>
+  </data>
+  <data name="Tasks.NotificationSystem" xml:space="preserve">
+    <value>سیستم اعلان</value>
+    <comment>تنظیمات_امور</comment>
+  </data>
+  <data name="tasks.Task removal system" xml:space="preserve">
+    <value>سیستم حذف تسک ها</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="Tasks.WarningToMinute" xml:space="preserve">
+    <value>هشدار به (دقیقه)</value>
+    <comment>تنظیمات_امور</comment>
+  </data>
+  <data name="Tasks.WarnToAddTaskProperty" xml:space="preserve">
+    <value>هشدار برای اضافه کردن دستورالعمل ها</value>
+    <comment>تنظیمات_امور</comment>
+  </data>
+  <data name="Tasks.WarnToClosedRunningTask" xml:space="preserve">
+    <value>هشدار در هنگام اجرا شدن دستورالعمل ها</value>
+    <comment>تنظیمات_امور</comment>
+  </data>
+  <data name="tasks.WhenLockModeIsEnableWeCantDeleteRecentTask" xml:space="preserve">
+    <value>وقتی حالت قفل فعال است نمی توان دستورالعمل گذشته را حذف کرد</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="tasks.WhenLockModeIsEnableWeCantDeleteTask" xml:space="preserve">
+    <value>وقتی حالت قفل فعال است نمی توان دستورالعملی را حذف کرد</value>
+    <comment>Settings_Tasks</comment>
+  </data>
+  <data name="TasksBTN" xml:space="preserve">
+    <value>دستور ها</value>
+    <comment>تنظیمات</comment>
+  </data>
+  <data name="Theme.ChangeTheme" xml:space="preserve">
+    <value>تغییر تم</value>
+    <comment>تنظیمات_پوسته</comment>
+  </data>
+  <data name="Theme.enBTN" xml:space="preserve">
+    <value>انگلیسی</value>
+    <comment>تنظیمات_پوسته</comment>
+  </data>
+  <data name="Theme.faBTN" xml:space="preserve">
+    <value>فارسی</value>
+    <comment>تنظیمات_پوسته</comment>
+  </data>
+  <data name="Theme.ThemeEditing" xml:space="preserve">
+    <value>ویرایش تم</value>
+    <comment>تنظیمات_پوسته</comment>
+  </data>
+  <data name="ThemeBTN" xml:space="preserve">
+    <value>تم</value>
+    <comment>تنظیمات</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.Subtitle1" xml:space="preserve">
+    <value>تم های سفارشی شده زیر به شما کمک می کند قابلیت های سفارشی سازی بیشتری داشته باشید.</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.ThemeBlue" xml:space="preserve">
+    <value>آبی</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.ThemeClassic" xml:space="preserve">
+    <value>کلاسیک</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="Theme_ChangeThemeOfThemeUserControl.ThemeYellow" xml:space="preserve">
+    <value>زرد</value>
+    <comment>Theme_ChangeThemeOfThemeUserControl</comment>
+  </data>
+  <data name="TwoWayYesNo.Title.AreYouSure" xml:space="preserve">
+    <value>آیا مطمئن هستید؟</value>
+    <comment>TwoWayYesNo</comment>
+  </data>
+  <data name="TwoWayYesNo.Title2.By performing this operation, the program will be restarted." xml:space="preserve">
+    <value>با انجام این عملیات، برنامه ری استارت میشود.</value>
+    <comment>TwoWayYesNo</comment>
+  </data>
+  <data name="UnlockWindow.EnterPasswordText" xml:space="preserve">
+    <value>رمز عبور خود را وارد کنید:</value>
+    <comment>پنجره اصلی_آنلاک ویندو</comment>
+  </data>
+</root>

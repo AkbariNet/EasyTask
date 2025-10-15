@@ -1,0 +1,275 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasyTask.Pages.PagesConnectors.PageElement"
+             xmlns:PagesConnectors="clr-namespace:EasyTask.Pages.PagesConnectors" x:Class="EasyTask.Pages.PagesConnectors.PageElement.ETComboBox"
+             mc:Ignorable="d" Height="auto" x:Name="CheckBoxElm" Margin="15,5,5,5" Loaded="CheckBoxElm_Loaded">
+    <UserControl.Resources>
+        <BooleanToVisibilityConverter x:Key="BTVC" >
+        </BooleanToVisibilityConverter>
+        <Storyboard x:Key="MoreOn">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="StackOfBTNS" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="0,0,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.1000000" Value="0,16.66665,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="0,50,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StackOfBTNS" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.333333"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="StackOfBTNS" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Collapsed}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Visible}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MoreOff">
+            <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="StackOfBTNS" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+                <EasingThicknessKeyFrame KeyTime="00:00:00" Value="0,50,0,0"/>
+                <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="0,0,0,0"/>
+            </ThicknessAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="StackOfBTNS" Storyboard.TargetProperty="(UIElement.Opacity)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="StackOfBTNS" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Collapsed}"/>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MoreOnElm">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MoreCombo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" >
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="-180">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MoreOffElm">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="MoreCombo" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="-180">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0">
+                    <EasingDoubleKeyFrame.EasingFunction>
+                        <CircleEase EasingMode="EaseInOut"/>
+                    </EasingDoubleKeyFrame.EasingFunction>
+                </EasingDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+
+
+        <Style TargetType="ToggleButton">
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border Name="border" Background="Transparent" BorderThickness="{TemplateBinding BorderThickness}" BorderBrush="Black">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsChecked" Value="True">
+                    <Setter Property="BorderThickness" Value="10" />
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Border Background="{DynamicResource ETCBSec}" CornerRadius="3" x:Name="StackOfBTNS" RenderTransformOrigin="0.5,0.5" Margin="0,0,0,0" Opacity="0" Visibility="Collapsed">
+            <StackPanel>
+                <ToggleButton x:Name="Combo1" IsChecked="{Binding ElementName=CheckBoxElm, Path=isFilling1 ,Mode=TwoWay}" Width="auto" Height="30" VerticalAlignment="Top" Margin="10,5,0,5" Visibility="{Binding visiblity1, Converter={StaticResource BTVC}, ElementName=CheckBoxElm ,Mode=TwoWay}" Checked="Combo1_Checked" >
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Grid.Column="1" Background="{DynamicResource ETCBSec}">
+                                    <Grid>
+                                        <Rectangle x:Name="MDS"  Width="20" Height="20" Stroke="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                        <Rectangle x:Name="MdDS"  Width="10" Height="10" Fill="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                    </Grid>
+                                </Border>
+                                <Label Content="{Binding btnContent1, ElementName=CheckBoxElm}" x:Name="BtnLbl1" Grid.Column="3" Margin="5,0,5,0"/>
+                            </StackPanel>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Visible"></Setter>
+                                </Trigger>
+                                <Trigger Property="IsChecked" Value="False">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Collapsed"></Setter>
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+                <ToggleButton x:Name="Combo2" IsChecked="{Binding ElementName=CheckBoxElm, Path=isFilling2 ,Mode=TwoWay}" Width="auto" Height="30" VerticalAlignment="Top" Margin="10,5,0,5" Visibility="{Binding visiblity2, Converter={StaticResource BTVC}, ElementName=CheckBoxElm ,Mode=TwoWay}" Checked="Combo2_Checked" >
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Grid.Column="1" Background="{DynamicResource ETCBSec}">
+                                    <Grid>
+                                        <Rectangle x:Name="MDS"  Width="20" Height="20" Stroke="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                        <Rectangle x:Name="MdDS"  Width="10" Height="10" Fill="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                    </Grid>
+                                </Border>
+                                <Label Content="{Binding btnContent2, ElementName=CheckBoxElm}" x:Name="BtnLbl1" Grid.Column="3" Margin="5,0,5,0"/>
+                            </StackPanel>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Visible"></Setter>
+                                </Trigger>
+                                <Trigger Property="IsChecked" Value="False">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Collapsed"></Setter>
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+                <ToggleButton x:Name="Combo3" IsChecked="{Binding ElementName=CheckBoxElm, Path=isFilling3 ,Mode=TwoWay}" Width="auto" Height="30" VerticalAlignment="Top" Margin="10,5,0,5" Visibility="{Binding visiblity3, Converter={StaticResource BTVC}, ElementName=CheckBoxElm ,Mode=TwoWay}" Checked="Combo3_Checked" >
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Grid.Column="1" Background="{DynamicResource ETCBSec}">
+                                    <Grid>
+                                        <Rectangle x:Name="MDS"  Width="20" Height="20" Stroke="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                        <Rectangle x:Name="MdDS"  Width="10" Height="10" Fill="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                    </Grid>
+                                </Border>
+                                <Label Content="{Binding btnContent3, ElementName=CheckBoxElm}" x:Name="BtnLbl1" Grid.Column="3" Margin="5,0,5,0"/>
+                            </StackPanel>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Visible"></Setter>
+                                </Trigger>
+                                <Trigger Property="IsChecked" Value="False">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Collapsed"></Setter>
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+                <ToggleButton x:Name="Combo4" IsChecked="{Binding ElementName=CheckBoxElm, Path=isFilling4 ,Mode=TwoWay}" Width="auto" Height="30" VerticalAlignment="Top" Margin="10,5,0,5" Visibility="{Binding visiblity4, Converter={StaticResource BTVC}, ElementName=CheckBoxElm ,Mode=TwoWay}" Checked="Combo4_Checked" >
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Grid.Column="1" Background="{DynamicResource ETCBSec}">
+                                    <Grid>
+                                        <Rectangle x:Name="MDS"  Width="20" Height="20" Stroke="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                        <Rectangle x:Name="MdDS"  Width="10" Height="10" Fill="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                    </Grid>
+                                </Border>
+                                <Label Content="{Binding btnContent4, ElementName=CheckBoxElm}" x:Name="BtnLbl1" Grid.Column="3" Margin="5,0,5,0"/>
+                            </StackPanel>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Visible"></Setter>
+                                </Trigger>
+                                <Trigger Property="IsChecked" Value="False">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Collapsed"></Setter>
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+                <ToggleButton x:Name="Combo5" IsChecked="{Binding ElementName=CheckBoxElm, Path=isFilling5 ,Mode=TwoWay}" Width="auto" Height="30" VerticalAlignment="Top" Margin="10,5,0,5" Visibility="{Binding visiblity5, Converter={StaticResource BTVC}, ElementName=CheckBoxElm ,Mode=TwoWay}" Checked="Combo5_Checked" >
+                    <ToggleButton.Template>
+                        <ControlTemplate TargetType="ToggleButton">
+                            <StackPanel Orientation="Horizontal">
+                                <Border Grid.Column="1" Background="{DynamicResource ETCBSec}">
+                                    <Grid>
+                                        <Rectangle x:Name="MDS"  Width="20" Height="20" Stroke="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                        <Rectangle x:Name="MdDS"  Width="10" Height="10" Fill="{DynamicResource ETCBMain}" StrokeThickness="2" RadiusX="3" RadiusY="3" Margin="5,0,5,0" />
+                                    </Grid>
+                                </Border>
+                                <Label Content="{Binding btnContent5, ElementName=CheckBoxElm}" x:Name="BtnLbl1" Grid.Column="3" Margin="5,0,5,0"/>
+                            </StackPanel>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsChecked" Value="True">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Visible"></Setter>
+                                </Trigger>
+                                <Trigger Property="IsChecked" Value="False">
+                                    <Setter TargetName="MdDS" Property="Visibility" Value="Collapsed"></Setter>
+                                </Trigger>
+
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </ToggleButton.Template>
+                </ToggleButton>
+            </StackPanel>
+        </Border>
+        <Border Background="{DynamicResource CBSec}" Cursor="Hand" CornerRadius="3" Height="40" VerticalAlignment="Top" MouseDown="Border_MouseDown" >
+            <Grid   >
+
+                <Label Content="{Binding ContentOfMainLabel, ElementName=CheckBoxElm}" Foreground="{DynamicResource CBLMain}"
+                    VerticalAlignment="Center"  Margin="10,0,50,0" HorizontalAlignment="Left" Cursor="Hand" MouseDown="Label_MouseDown" />
+                <Button x:Name="MoreCombo" Margin="10,5,10,5"  HorizontalAlignment="Right" Width="30" Click="MoreCombo_Click" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                    <Button.Template >
+                        <ControlTemplate>
+                            <Grid>
+                                <Border Background="{DynamicResource CBSec}" RenderTransformOrigin="0.5,0.5">
+
+                                </Border>
+                                <Grid HorizontalAlignment="Center" Height="NaN" Margin="0,5,0,5" Width="16" RenderTransformOrigin="0.5,0.5">
+                                    <Grid.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleX="0.7" ScaleY="0.7"/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Grid.RenderTransform>
+                                    <Rectangle Width="5" RadiusX="1" RadiusY="1" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource ETCBMain}" Height="20" HorizontalAlignment="Left" Margin="11,0,0,0">
+                                        <Rectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="45"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+                                    <Rectangle Width="5" RadiusX="1" RadiusY="1" RenderTransformOrigin="0.5,0.5" Fill="{DynamicResource ETCBMain}" Height="20" HorizontalAlignment="Left">
+                                        <Rectangle.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="-45"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Rectangle.RenderTransform>
+                                    </Rectangle>
+
+                                </Grid>
+
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

@@ -1,0 +1,111 @@
+﻿<UserControl x:Class="EasyTask.Pages.MainWindowElement.RecentActionControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"  
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                 xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+             xmlns:local="clr-namespace:EasyTask.Pages.MainWindowElement"
+             mc:Ignorable="d" Margin="0,0,0,20" Height="110"
+             d:DesignHeight="110" d:DesignWidth="NaN" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary x:Name="RecentIconMe" Source="..\..\files\icons\RecentIcon\recentIcon.xaml"/>
+                <ResourceDictionary x:Name="DeleteIcon" Source="..\..\files\icons\DeleteIcon\DeleteIcon.xaml"/>
+
+
+
+            </ResourceDictionary.MergedDictionaries>
+
+            <Storyboard x:Key="Out">
+
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="RecentActionControl" Storyboard.TargetProperty="(UIElement.Opacity)">
+
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.0500000" Value="0">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <CircleEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <ThicknessAnimationUsingKeyFrames Storyboard.TargetName="TasksRibbon" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+
+                    <EasingThicknessKeyFrame KeyTime="00:00:00.3000000" Value="15,-130,5,20"/>
+                </ThicknessAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ShortActionProName" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="{x:Static Visibility.Collapsed}"/>
+
+                </ObjectAnimationUsingKeyFrames>
+
+            </Storyboard>
+            <Storyboard x:Key="DeleteButtonSmoothIn">
+
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="DeleteRecentTaskBTN" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DeleteRecentTaskBTN" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="DeleteButtonSmoothOut">
+
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="DeleteRecentTaskBTN" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0"/>
+                </DoubleAnimationUsingKeyFrames>
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="DeleteRecentTaskBTN" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:02" Value="{x:Static Visibility.Collapsed}"/>
+                </ObjectAnimationUsingKeyFrames>
+            </Storyboard>
+        </ResourceDictionary>
+
+       
+    </UserControl.Resources>
+    <UserControl.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+        </TransformGroup>
+    </UserControl.RenderTransform>
+    <Border Background="{DynamicResource RAPESec}" CornerRadius="5">
+        <Grid >
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Image Source="{DynamicResource recenticonDrawingImage}" Width="60" MouseDown="Image_MouseDown"></Image>
+                <Grid  Grid.Column="1" Margin="0,10,0,0" HorizontalAlignment="Left">
+                    <TextBlock x:Name="actionPreview" Text="{x:Static Language:Lang.DefaultTextName_Empty}" Foreground="{DynamicResource labelContent}"  FontSize="42" FontWeight="SemiBold" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,0,30"></TextBlock>
+                    <StackPanel HorizontalAlignment="Left" Margin="0,60,0,0" Orientation="Horizontal" VerticalAlignment="Top">
+                        <TextBlock Text="{x:Static Language:Lang.RecentActionControl_ActionStartedAt}" Foreground="{DynamicResource labelContent}"/>
+                        <TextBlock x:Name="startDatePreview" Text="2024/0/0" Margin="10,0,0,0" Foreground="{DynamicResource labelContent}"/>
+
+                    </StackPanel>
+                    <Rectangle  Height="2" Margin="0,0,0,4" HorizontalAlignment="Stretch" RadiusX="1" RadiusY="1" VerticalAlignment="Bottom" Fill="{DynamicResource labelContent}"></Rectangle>
+
+                </Grid>
+                <Button Grid.ColumnSpan="2" x:Name="DeleteRecentTaskBTN" Visibility="Collapsed" Click="DeleteRecentTaskBTN_Click">
+                    <Button.Template>
+                        <ControlTemplate>
+
+                            <Grid x:Name="GridOfContent" >
+                                <Border Background="{DynamicResource RAPEDeleteElementColor}" CornerRadius="5"></Border>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                    <Image x:Name="DeleteIconName"  Source="{DynamicResource DeleteIconDrawingImage}" Margin="0,0,20,0" VerticalAlignment="Center" HorizontalAlignment="Center"  Width="50" Height="50"></Image>
+
+                                    <TextBlock Text="{x:Static Language:Lang.RecentActionControl_DeleteButton}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="#ffffff"></TextBlock>
+
+                                </StackPanel>
+                            </Grid>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+            
+        </Grid>
+    </Border>
+</UserControl>

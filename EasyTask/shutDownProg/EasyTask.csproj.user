@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\STUDIO\DEVELOP\PROGRAMMER\C\Easy Task\EasyTask\shutDownProg\Properties\PublishProfiles\FolderProfile1.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Class\Deffult Storyboards\DeffultStoryboardsByWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Actions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ActionStartReminder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddTaskChildren\selectAppForKill.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddTaskWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ApplyingProcessTask.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Element\CustomContextMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Element\CustomMenuItem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Element\TasksShort.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MainWindowElement\Elements\SLElement.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MainWindowElement\MainWindow_AboutPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MainWindowElement\MainWindow_MainPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MainWindowElement\RecentActionControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\MainWindowElement\SelectLanguage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\Security_Childrens\ChangePasswordWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\PageElement\Childrens\CheckingBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\PageElement\ETBeginOfTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\PageElement\ETCheckBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\PageElement\ETEndingOfTab.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\PageElement\ETIntBox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\PageElement\ETSettingsBTN.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\ProcessOfSettingsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\Theme_Childrens\ChangeThemeOfThemeUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\PagesConnectors\Theme_Childrens\ChangeTheme_Childrens\ThemeButtonOfChangeThemeUserControl.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ProcessInProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\SettingsPro.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ShortAction.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\UnLockWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Languages\Lang.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Languages\Lang.de.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Languages\Lang.fa.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Languages\Lang.fr.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Properties\Languages\Lang.pt.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Class\Deffult Storyboards\DeffultStoryboardsByWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddTaskChildren\selectAppForKill.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ApplyingProcessTask.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Element\CustomContextMenu.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Element\CustomMenuItem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Element\TasksShort.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainWindowElement\Elements\SLElement.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainWindowElement\MainWindow_AboutPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainWindowElement\MainWindow_MainPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainWindowElement\RecentActionControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainWindowElement\SelectLanguage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\Security_Childrens\CreatePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\Security_Childrens\ChangePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\Childrens\CheckingBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\ThemeOfSettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\SecurityOfSettingsPage .xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\ETBeginOfTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\ETComboBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\ETCheckBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\ETEndingOfTab.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\ETIntBox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\PageElement\ETSettingsBTN.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\ConnectionOfSettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\TaskOfSettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\ProcessOfSettingsPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="files\icons\MoreIcon\MoreIconTrue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="files\icons\RestartIcon\RestartIconTrue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="files\icons\ShutDownIcon\ShutDownIconTrue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="files\icons\SleepICon\SleepIConTrue.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddTaskWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\Theme_Childrens\ChangeThemeOfThemeUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\PagesConnectors\Theme_Childrens\ChangeTheme_Childrens\ThemeButtonOfChangeThemeUserControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\TwoWayYesNo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ProcessInProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SettingsPro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ShortActionpro.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ShortAction.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ActionStartReminder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Actions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\UnLockWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Includer.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ThemeButtonOfChangeThemeResourceDictionary_Dark.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ThemeButtonOfChangeThemeResourceDictionary_Light.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\BlueLightMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\YellowLightMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\YellowDarkMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\BlueDarkMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\DarkMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\ElementsStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\LightMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

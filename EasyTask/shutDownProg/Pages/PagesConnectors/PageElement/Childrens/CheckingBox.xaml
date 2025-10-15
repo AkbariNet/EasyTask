@@ -1,0 +1,200 @@
+﻿<CheckBox x:Class="EasyTask.Pages.PagesConnectors.PageElement.Childrens.CheckingBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasyTask.Pages.PagesConnectors.PageElement.Childrens"
+             mc:Ignorable="d" >
+    <CheckBox.Template>
+        <ControlTemplate TargetType="CheckBox">
+            <Grid>
+                <Path Width="15" x:Name="boxof" RenderTransformOrigin=".5,.5" Height="30" Fill="{DynamicResource BorderBrushForDifficultColorElements}" Stretch="Uniform" Data="m 82.322266,52.148437
+c -16.500779,10e-7 -30.173828,13.67305 -30.173829,30.173829
+V 429.67773
+c 10e-7,16.50078 13.673057,30.17383 30.173829,30.17383
+H 429.67773
+c 16.50078,0 30.17383,-13.67305 30.17383,-30.17383
+V 82.322266
+c 0,-16.500772 -13.67305,-30.173828 -30.17383,-30.173829
+z
+
+m 0,25
+H 429.67773
+c 3.08323,0 5.17383,2.090598 5.17383,5.173829
+V 429.67773
+c 0,3.08323 -2.0906,5.17383 -5.17383,5.17383
+H 82.322266
+c -3.083231,0 -5.173829,-2.0906 -5.173829,-5.17383
+V 82.322266
+c 0,-3.083224 2.090605,-5.173828 5.173829,-5.173829
+z">
+
+                </Path>
+
+                <Path x:Name="fillOf"  Width="7" RenderTransformOrigin=".5,.5" Visibility="Visible" Height="20" Fill="{DynamicResource BorderBrushForDifficultColorElements2}" Stretch="Uniform" Data="m 196.29991,185.92872
+c -0.35449,0 -0.70402,0.0179 -1.05001,0.0537 -0.34599,0.0358 -0.68749,0.09 -1.02315,0.15979 -0.33567,0.0698 -0.66607,0.15584 -0.98959,0.25781 -0.32352,0.10196 -0.64109,0.21948 -0.95064,0.35178 -0.61912,0.26463 -1.20798,0.58765 -1.76031,0.96273 -0.55234,0.3751 -1.06777,0.80191 -1.53876,1.27291 -0.471,0.47099 -0.89781,0.98642 -1.27291,1.53876 -0.37508,0.55233 -0.6981,1.14119 -0.96273,1.76031 -0.1323,0.30955 -0.24982,0.62712 -0.35178,0.95064 -0.10197,0.32352 -0.18801,0.65392 -0.25781,0.98959 -0.0698,0.33566 -0.12398,0.67716 -0.15979,1.02315 -0.0358,0.34599 -0.0537,0.69686 -0.0537,1.05135
+v 119.3975
+c 0,0.35449 0.0179,0.70536 0.0537,1.05135 0.0358,0.34599 0.09,0.68749 0.15979,1.02315 0.0698,0.33567 0.15584,0.66607 0.25781,0.98959 0.10196,0.32352 0.21948,0.64109 0.35178,0.95064 0.26463,0.61912 0.58765,1.20798 0.96273,1.76031 0.3751,0.55234 0.80191,1.06777 1.27291,1.53876 0.47099,0.471 0.98642,0.89781 1.53876,1.2729 0.55233,0.37509 1.14119,0.69811 1.76031,0.96274 0.30955,0.1323 0.62712,0.24982 0.95064,0.35178 0.32352,0.10197 0.65392,0.18801 0.98959,0.25781 0.33566,0.0698 0.67716,0.12398 1.02315,0.15979 0.34599,0.0358 0.69552,0.0537 1.05001,0.0537
+h 119.39884
+c 0.35449,0 0.70536,-0.0179 1.05135,-0.0537 0.34599,-0.0358 0.68749,-0.09 1.02315,-0.15979 0.33567,-0.0698 0.66607,-0.15584 0.98959,-0.25781 0.32352,-0.10196 0.64109,-0.21948 0.95064,-0.35178 0.61912,-0.26463 1.20798,-0.58765 1.76031,-0.96274 0.55234,-0.37509 1.06777,-0.8019 1.53876,-1.2729 0.471,-0.47099 0.89781,-0.98642 1.2729,-1.53876 0.37509,-0.55233 0.69811,-1.14119 0.96274,-1.76031 0.1323,-0.30955 0.24982,-0.62712 0.35178,-0.95064 0.10197,-0.32352 0.18801,-0.65392 0.25781,-0.98959 0.0698,-0.33566 0.12398,-0.67716 0.15979,-1.02315 0.0358,-0.34599 0.0537,-0.69686 0.0537,-1.05135
+V 196.30125
+c 0,-0.3545 -0.0179,-0.70536 -0.0537,-1.05136 -0.0358,-0.34599 -0.09,-0.68748 -0.15979,-1.02315 -0.0698,-0.33567 -0.15584,-0.66607 -0.25781,-0.98958 -0.10196,-0.32353 -0.21948,-0.64109 -0.35178,-0.95065 -0.26463,-0.61912 -0.58765,-1.20797 -0.96274,-1.76031 -0.37509,-0.55234 -0.8019,-1.06777 -1.2729,-1.53876 -0.47099,-0.47099 -0.98642,-0.89781 -1.53876,-1.2729 -0.55233,-0.37509 -1.14119,-0.69811 -1.76031,-0.96273 -0.30955,-0.13231 -0.62712,-0.24983 -0.95064,-0.35179 -0.32352,-0.10197 -0.65392,-0.18801 -0.98959,-0.2578 -0.33566,-0.0698 -0.67716,-0.12398 -1.02315,-0.15979 -0.34599,-0.0358 -0.69686,-0.0537 -1.05135,-0.0537
+z">
+                    <Path.RenderTransform>
+                        <RotateTransform x:Name="fillofRotate"></RotateTransform>
+                    </Path.RenderTransform>
+                </Path>
+            </Grid>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsChecked" Value="True" >
+                    <Trigger.EnterActions>
+                        <BeginStoryboard x:Name="ETCS" >
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames 
+                                       Storyboard.TargetProperty="(FrameworkElement.Opacity)" 
+                                       Storyboard.TargetName="fillOf" BeginTime="00:00:00">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0" >
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:3" Value="100">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+
+
+                                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fillOf" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                </ObjectAnimationUsingKeyFrames>
+
+                                <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever"
+                                       Storyboard.TargetProperty="Angle" 
+                                       Storyboard.TargetName="fillofRotate" BeginTime="00:00:00">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:3" Value="20">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard x:Name="ETCOff" >
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames 
+                                       Storyboard.TargetProperty="(FrameworkElement.Opacity)" 
+                                       Storyboard.TargetName="fillOf" BeginTime="00:00:00">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0" >
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+
+                                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fillOf" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                    <DiscreteObjectKeyFrame KeyTime="00:00:3" Value="{x:Static Visibility.Collapsed}"/>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+                <Trigger Property="IsChecked" Value="False">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames 
+                                       Storyboard.TargetProperty="(FrameworkElement.Opacity)" 
+                                       Storyboard.TargetName="fillOf" BeginTime="00:00:00">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0" >
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:3" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+
+                                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fillOf" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                    <DiscreteObjectKeyFrame KeyTime="00:00:3" Value="{x:Static Visibility.Collapsed}"/>
+                                </ObjectAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+
+                        <BeginStoryboard x:Name="ETCs2" >
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames 
+                                       Storyboard.TargetProperty="(FrameworkElement.Opacity)" 
+                                       Storyboard.TargetName="fillOf" BeginTime="00:00:00">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:3" Value="100">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+
+
+                                <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="fillOf" Storyboard.TargetProperty="(UIElement.Visibility)">
+                                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                                </ObjectAnimationUsingKeyFrames>
+
+                                <DoubleAnimationUsingKeyFrames RepeatBehavior="Forever"
+                                       Storyboard.TargetProperty="Angle" 
+                                       Storyboard.TargetName="fillofRotate" BeginTime="00:00:00">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="00:00:3" Value="20">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                    <EasingDoubleKeyFrame KeyTime="0:0:6" Value="0">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <CircleEase EasingMode="EaseInOut"/>
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+
+    </CheckBox.Template>
+</CheckBox>

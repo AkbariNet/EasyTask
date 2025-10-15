@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="EasyTask.Pages.Element.CustomMenuItem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FlowDirection="{DynamicResource FlowAll}"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasyTask.Pages.Element"
+        xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+        mc:Ignorable="d"  Width="250" Loaded="UserControl_Loaded"
+       >
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/files/Logo/SVG/LOGOPACK.xaml" x:Name="Logo"></ResourceDictionary>
+
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Border  Background="{DynamicResource TaskbarIconStyleSec}" CornerRadius="10">
+        <StackPanel >
+            <Image Source="{DynamicResource WhiteLogoTypeCaptalDrawingImage}"  Width="120" Height="60" Margin="10"></Image>
+            <Line Stroke="{DynamicResource TaskbarIconStyleMain}" StrokeThickness="2" Margin="10" Fill="{DynamicResource TaskbarIconStyleMain}" X1="250" ></Line>
+            <TextBlock Text="{x:Static Language:Lang.TasksBTN}" FontSize="8" Margin="10,5,10,5"></TextBlock>
+            <StackPanel x:Name="PlaceForTasks" Margin="10">
+            </StackPanel>
+            <Line Stroke="{DynamicResource TaskbarIconStyleMain}" StrokeThickness="2" Margin="10" Fill="{DynamicResource TaskbarIconStyleMain}" X1="250" ></Line>
+            <Button x:Name="OpenButton" FontSize="6" BorderThickness="0" BorderBrush="Transparent" FontWeight="Light" Margin="15,5,15,5" Background="{DynamicResource TaskbarIconStyleSec}" Content="{x:Static Language:Lang.defaultTextName_Open}" Click="OpenButton_Click"></Button>
+            <Button x:Name="EXTButton" FontSize="6" BorderThickness="0" BorderBrush="Transparent"  FontWeight="DemiBold" Margin="15,5,15,25" Background="{DynamicResource TaskbarIconStyleSec}" Content="{x:Static Language:Lang.DefaultTextName_Exit}" Click="EXTButton_Click"></Button>
+        </StackPanel>
+    </Border>
+</UserControl>

@@ -1,0 +1,199 @@
+﻿<Window x:Name="UnlockWindow" x:Class="EasyTask.Pages.UnLockWindow"
+        
+             xmlns:lottie="clr-namespace:LottieSharp.WPF;assembly=LottieSharp"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EasyTask.Pages"  FlowDirection="{DynamicResource FlowAll}"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" AllowsTransparency="True"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Transparent" 
+         xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com" Title="Unlock Apllication" Height="650" Width="500" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Loaded="Window_Loaded" RenderTransformOrigin="0.5,0.5" Topmost="True"  >
+    <Window.Resources>
+        <ResourceDictionary>
+
+
+            <Storyboard x:Key="TrueProsses" x:Name="TrueProsses" Completed="TrueProsses_Completed">
+                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="TrueProssesGrid" Storyboard.TargetProperty="(UIElement.Visibility)">
+                    <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+                </ObjectAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="TrueProssesGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.2"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                    <EasingDoubleKeyFrame KeyTime="00:00:02.5000000" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames Storyboard.TargetName="TrueProssesGrid" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0.2"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                    <EasingDoubleKeyFrame KeyTime="00:00:02.5" Value="1"/>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="OutW" x:Name="OutW" Completed="Out_Completed">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                 
+                    <EasingDoubleKeyFrame KeyTime="00:00:0.5000000" Value="0.2">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+               
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.2">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="In" x:Name="In" >
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value=".2"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1">
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value=".2"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1">
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1">
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+            <Storyboard x:Key="Out" x:Name="Out" Completed="Out_Completed">
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.2">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.2">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+                <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="AllContent" Storyboard.TargetProperty="(UIElement.Opacity)">
+                    <EasingDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+                    <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0">
+                        <EasingDoubleKeyFrame.EasingFunction>
+                            <BackEase EasingMode="EaseOut"/>
+                        </EasingDoubleKeyFrame.EasingFunction>
+                    </EasingDoubleKeyFrame>
+                </DoubleAnimationUsingKeyFrames>
+            </Storyboard>
+        </ResourceDictionary>
+
+    </Window.Resources>
+
+    <Border  x:Name="AllContent" Background="{DynamicResource ETBSec}" BorderThickness="80" RenderTransformOrigin="0.5,0.5">
+        <Border.Effect>
+            <DropShadowEffect Color="#FF3A3D40" Direction="0" BlurRadius="60" RenderingBias="Quality" ShadowDepth="0" Opacity="0.4"></DropShadowEffect>
+
+        </Border.Effect>
+        <Border.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform/>
+                <TranslateTransform />
+            </TransformGroup>
+        </Border.RenderTransform>
+        <Grid>
+            <Grid x:Name="GridLockImgs">
+                <lottie:LottieAnimationView FlowDirection="LeftToRight" Height="200" Width="200" Margin="0,20,0,20"
+    AutoPlay="False" IsPlaying="False"     Visibility="Collapsed"         x:Name="LockAnimate" HorizontalAlignment="Center" VerticalAlignment="Top"
+    ResourcePath="pack://application:,,,/files/SVGANIMATE/LockAnimate/LockNewAnimate.json"
+    RepeatCount="0" />
+                <lottie:LottieAnimationView FlowDirection="LeftToRight" Height="200" Width="200" Margin="0,20,0,20"
+    AutoPlay="False" IsPlaying="False"              x:Name="LockBlackAnimate" HorizontalAlignment="Center" VerticalAlignment="Top"
+    ResourcePath="pack://application:,,,/files/SVGANIMATE/LockAnimate/LockNewBlackAnimate.json"
+    RepeatCount="0" />
+                </Grid>
+            <StackPanel HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="0,0,0,100">
+                <Label Content="{x:Static Language:Lang.UnlockWindow_EnterPasswordText}" HorizontalContentAlignment="Center"/>
+                <StackPanel FlowDirection="LeftToRight"  Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Center">
+                    <TextBox x:Name="num1" Height="30" Width="30" Background="{DynamicResource UWMain}" Foreground="{DynamicResource UWB}" MaxLines="1" MaxLength="1" Margin="5,0,5,0" PreviewKeyDown="TextBox_PreviewKeyDown"  FontSize="25" PreviewTextInput="TextBox_PreviewTextInput" HorizontalContentAlignment="Center" TextChanged="num_TextChanged" Text="{Binding ElementName=UnlockWindow, Path=Num1}"  KeyUp="TextBox_KeyUp" TabIndex="1" />
+                    <TextBox x:Name="num2" Height="30" Width="30" Background="{DynamicResource UWMain}" Foreground="{DynamicResource UWB}" MaxLines="1" MaxLength="1" Margin="5,0,5,0"  PreviewKeyDown="TextBox_PreviewKeyDown"  FontSize="25" PreviewTextInput="TextBox_PreviewTextInput"  HorizontalContentAlignment="Center" TextChanged="num_TextChanged" Text="{Binding ElementName=UnlockWindow, Path=Num2}"   KeyUp="TextBox_KeyUp" TabIndex="2"/>
+                    <TextBox x:Name="num3" Height="30" Width="30" Background="{DynamicResource UWMain}" Foreground="{DynamicResource UWB}" MaxLines="1" MaxLength="1" Margin="5,0,5,0" PreviewKeyDown="TextBox_PreviewKeyDown"  FontSize="25" PreviewTextInput="TextBox_PreviewTextInput"  HorizontalContentAlignment="Center" TextChanged="num_TextChanged" Text="{Binding ElementName=UnlockWindow, Path=Num3}"  KeyUp="TextBox_KeyUp" TabIndex="3"/>
+                    <TextBox x:Name="num4" Height="30" Width="30" Background="{DynamicResource UWMain}" Foreground="{DynamicResource UWB}" MaxLines="1" MaxLength="1" Margin="5,0,5,0" PreviewKeyDown="TextBox_PreviewKeyDown"  FontSize="25" PreviewTextInput="TextBox_PreviewTextInput"  HorizontalContentAlignment="Center"  TextChanged="num_TextChanged" Text="{Binding ElementName=UnlockWindow, Path=Num4}"  KeyUp="TextBox_KeyUp" TabIndex="4" />
+
+                </StackPanel>
+                <Button x:Name="CancelBTN" Width="100" Height="30" Margin="0,40,0,0" Content="{x:Static Language:Lang.DefaultTextName_Cancel}" Click="CancelBTN_Click"/>
+            </StackPanel>
+            <Grid x:Name="OK" FlowDirection="LeftToRight" Visibility="Collapsed" IsVisibleChanged="TrueProssesGrid_IsVisibleChanged">
+                <Border x:Name="TrueGrid" Background="{DynamicResource UWSec}"/>
+                <Grid x:Name="TrueProssesGrid" RenderTransformOrigin="0.5,0.5" IsVisibleChanged="TrueProssesGrid_IsVisibleChanged">
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+                    <Ellipse x:Name="ellipse9" Stroke="Transparent" HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="80" Fill="{DynamicResource UWElementColor}" RenderTransformOrigin="0.937,-0.104">
+                        <Ellipse.Effect>
+                            <DropShadowEffect Color="#FFE2E2E2" BlurRadius="50" Direction="0" Opacity="0.6" RenderingBias="Quality" ShadowDepth="0" />
+                        </Ellipse.Effect>
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Grid HorizontalAlignment="Center" Height="60" VerticalAlignment="Center" Width="36" Margin="0,0,10,0">
+                        <Rectangle x:Name="rectangle2" HorizontalAlignment="Left" RadiusX="5" RadiusY="5" Height="28" VerticalAlignment="Top" Width="14" Fill="{DynamicResource UWElementColor2}" RenderTransformOrigin="0.5,0.5" Margin="0,27,0,0">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="-45"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Rectangle x:Name="rectangle3" HorizontalAlignment="Left" Height="60" VerticalAlignment="Center" Width="14" Fill="{DynamicResource UWElementColor2}" RenderTransformOrigin="0.5,0.5" RadiusX="5" RadiusY="5" Margin="22,0,0,0">
+                            <Rectangle.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="45"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+
+                    </Grid>
+
+                </Grid>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

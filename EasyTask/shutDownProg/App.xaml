@@ -1,0 +1,30 @@
+﻿<Application x:Class="_21_4_23.App"  xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:shutDownProg"  
+             StartupUri="../pages/MainWindow.xaml" x:Name="EasyTask"  
+             ShutdownMode="OnExplicitShutdown" >
+    <Application.Resources>
+        <!--
+        <ResourceDictionary Source="Themes/DarkMode.xaml">
+        
+        -->
+        <!--
+        
+        <ResourceDictionary Source="Themes/LightMode.xaml">
+        
+        -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+
+                <ui:ControlsDictionary />
+                <ResourceDictionary Source="Themes/YellowLightMode.xaml">
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+            
+
+        </ResourceDictionary>
+    </Application.Resources>
+    
+</Application>
+    

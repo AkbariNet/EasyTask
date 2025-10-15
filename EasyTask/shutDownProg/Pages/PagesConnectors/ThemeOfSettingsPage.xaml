@@ -1,0 +1,34 @@
+﻿<UserControl
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" x:Name="ThemeOfSettingsPageX"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"  FlowDirection="{DynamicResource FlowAll}"
+      xmlns:local="clr-namespace:EasyTask.Pages" 
+                 xmlns:Language="clr-namespace:EasyTask.Properties.Languages"
+              xmlns:PageElement="clr-namespace:EasyTask.Pages.PagesConnectors.PageElement" x:Class="EasyTask.Pages.PagesConnectors.ThemeOfSettingsPage" 
+              HorizontalAlignment="Left" VerticalAlignment="Top" Loaded="ThemeOfSettingsPageX_Loaded">
+    <UserControl.RenderTransform>
+        <TransformGroup>
+            <ScaleTransform/>
+            <SkewTransform/>
+            <RotateTransform/>
+            <TranslateTransform/>
+        </TransformGroup>
+    </UserControl.RenderTransform>
+    <UserControl.Resources>
+    </UserControl.Resources>
+    <Grid Margin="40,20,0,0">
+
+        <TextBlock Text="{x:Static Language:Lang.ThemeBTN}" Style="{DynamicResource SWPBoldTextBlock}" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+        <ScrollViewer Margin="0,70,0,10">
+            <StackPanel Orientation="Vertical">
+                <PageElement:ETBeginOfTab ETBlabelContent="{x:Static Language:Lang.Theme_ThemeEditing}"/>
+                <PageElement:ETSettingsBTN x:Name="ChangeThemeButton" SetContent="{x:Static Language:Lang.Theme_ChangeTheme}" HorizontalAlignment="Left" Background="{DynamicResource BorderBrushForDifficultColorElements}" Foreground="White" Click="ChangeThemeButton_Click" ></PageElement:ETSettingsBTN>
+          
+               <PageElement:ETEndingOfTab Width="250" HorizontalAlignment="Left"></PageElement:ETEndingOfTab>
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+</UserControl>

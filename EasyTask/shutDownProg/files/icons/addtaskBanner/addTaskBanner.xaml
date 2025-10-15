@@ -1,0 +1,69 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <SolidColorBrush x:Key="MainColorAddTaskBanner" x:Name="MainColorAddTaskBanner" Color="#3A3D40"></SolidColorBrush>
+    <Geometry x:Key="Artboard_48Geometry1">F1 M90,14.43z M0,0z M2.16,3.08C16.48,-0.89 31.48,0.11 46.48,0.11 40.48,1.11 34.48,7.14 27.48,2.12 26.48,2.12 23.48,4.13 21.48,4.13 20.48,4.13 19.48,1.12 18.48,1.12 12.48,2.12 9.48,9.15 2.48,10.16 2.48,11.16 2.48,12.17 3.48,13.17 6.48,16.18 7.48,5.13 12.48,14.17 8.48,14.17 3.48,15.17 1.48,13.17 -0.52,12.17 0.48,7.14 0.81,3.64 0.81,3.64 1.48,3.25 2.16,3.08z</Geometry>
+  <Geometry x:Key="Artboard_48Geometry2">F1 M90,14.43z M0,0z M16.45,13.8C18.48,12.62 20.48,10.62 22.48,9.62 23.48,9.62 25.48,12.62 26.48,12.62 29.48,12.62 33.48,9.62 36.48,10.62 41.48,12.62 47.48,11.62 52.48,10.62L51.48,10.62C55.48,9.62 58.48,9.62 62.48,9.62 60.48,9.62 57.48,9.62 55.48,10.62 62.48,15.62 68.48,10.62 75.48,10.62 58.48,17.62 38.48,11.62 20.52,13.76 17.98,13.79 16.45,13.8 16.45,13.8z</Geometry>
+  <Geometry x:Key="Artboard_48Geometry3">F1 M90,14.43z M0,0z M89.51,14.24C85.48,11.56 80.48,15.56 76.48,12.56 80.48,12.56 83.48,11.56 87.38,10.77L89.51,14.24z</Geometry>
+  <Geometry x:Key="Artboard_48Geometry4">F1 M90,14.43z M0,0z M87.79,5.88C82.49,4.43 75.49,6.43 72.49,0.43 77.49,2.43 82.49,2.43 87.77,3.37L87.79,5.87z</Geometry>
+  <Geometry x:Key="Artboard_48Geometry5">F1 M90,14.43z M0,0z M69.74,4.56C64.89,4.15 60.89,4.15 55.89,4.15 56.89,4.15 58.89,3.15 58.89,3.15 57.89,-1.85 51.89,7.15 50.89,0.149999999999999 57.89,1.15 64.89,-1.85 70.89,2.15 68.89,3.15 66.89,3.15 65.09,2.92L69.75,4.56z</Geometry>
+  <Geometry x:Key="Artboard_48Geometry6">F1 M90,14.43z M0,0z M45.89,5.13C45.78,5.24 45.63,5.28 45.5,5.25 45.39,5.23 45.27,5.22 45.15,5.22 45.12,5.22 45.09,5.22 45.07,5.22L45.07,5.22C45.07,5.22 45.03,5.22 45.02,5.22 44.98,5.22 44.94,5.22 44.91,5.22 44.88,5.22 44.86,5.22 44.83,5.23 44.78,5.23 44.73,5.24 44.68,5.26 44.67,5.26 44.66,5.26 44.65,5.26 44.6,5.27 44.56,5.28 44.51,5.3 44.47,5.3 44.44,5.32 44.4,5.34 44.38,5.34 44.35,5.35 44.33,5.37 44.29,5.38 44.26,5.4 44.23,5.42 44.2,5.43 44.17,5.45 44.15,5.46 44.1,5.49 44.05,5.52 44,5.55 43.97,5.57 43.93,5.59 43.9,5.62 43.87,5.64 43.84,5.67 43.81,5.69 43.65,5.83 43.51,6 43.4,6.18 43.37,6.22 43.35,6.26 43.33,6.29 43.3,6.34 43.28,6.4 43.25,6.45 43.22,6.51 43.2,6.58 43.18,6.64 43.17,6.68 43.16,6.72 43.15,6.75 43.15,6.78 43.14,6.81 43.13,6.84 43.1,6.97 43.09,7.11 43.09,7.25 43.09,7.32 43.09,7.39 43.1,7.46 43.1,7.52 43.11,7.57 43.12,7.63 43.12,7.65 43.12,7.68 43.13,7.7 43.14,7.76 43.16,7.82 43.18,7.88 43.22,8.01 43.28,8.14 43.34,8.26 43.34,8.27 43.36,8.29 43.37,8.31 43.44,8.45 43.43,8.62 43.34,8.76 43.31,8.81 43.27,8.84 43.22,8.87 43.21,8.87 43.19,8.89 43.18,8.9 43.04,8.97 42.87,8.96 42.73,8.87 42.69,8.84 42.6,8.73 42.59,8.71 42.56,8.66 42.53,8.61 42.51,8.56 42.45,8.45 42.4,8.33 42.36,8.21 42.34,8.16 42.33,8.12 42.32,8.07 42.32,8.05 42.31,8.02 42.3,8 42.3,8 42.3,7.99 42.3,7.98 42.28,7.89 42.26,7.8 42.24,7.71 42.24,7.69 42.24,7.67 42.24,7.64 42.24,7.58 42.23,7.52 42.22,7.46L42.22,7.44C42.22,7.38 42.22,7.31 42.22,7.25 42.22,5.63 43.54,4.31 45.16,4.31 45.25,4.31 45.33,4.31 45.42,4.32 45.48,4.32 45.55,4.33 45.61,4.34 45.63,4.34 45.66,4.34 45.68,4.35 45.76,4.37 45.84,4.41 45.9,4.47 46.07,4.64 46.07,4.92 45.9,5.09z</Geometry>
+  <DrawingGroup x:Key="Artboard_48DrawingGroup" ClipGeometry="M0,0 V14.43 H90 V0 H0 Z">
+    <DrawingGroup.Transform>
+      <TranslateTransform X="0" Y="0.0022306116297841072" />
+    </DrawingGroup.Transform>
+        <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" Geometry="{StaticResource Artboard_48Geometry1}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" Geometry="{StaticResource Artboard_48Geometry2}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" Geometry="{StaticResource Artboard_48Geometry3}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" Geometry="{StaticResource Artboard_48Geometry4}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" Geometry="{StaticResource Artboard_48Geometry5}" />
+    <DrawingGroup Opacity="1">
+      <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="0.14" RadiusY="0.14" Center="47.65,7.28" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" >
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="0.18" RadiusY="0.18" Center="47.41,8.33" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="0.22" RadiusY="0.22" Center="46.75,9.19" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="0.28" RadiusY="0.28" Center="45.79,9.69" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="0.35" RadiusY="0.35" Center="44.71,9.74" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}" Geometry="{StaticResource Artboard_48Geometry6}" />
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+          <GeometryDrawing.Geometry>
+            <EllipseGeometry RadiusX="0.44" RadiusY="0.44" Center="43.71,9.32" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+      </DrawingGroup>
+      <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+          <GeometryDrawing.Geometry>
+            <RectangleGeometry RadiusX="0.22" RadiusY="0.22" Rect="44.03,7.06,2.28,0.44" />
+          </GeometryDrawing.Geometry>
+        </GeometryDrawing>
+        <DrawingGroup Transform="6.12303176911189E-17,1,-1,6.12303176911189E-17,52.44,-37.89">
+                    <GeometryDrawing Brush="{DynamicResource MainColorAddTaskBanner}">
+            <GeometryDrawing.Geometry>
+              <RectangleGeometry RadiusX="0.22" RadiusY="0.22" Rect="44.03,7.06,2.28,0.44" />
+            </GeometryDrawing.Geometry>
+          </GeometryDrawing>
+        </DrawingGroup>
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="Artboard_48DrawingImage" Drawing="{StaticResource Artboard_48DrawingGroup}" />
+</ResourceDictionary>

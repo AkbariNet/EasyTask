@@ -1,0 +1,66 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="RecentIconNewGeometry1">F1 M40.04,40.04z M0,0z M20.37,16.01L20.37,15.99C20.36,15.88,20.37,15.99,20.37,16.01z</Geometry>
+  <Geometry x:Key="RecentIconNewGeometry2">F1 M40.04,40.04z M0,0z M20.37,16.01L20.37,15.99C20.36,15.88,20.37,15.99,20.37,16.01z</Geometry>
+  <Geometry x:Key="RecentIconNewGeometry3">F1 M40.04,40.04z M0,0z M22.59,10.75C22.5,10.09 22.19,9.5 21.74,9.05 21.13,8.44 20.29,8.11 19.37,8.17 17.75,8.29 16.58,9.78 16.58,11.4L16.58,17.93C16.58,18.64,16.36,19.32,15.94,19.9L11.96,25.38C11.57,25.91 11.38,26.54 11.38,27.15 11.38,28.09 11.82,29.02 12.63,29.61 13.86,30.51 15.55,30.33 16.57,29.26 16.66,29.17 16.76,29.06 16.84,28.94L21.97,21.87C22.39,21.3,22.61,20.61,22.61,19.9L22.61,11.18C22.61,11.03,22.6,10.88,22.57,10.74z M20.36,15.98C20.36,15.87,20.37,15.98,20.37,16L20.37,15.98z</Geometry>
+  <Geometry x:Key="RecentIconNewGeometry4">F1 M40.04,40.04z M0,0z M19.61,2.85L19.61,2.85C19.61,4.22 20.59,5.42 21.95,5.64 28.99,6.78 34.33,13.02 34.06,20.45 33.78,28 27.48,34.2 19.93,34.36 17.49,34.41 15.18,33.85 13.15,32.82 11.92,32.2 10.41,32.58 9.6,33.7L9.6,33.7C8.57,35.12 9.04,37.13 10.61,37.92 13.39,39.31 16.48,40.05 19.62,40.05 30.67,40.05 39.76,30.96 39.76,19.91 39.75,9.97 32.39,1.61 22.86,0.04 21.15,-0.24 19.61,1.12 19.61,2.85z</Geometry>
+  <DrawingGroup x:Key="RecentIconNewDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+    <DrawingGroup Transform="0.809016994374947,-0.587785252292473,0.587785252292473,0.809016994374947,-1.81,6.79">
+            <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="3.02" RadiusY="3.02" Rect="6.52,3.15,6.05,6.05" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="0.309016994374947,-0.951056516295154,0.951056516295154,0.309016994374947,-11.72,13.34">
+            <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="3.02" RadiusY="3.02" Rect="0.3,11.71,6.05,6.05" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="-0.309016994374947,-0.951056516295154,0.951056516295154,-0.309016994374947,-19.72,36.29">
+            <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="3.02" RadiusY="3.02" Rect="0.3,22.29,6.05,6.05" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource RecentIconNewGeometry1}" />
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource RecentIconNewGeometry2}" />
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource RecentIconNewGeometry3}" />
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource RecentIconNewGeometry4}" />
+  </DrawingGroup>
+  <DrawingImage x:Key="RecentIconNewDrawingImage" Drawing="{StaticResource RecentIconNewDrawingGroup}" />
+  <Geometry x:Key="recenticonGeometry1">F1 M40.04,40.04z M0,0z M20.67,16.62L20.67,16.6C20.66,16.51,20.67,16.6,20.67,16.62z</Geometry>
+  <Geometry x:Key="recenticonGeometry2">F1 M40.04,40.04z M0,0z M20.67,16.62L20.67,16.6C20.66,16.51,20.67,16.6,20.67,16.62z</Geometry>
+  <Geometry x:Key="recenticonGeometry3">F1 M40.04,40.04z M0,0z M22.56,12.17C22.48,11.61 22.22,11.11 21.84,10.73 21.33,10.22 20.61,9.93 19.83,9.99 18.46,10.09 17.47,11.36 17.47,12.73L17.47,18.26C17.47,18.86,17.28,19.44,16.93,19.92L13.56,24.57C13.23,25.02 13.07,25.55 13.07,26.07 13.07,26.87 13.44,27.65 14.13,28.15 15.17,28.91 16.6,28.76 17.47,27.85 17.55,27.77 17.63,27.68 17.7,27.58L22.05,21.6C22.4,21.12,22.59,20.53,22.59,19.93L22.59,12.54C22.59,12.41,22.58,12.29,22.56,12.17z M20.67,16.6C20.67,16.51,20.68,16.6,20.68,16.62L20.68,16.6z</Geometry>
+  <Geometry x:Key="recenticonGeometry4">F1 M40.04,40.04z M0,0z M20.03,5.48L20.03,5.48C20.03,6.64 20.86,7.65 22.01,7.84 27.98,8.81 32.5,14.09 32.27,20.38 32.04,26.67 26.7,32.03 20.3,32.16 18.23,32.2 16.28,31.73 14.56,30.86 13.51,30.33 12.24,30.66 11.55,31.6L11.55,31.6C10.68,32.8 11.08,34.51 12.4,35.17 14.76,36.35 17.37,36.97 20.03,36.97 29.39,36.97 37.09,29.27 37.09,19.91 37.09,11.49 30.86,4.40999999999999 22.79,3.07999999999999 21.34,2.83999999999999 20.03,3.99999999999999 20.03,5.45999999999999z</Geometry>
+  <DrawingGroup x:Key="recenticonDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+    <DrawingGroup Transform="0.809016994374947,-0.587785252292473,0.587785252292473,0.809016994374947,-2.68,8.35">
+            <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="2.56" RadiusY="2.56" Rect="8.94,5.73,5.12,5.12" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="0.309016994374947,-0.951056516295154,0.951056516295154,0.309016994374947,-10.47,16.67">
+            <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="2.56" RadiusY="2.56" Rect="3.68,12.98,5.12,5.12" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+    <DrawingGroup Transform="-0.309016994374947,-0.951056516295154,0.951056516295154,-0.309016994374947,-15.14,38.01">
+            <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}">
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="2.56" RadiusY="2.56" Rect="3.68,21.94,5.12,5.12" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource recenticonGeometry1}" />
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource recenticonGeometry2}" />
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource recenticonGeometry3}" />
+        <GeometryDrawing  Brush="{DynamicResource MainColorRecentIcon}" Geometry="{StaticResource recenticonGeometry4}" />
+  </DrawingGroup>
+  <DrawingImage x:Key="recenticonDrawingImage" Drawing="{StaticResource recenticonDrawingGroup}" />
+</ResourceDictionary>

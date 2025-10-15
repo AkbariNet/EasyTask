@@ -1,0 +1,15 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="TopElmOfWelcomeGeometry1">F1 M90,14.43z M0,0z M46.48,0.11C40.48,1.12 34.48,7.14 27.48,2.12 26.48,2.12 23.48,4.13 21.48,4.13 20.48,4.13 19.48,1.12 18.48,1.12 12.48,2.12 9.48,9.15 2.48,10.16 2.48,10.16 1.44,10.36 0.29,10.39 0.28,10.32 0.28,10.24 0.28,10.16 0.21,8.19 0.62,5.66 0.81,3.64 0.81,3.64 1.47,3.25 2.15,3.08 16.48,-0.89 31.48,0.11 46.48,0.11z</Geometry>
+  <Geometry x:Key="TopElmOfWelcomeGeometry2">F1 M90,14.43z M0,0z M87.79,5.88C82.49,4.43 75.49,6.43 72.49,0.43 77.49,2.43 82.49,2.43 87.77,3.37L87.79,5.87z</Geometry>
+  <Geometry x:Key="TopElmOfWelcomeGeometry3">F1 M90,14.43z M0,0z M69.74,4.56C64.89,4.15 60.89,4.15 55.89,4.15 56.89,4.15 58.89,3.15 58.89,3.15 57.89,-1.85 51.89,7.15 50.89,0.149999999999999 57.89,1.15 64.89,-1.85 70.89,2.15 68.89,3.15 66.89,3.15 65.09,2.92L69.75,4.56z</Geometry>
+  <DrawingGroup x:Key="TopElmOfWelcomeDrawingGroup" ClipGeometry="M0,0 V14.43 H90 V0 H0 Z">
+    <DrawingGroup.Transform>
+      <TranslateTransform X="0" Y="0.0022306116297841072" />
+    </DrawingGroup.Transform>
+        <GeometryDrawing Brush="{DynamicResource MainColorBottonELM}" Geometry="{StaticResource TopElmOfWelcomeGeometry1}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorBottonELM}" Geometry="{StaticResource TopElmOfWelcomeGeometry2}" />
+        <GeometryDrawing Brush="{DynamicResource MainColorBottonELM}" Geometry="{StaticResource TopElmOfWelcomeGeometry3}" />
+    </DrawingGroup>
+    <SolidColorBrush x:Key="MainColorBottonELM" Color="{DynamicResource TopElmOfWelcomeIconColor}"></SolidColorBrush>
+    <DrawingImage x:Key="TopElmOfWelcomeDrawingImage" Drawing="{StaticResource TopElmOfWelcomeDrawingGroup}" />
+</ResourceDictionary>

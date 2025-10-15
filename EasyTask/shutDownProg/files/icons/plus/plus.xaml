@@ -1,0 +1,20 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Geometry x:Key="PlusGeometry">F1 M2001,2001z M0,0z M1843.82,945.03L1843.82,1064.68C1843.82,1166.74,1761.08,1249.48,1659.01,1249.48L1232.25,1249.48 1232.25,1676.25C1232.25,1778.31,1149.51,1861.05,1047.44,1861.05L927.79,1861.05C825.73,1861.05,742.99,1778.31,742.99,1676.25L742.99,1249.48 316.22,1249.48C214.16,1249.48,131.42,1166.74,131.42,1064.68L131.42,945.03C131.42,842.96,214.16,760.22,316.22,760.22L742.99,760.22 742.99,333.46C742.99,231.39,825.73,148.65,927.79,148.65L1047.44,148.65C1149.51,148.65,1232.25,231.39,1232.25,333.46L1232.25,760.22 1659.01,760.22C1761.08,760.22,1843.82,842.96,1843.82,945.03z</Geometry>
+  <DrawingGroup x:Key="PlusDrawingGroup" ClipGeometry="M0,0 V2001 H2001 V0 H0 Z">
+    <DrawingGroup Opacity="1">
+      <DrawingGroup.ClipGeometry>
+        <RectangleGeometry RadiusX="551" RadiusY="551" Rect="0.5,0.5,2000,2000" />
+      </DrawingGroup.ClipGeometry>
+            <GeometryDrawing Brush="{DynamicResource MainLight}">
+        <GeometryDrawing.Pen>
+          <Pen Brush="#FF000000" Thickness="1" StartLineCap="Flat" EndLineCap="Flat" LineJoin="Miter" />
+        </GeometryDrawing.Pen>
+        <GeometryDrawing.Geometry>
+          <RectangleGeometry RadiusX="0" RadiusY="0" Rect="0.5,0.5,2000,2000" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+            <GeometryDrawing Brush="#FF5097FF" Geometry="{DynamicResource PlusGeometry}" />
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="_DrawingImage" Drawing="{DynamicResource PlusDrawingGroup}" />
+</ResourceDictionary>

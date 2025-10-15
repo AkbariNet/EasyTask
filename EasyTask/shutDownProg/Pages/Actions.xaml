@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="shutDownProg.Pages.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FlowDirection="{DynamicResource FlowAll}"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:shutDownProg.Pages"
+             mc:Ignorable="d" 
+             >
+    <Grid Height="309" Width="353">
+        <Grid>
+            <Rectangle Fill="#FF001A3A" RadiusX="10" RadiusY="10" HorizontalAlignment="Stretch" Width="353" Height="309" VerticalAlignment="Stretch"/>
+            <Ellipse HorizontalAlignment="Left" Height="100" Margin="20,20,0,0" VerticalAlignment="Top" Width="100" Fill="#FFD9EAFF"/>
+            <Label x:Name="taskTitle" Content="YOUR TASK: " HorizontalAlignment="Left" Margin="146,20,0,0" VerticalAlignment="Top" Foreground="White"/>
+            <Ellipse HorizontalAlignment="Left" Height="72" Margin="34,34,0,0" VerticalAlignment="Top" Width="72" Fill="#FF001A3A"/>
+            <Label x:Name="taskNamePreview" Content="My Task Name&#xA;" HorizontalAlignment="Left" Margin="146,46,0,0" VerticalAlignment="Top" Foreground="White" Width="192" FontSize="24" Height="54" FontFamily="Bahnschrift"/>
+            <Rectangle HorizontalAlignment="Left" Height="26" Margin="20,139,0,0" VerticalAlignment="Top" Width="180" RadiusX="5" RadiusY="5" Fill="#FF5097FF"/>
+            <Label Content="Date Created:" HorizontalAlignment="Left" Margin="20,140,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift"/>
+            <Label x:Name="dateCreatedPreview" Content="19 sep - 2023" HorizontalAlignment="Left" Margin="108,140,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Rectangle HorizontalAlignment="Left" Height="26" Margin="20,209,0,0" VerticalAlignment="Top" Width="180" RadiusX="5" RadiusY="5" Fill="#FF5097FF"/>
+            <Label Content="Action:" HorizontalAlignment="Left" Margin="20,210,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift"/>
+            <Label x:Name="actionPreview" Content="Shut Down" HorizontalAlignment="Left" Margin="108,210,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Rectangle HorizontalAlignment="Left" Height="26" Margin="20,174,0,0" VerticalAlignment="Top" Width="180" RadiusX="5" RadiusY="5" Fill="#FF5097FF"/>
+            <Label Content="Start Date:" HorizontalAlignment="Left" Margin="20,175,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift"/>
+            <Label x:Name="startDatePreview" Content="19 sep - 2023" HorizontalAlignment="Left" Margin="108,175,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift Light"/>
+            <Rectangle HorizontalAlignment="Left" Height="94" Margin="212,140,0,0" VerticalAlignment="Top" Width="114" RadiusX="5" RadiusY="5" Fill="#FF5097FF"/>
+            <Label Content="Start Time:" HorizontalAlignment="Left" Margin="235,149,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift"/>
+            <Label x:Name="startTimePreview" Content="19:00" HorizontalAlignment="Left" Margin="225,169,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift" FontSize="36"/>
+            <Button x:Name="deleteButtonTask" Content="Delete" HorizontalAlignment="Left" Height="30" Margin="213,244,0,0" VerticalAlignment="Top" Width="113" Background="White" Foreground="#FF001A3A" FontFamily="Microsoft YaHei UI" BorderThickness="0,0,0,0" Click="deleteButtonTask_Click_1">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5,5,5,5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="editButtonTask" Content="Edit" HorizontalAlignment="Left" Height="30" Margin="87,244,0,0" VerticalAlignment="Top" Width="113" Background="#FF001A3A" Foreground="White" FontFamily="Microsoft YaHei UI" BorderThickness="2,2,2,2" BorderBrush="#FF5097FF">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property=   "CornerRadius" Value="5,5,5,5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+
+        </Grid>
+    </Grid>
+</UserControl>

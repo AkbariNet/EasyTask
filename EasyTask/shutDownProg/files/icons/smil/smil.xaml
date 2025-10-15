@@ -1,0 +1,22 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="dataGeometry1">F1 M1024,2060z M0,0z M412,-244C412,-244 412,284 412,284 412,284 -438,284 -438,284 -438,284 -438,-244 -438,-244 -438,-244 412,-244 412,-244z</Geometry>
+  <Geometry x:Key="dataGeometry2">F1 M1024,2060z M0,0z M-252,-290C-252,-290 -252,350 -252,350 -252,350 -352,350 -352,350 -352,350 -352,-290 -352,-290 -352,-290 -252,-290 -252,-290z</Geometry>
+  <Geometry x:Key="dataGeometry3">F1 M1024,2060z M0,0z M292,-322C292,-322 292,-194 292,-194 292,-194 -352,-194 -352,-194 -352,-194 -352,-322 -352,-322 -352,-322 292,-322 292,-322z</Geometry>
+  <Geometry x:Key="dataGeometry4">F1 M1024,2060z M0,0z M328,-326C328,-326 328,302 328,302 328,302 216,302 216,302 216,302 216,-326 216,-326 216,-326 328,-326 328,-326z</Geometry>
+  <DrawingGroup x:Key="dataDrawingGroup" ClipGeometry="M0,0 V2060 H1024 V0 H0 Z">
+    <DrawingGroup.Transform>
+      <TranslateTransform X="438" Y="326" />
+    </DrawingGroup.Transform>
+    <DrawingGroup Opacity="1">
+      <DrawingGroup Opacity="1" Transform="1,0,0,1.30986,525,1542">
+        <GeometryDrawing Brush="#FF606060" Geometry="{StaticResource dataGeometry1}" />
+      </DrawingGroup>
+      <DrawingGroup Opacity="1" Transform="1,0,0,1,268,1143">
+        <GeometryDrawing Brush="#FF28FFD4" Geometry="{StaticResource dataGeometry2}" />
+        <GeometryDrawing Brush="#FF28FFD4" Geometry="{StaticResource dataGeometry3}" />
+        <GeometryDrawing Brush="#FF28FFD4" Geometry="{StaticResource dataGeometry4}" />
+      </DrawingGroup>
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="dataDrawingImage" Drawing="{StaticResource dataDrawingGroup}" />
+</ResourceDictionary>

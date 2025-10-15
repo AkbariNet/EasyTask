@@ -1,0 +1,21 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Geometry x:Key="settingsGeometry1">F1 M40.04,40.04z M0,0z M24.57,10.37L15.47,10.37C14.82,10.37,14.22,10.72,13.9,11.28L9.35,19.16C9.03,19.72,9.03,20.41,9.35,20.97L13.9,28.85C14.22,29.41,14.82,29.76,15.47,29.76L24.57,29.76C25.22,29.76,25.82,29.41,26.14,28.85L30.69,20.97C31.01,20.41,31.01,19.72,30.69,19.16L26.14,11.28C25.82,10.72,25.22,10.37,24.57,10.37z</Geometry>
+  <Geometry x:Key="settingsGeometry2">F1 M40.04,40.04z M0,0z M19.12,9.39L11.24,13.94C10.68,14.26,10.33,14.86,10.33,15.51L10.33,24.61C10.33,25.26,10.68,25.86,11.24,26.18L19.12,30.73C19.68,31.05,20.37,31.05,20.93,30.73L28.81,26.18C29.37,25.86,29.72,25.26,29.72,24.61L29.72,15.51C29.72,14.86,29.37,14.26,28.81,13.94L20.93,9.39C20.37,9.07,19.68,9.07,19.12,9.39z</Geometry>
+  <DrawingGroup x:Key="settingsDrawingGroup" ClipGeometry="M0,0 V40.04 H40.04 V0 H0 Z">
+        <DrawingGroup.Transform>
+            <TranslateTransform X="0" Y="0.019999999999999574" />
+        </DrawingGroup.Transform>
+        <DrawingGroup Opacity="1">
+      <DrawingGroup Opacity="1">
+                <GeometryDrawing Brush="White" Geometry="{StaticResource settingsGeometry1}" />
+                <GeometryDrawing Brush="White" Geometry="{StaticResource settingsGeometry2}" />
+      </DrawingGroup>
+      <GeometryDrawing Brush="{DynamicResource buttonborder}">
+        <GeometryDrawing.Geometry>
+          <EllipseGeometry RadiusX="3.02" RadiusY="3.02" Center="20.02,19.72" />
+        </GeometryDrawing.Geometry>
+      </GeometryDrawing>
+    </DrawingGroup>
+  </DrawingGroup>
+  <DrawingImage x:Key="settingsDrawingImage" Drawing="{StaticResource settingsDrawingGroup}" />
+</ResourceDictionary>
