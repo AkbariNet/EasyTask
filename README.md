@@ -11,7 +11,6 @@ Create scheduled tasks to automatically perform system actions, launch applicati
 ![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge)
 ![Framework](https://img.shields.io/badge/.NET-WPF-512BD4?style=for-the-badge)
 ![Languages](https://img.shields.io/badge/Languages-8%2B-success?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
 
 </div>
 
