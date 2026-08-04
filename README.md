@@ -150,13 +150,7 @@ See more in **[Screenshots](./Screenshots)**
 - .NET
 - WPF
 - C#
-- MVVM
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
+- MVC
 
 ---
 
