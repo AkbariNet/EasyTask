@@ -155,7 +155,7 @@ See more in **[Screenshots](./Screenshots)**
 
 <div align="center">
 
-Made with ❤️ by **Mohammad Rasool Akbari Davar**
+Made with ❤️ by **Mohammad Rasuol Akbari Davar**
 
 If you like this project, don't forget to ⭐ the repository.
 
