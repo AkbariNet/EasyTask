@@ -2,7 +2,10 @@
 
 <img src="assets/banner.png" alt="EasyTask Banner" width="100%">
 
-# EasyTask
+<h1>
+  <img src="EasyTask/EasyTask/files/1080LOGO/OriginalBGblack80.png" width="50" height="50" align="center" >
+    Easy Task
+</h1>
 
 **A powerful and modern task automation application for Windows.**
 
