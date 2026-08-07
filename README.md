@@ -3,7 +3,7 @@
 <img src="EasyTask%20Common/Banners/Banner1-01.svg" alt="EasyTask Banner" width="100%">
 
 <h1>
-  <img src="EasyTask/EasyTask/files/1080LOGO/OriginalBGblack80.png" width="50" height="50"  >
+  <img src="EasyTask/EasyTask/files/1080LOGO/OriginalBGblack80.png" width="50" height="50"   align="center">
     Easy Task
 </h1>
 
