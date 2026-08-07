@@ -4,7 +4,7 @@
 
 <h1>
   <img src="EasyTask/EasyTask/files/1080LOGO/OriginalBGblack80.png" width="50" height="50"   align="center" >
-   <h1> Easy Task</h1>
+    Easy Task
 </h1>
 
 **A powerful and modern task automation application for Windows.**
